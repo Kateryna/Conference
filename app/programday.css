@@ -1,5 +1,51 @@
-{mso-displayed-decimal-separator:"\.";
-mso-displayed-thousand-separator:"\,";}
+.date 
+	{padding-top:20px;
+	padding-bottom:20px;
+	padding-right:1px;
+	padding-left:1px;
+	color:#1F497D;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	text-align:center;}
+.time
+	{padding-top:5px;
+	padding-bottom:5px;
+	padding-right:1px;
+	padding-left:1px;
+	color:black;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid;}
+.event
+	{padding-top:5px;
+	padding-bottom:5px;
+	padding-right:1px;
+	padding-left:1px;
+	color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-family:Arial, sans-serif;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid;
+	background:#FDE9D9;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .font56916
 	{color:windowtext;
 	font-size:7.0pt;
