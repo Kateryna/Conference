@@ -1,0 +1,5 @@
+/* stylesheet for priting */
+a {text-decoration:none !important;color: inherit !important;}
+
+#ad7,#ad300,.pn,.addiv,ul.ht,div.hi,div.hi2,#LR,div.hc,#TL {display:none;}
+.cpb {visibility:hidden;page-break-before:always;margin:0 0;}
