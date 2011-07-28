@@ -17,52 +17,46 @@
 				alert("Detailed Information");
 			};
 			
-			function infoResearch1(){
+			
+			
+			function getInfo(session){
+				var sessionDescription;
 				var presentationOrder = new Array();
 				var submissionTitle = new Array();
 				var submissionAuthors = new Array();
 				var sessionName = xmlDoc.getElementsByTagName("sessionName");
-				var sessionDescription = xmlDoc.getElementsByTagName("sessionDescription")[0].childNodes[0].nodeValue;
 			//	location = xmlDoc.getElementsByTagName("location")[0].childNodes[0].nodeValue;
-			
-			
-			//x = document.getElementById("Research1");
-			//console.log (x);
-						
 				for (i=0; i<sessionName.length; i++) { 
-					if (sessionName[i].childNodes[0].nodeValue == "Research 1") {
+					if (sessionName[i].childNodes[0].nodeValue == session) {
+						sessionDescription = xmlDoc.getElementsByTagName("sessionDescription")[i].childNodes[0].nodeValue;
 						presentationOrder.push (xmlDoc.getElementsByTagName("presentationOrder")[i].childNodes[0].nodeValue);	
 						submissionTitle.push (xmlDoc.getElementsByTagName("submissionTitle")[i].childNodes[0].nodeValue);	
 						submissionAuthors.push (xmlDoc.getElementsByTagName("submissionAuthors")[i].childNodes[0].nodeValue);	
 					};
-				
-				}
-				console.log (sessionDescription);
-				console.log (presentationOrder);
-				console.log (submissionTitle);
-				console.log (submissionAuthors);
-				
-				
-				var info = new Array();;
-				for (j=0; j<presentationOrder.length; j++) {
-				for (k=0; k<submissionTitle.length; k++) {
-				for (l=0; l<submissionAuthors.length; l++) {
-				info = 'Research Session 1: '+sessionDescription+ '\n' + '\n' + 'Presentation # '+presentationOrder[j]+ '\n' +'Title: '+submissionTitle[k]+'\n' + 'Authors: '+submissionAuthors[l];
-				
-				}
-				}
 				}
 				
+			//	console.log (sessionDescription);
+			//	console.log (presentationOrder);
+			//	console.log (submissionTitle);
+			//	console.log (submissionAuthors);
+					
+				return alert (session+': '+sessionDescription);
 				
-				alert (info);
+		
+				
+				
+			
+			};
+			
+			
+			//	info = 'Research Session 1: '+sessionDescription+ '\n' + '\n' + 'Presentation # '+presentationOrder[j]+ '\n' +'Title: '+submissionTitle[k]+'\n' + 'Authors: '+submissionAuthors[l];
+			
+			//	alert (info);
 				
 				//	 alert('Research Session 1: '+sessionDescription+ '\n' + '\n' + 'Presentation '+presentationOrder+': '+submissionTitle+'\n' + '\n' + 'Authors: '+submissionAuthors); 
 					
 				
-			};
-			
-			
-			
+		
 			
 		</script>
 
@@ -104,12 +98,12 @@
  
 			<tr>
 				<td rowspan="3" class="time">10:30 - 12:00</td>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="infoResearch1()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 1:</font><font class="sessionFont2"><br>Distributed Systems<br></font></div></a></td>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 2:</font><font class="sessionFont2"><br>Entity Matching<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 1')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 1:</font><font class="sessionFont2"><br>Distributed Systems<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 2')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 2:</font><font class="sessionFont2"><br>Entity Matching<br></font></div></a></td>
 			</tr>
 			<tr>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Industrial 1:</font><font class="sessionFont2"><br>Test, Debugging &amp; Analysis<br></font></div></a></td>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 3:</font><font class="sessionFont2"><br>Web Processing<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Industrial 1')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Industrial 1:</font><font class="sessionFont2"><br>Test, Debugging &amp; Analysis<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 3')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 3:</font><font class="sessionFont2"><br>Web Processing<br></font></div></a></td>
 			</tr>	
 			<tr>
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 1:</font><font class="sessionFont2"><br>BI</font></div></a></td>
@@ -123,12 +117,12 @@
 		
 			<tr>
 				<td rowspan="3" class="time">1:30 - 3:30</td>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="infoResearch1()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 4:</font><font class="sessionFont2"><br>GeoSpatial<br></font></div></a></td>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 5:</font><font class="sessionFont2"><br>Uncertain Data<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 4')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 4:</font><font class="sessionFont2"><br>GeoSpatial<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 5')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 5:</font><font class="sessionFont2"><br>Uncertain Data<br></font></div></a></td>
 			</tr>
 			<tr>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 6:</font><font class="sessionFont2"><br>Database Design<br></font></div></a></td>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 7:</font><font class="sessionFont2"><br>Query Processing<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 6')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 6:</font><font class="sessionFont2"><br>Database Design<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 7')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 7:</font><font class="sessionFont2"><br>Query Processing<br></font></div></a></td>
 			</tr>	
 			<tr>
 				<td  colspan="2" class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">Challenges and Vision 1</div></a></td>
@@ -143,11 +137,11 @@
  
 			<tr>
 				<td rowspan="3" class="time">4:00 - 6:00</td>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="infoResearch1()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 8:</font><font class="sessionFont2"><br>Graph Data<br></font></div></a></td>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 9:</font><font class="sessionFont2"><br>New HW Architecture<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 8')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 8:</font><font class="sessionFont2"><br>Graph Data<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 9')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 9:</font><font class="sessionFont2"><br>New HW Architecture<br></font></div></a></td>
 			</tr>
 			<tr>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 10:</font><font class="sessionFont2"><br>Causality, Quality, Dependencies<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 10')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 10:</font><font class="sessionFont2"><br>Causality, Quality, Dependencies<br></font></div></a></td>
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 2:</font><font class="sessionFont2"><br>Flash Storage<br></font></div></a></td>
 			</tr>	
 			<tr>
