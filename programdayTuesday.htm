@@ -2,193 +2,160 @@
 
 <html>
 	<head>
-		<title>Program for Day | VLDB 2011</title>
+		<title>Program for Tuesday</title>
 		<link type="text/css" rel="stylesheet" media="all" href="app/layout.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
 	
 		<script type="text/javascript">
 			
 			xmlhttp=new XMLHttpRequest();	
-			xmlhttp.open("GET","VLDB_2011_Program.xml",false);
+			xmlhttp.open("GET","app/VLDB_2011_Program.xml",false);
 			xmlhttp.send();
 			xmlDoc=xmlhttp.responseXML;
-			
-			
+						
 			function info(){
 				alert("Detailed Information");
 			};
 			
-			function infoResearch1(){
+			
+			
+			function getInfo(session){
+				var sessionDescription;
 				var presentationOrder = new Array();
 				var submissionTitle = new Array();
 				var submissionAuthors = new Array();
 				var sessionName = xmlDoc.getElementsByTagName("sessionName");
-				var sessionDescription = xmlDoc.getElementsByTagName("sessionDescription")[0].childNodes[0].nodeValue;
 			//	location = xmlDoc.getElementsByTagName("location")[0].childNodes[0].nodeValue;
-			
-			
-			//x = document.getElementById("Research1");
-			//console.log (x);
-			
-			
 				for (i=0; i<sessionName.length; i++) { 
-					if (sessionName[i].childNodes[0].nodeValue == "Research 1") {
+					if (sessionName[i].childNodes[0].nodeValue == session) {
+						sessionDescription = xmlDoc.getElementsByTagName("sessionDescription")[i].childNodes[0].nodeValue;
 						presentationOrder.push (xmlDoc.getElementsByTagName("presentationOrder")[i].childNodes[0].nodeValue);	
 						submissionTitle.push (xmlDoc.getElementsByTagName("submissionTitle")[i].childNodes[0].nodeValue);	
 						submissionAuthors.push (xmlDoc.getElementsByTagName("submissionAuthors")[i].childNodes[0].nodeValue);	
 					};
-				
-				}
-				console.log (sessionDescription);
-				console.log (presentationOrder);
-				console.log (submissionTitle);
-				console.log (submissionAuthors);
-				
-				
-				var info = new Array();;
-				for (j=0; j<presentationOrder.length; j++) {
-				for (k=0; k<submissionTitle.length; k++) {
-				for (l=0; l<submissionAuthors.length; l++) {
-				info = 'Research Session 1: '+sessionDescription+ '\n' + '\n' + 'Presentation # '+presentationOrder[j]+ '\n' +'Title: '+submissionTitle[k]+'\n' + 'Authors: '+submissionAuthors[l];
-				
-				}
-				}
 				}
 				
+			//	console.log (sessionDescription);
+			//	console.log (presentationOrder);
+			//	console.log (submissionTitle);
+			//	console.log (submissionAuthors);
+					
+				return alert (session+': '+sessionDescription);
 				
-				alert (info);
+		
+				
+				
+			
+			};
+			
+			
+			//	info = 'Research Session 1: '+sessionDescription+ '\n' + '\n' + 'Presentation # '+presentationOrder[j]+ '\n' +'Title: '+submissionTitle[k]+'\n' + 'Authors: '+submissionAuthors[l];
+			
+			//	alert (info);
 				
 				//	 alert('Research Session 1: '+sessionDescription+ '\n' + '\n' + 'Presentation '+presentationOrder+': '+submissionTitle+'\n' + '\n' + 'Authors: '+submissionAuthors); 
 					
 				
-			};
-			
-			
-			
+		
 			
 		</script>
 
 	</head>
 
 	<body>
-		<div id="header-inner"><img src="img/vldb2011_header_960x100.png" alt="" width="100%"></a></div>
+		<div id="header-inner"><img src="img/vldb2011_header_960x100.png" width="100%"></a></div>
 		<div id="programForDay" align="center">
-		
-		<table border="0" cellpadding="0" cellspacing="0" width="603" style="border-collapse:collapse;table-layout:fixed;width:453pt">
-			<colgroup><col width="71" style="mso-width-source:userset;mso-width-alt:2272;width:53pt">
-			 <col style="mso-width-source:userset;mso-width-alt:2528;width:59pt">
-			 <col style="mso-width-source:userset;mso-width-alt:2496;width:59pt">
-			 <col style="mso-width-source:userset;mso-width-alt:2432;width:57pt">
-			 <col style="mso-width-source:userset;mso-width-alt:3008;width:49pt">
-			 <col style="mso-width-source:userset;mso-width-alt:2304;width:49pt">
-			 <col style="mso-width-source:userset;mso-width-alt:1952;width:46pt">
-			 <col style="mso-width-source:userset;mso-width-alt:2304;width:71pt">
+		<table style="bordborder-collapse:collapse;table-layout:fixed;width:480px">
+			<colgroup>
+				<col width="40">
+				<col width="65">
+				<col width="65">
+				<col width="65">
+				<col width="65">
 			</colgroup> 
-	 
-			<tr><p class="xl816916">Tuesday, August 30, 2011</p></tr>
- 
-			<tr height="20">
-			  <td class="xl696916"></td>
-			  <td class="xl646916"><b>Cascade 1BC</b></td>
-			  <td class="xl646916"><b>Cascade 2</b></td>
-			  <td class="xl646916"><b>Cascade 1A</b></td>
-			  <td class="xl646916"><b>Fifth Ave</b></td>
-			  <td class="xl646916"><b>Vashon</b></td>
-			  <td class="xl646916"><b>St. Helens</b></td>
-			  <td class="xl646916"><b>Grand Crescent</b></td>
+		
+			<tr><p class="date">Tuesday, August 30, 2011</p></tr>
+		
+			<tr>
+				<td class="time">8:00 - 8:30</td>
+				<td colspan="4" class="event">Breakfast (Grand Foyer)</td>
 			</tr>
- 
-			<tr height="21">
-			  <td height="21" class="xl686916">8:00 - 8:30</td>
-			  <td colspan="7" class="xl756916" style="border-right:.5pt solid black">Breakfast
-			  (Grand Foyer)</td>
-			</tr>
-			 
-			 
-			 <tr height="21">
-			  <td height="21" class="xl686916" >8:30 - 8:45</td>
-			  <td colspan="7" class="xl1586916" style="border-right:.5pt solid black">Opening
-			  Ceremony (Grand 1 &amp; 2)</td>
-			 </tr>
-			 
-			 <tr height="21">
-			  <td rowspan="3" height="63" class="xl686916">8:45 - 10:00</td>
-			  <td colspan="7" rowspan="3" class="xl1616916" style="border-right:.5pt solid black;
-			  border-bottom:.5pt solid black"><a href="#" style="color:black" onclick="info()"><div>Keynote 1: Tim O'Reilly (Grand 1 &amp; 2)</div></a></td>
-			 </tr>
-			 
-			 <tr height="21"></tr>
-			 <tr height="21"></tr>
-			 
-			 <tr height="21">
-			  <td height="21" class="xl686916">10:00 - 10:30</td>
-			  <td colspan="7" class="xl756916" style="border-right:.5pt solid black">Coffe Break (Grand Foyer)</td>
-			 </tr>
- 
-			 <tr height="21">
-			  <td rowspan="3" height="63" class="xl686916">10:30 - 12:00</td>
-			  <td rowspan="3" class="xl826916" width="79"><a href="#" onclick="infoResearch1()"><div><font class="font66916">Research 1:</font><font class="font56916"><br>Distributed Systems<br></font></div></a></td>
-			  <td rowspan="3" class="xl826916" width="78"><a href="#" onclick="info()"><div><font class="font66916">Research 2:</font><font class="font56916"><br>Entity Matching<br></font></div></a></td>
-			  <td rowspan="3" class="xl1456916" width="76">&nbsp;</td>
-			  <td rowspan="3" class="xl746916" width="72"><a href="#" onclick="info()"><div><font class="font76916">Industrial 1:</font><font class="font86916"><br>Test, Debugging &amp; Analysis<br></font></div></a></td>
-			  <td rowspan="3" class="xl826916" width="72"><a href="#" onclick="info()"><div><font class="font66916">Research 3:</font><font class="font56916"><br>Web Processing<br></font></div></a></td>
-			  <td rowspan="3" class="xl1216916" width="61"><a href="#" onclick="info()"><div><font class="font76916">Tutorial 1:</font><font class="font86916"><br>BI</font></div></a></td>
-			  <td rowspan="3" class="xl1196916" width="94"><a href="#" style="color:black" onclick="info()"><div>Demos</div></a></td>
-			 </tr>
- 
-			<tr height="21"></tr>
-			<tr height="21"></tr>
 			
-			 <tr height="21">
-			  <td rowspan="3" height="63" class="xl686916">12:00 - 1:30</td>
-			  <td colspan="7" rowspan="3" class="xl756916" width="532" style="border-right:.5pt solid black; width:400pt">Lunch Provided (Grand 3)</td>
-			 </tr>
+			<tr>
+				<td class="time">8:30 - 8:45</td>
+				<td colspan="4" class="event">Opening Ceremony (Grand 1 &amp; 2)</td>
+			</tr>
+	 
+			<tr>
+				<td class="time">8:45 - 10:00</td>
+				<td colspan="4" class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">Keynote 1: Tim O'Reilly (Grand 1 &amp; 2)</div></a></td>
+			</tr>
+ 		
+			<tr>
+				<td class="time">10:00 - 10:30</td>
+				<td colspan="4" class="event">Coffe Break (Grand Foyer)</td>
+			</tr>
  
-			 <tr height="21"></tr>
-			 <tr height="21"></tr>
+			<tr>
+				<td rowspan="3" class="time">10:30 - 12:00</td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 1')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 1:</font><font class="sessionFont2"><br>Distributed Systems<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 2')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 2:</font><font class="sessionFont2"><br>Entity Matching<br></font></div></a></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Industrial 1')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Industrial 1:</font><font class="sessionFont2"><br>Test, Debugging &amp; Analysis<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 3')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 3:</font><font class="sessionFont2"><br>Web Processing<br></font></div></a></td>
+			</tr>	
+			<tr>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 1:</font><font class="sessionFont2"><br>BI</font></div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">Demos</div></a></td>
+			</tr>	
+			
+			<tr>
+				<td class="time" height="70">12:00 - 1:30</td>
+				<td colspan="4" class="event" height="70">Lunch Provided (Grand 3)</td>
+			</tr> 			 
+		
+			<tr>
+				<td rowspan="3" class="time">1:30 - 3:30</td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 4')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 4:</font><font class="sessionFont2"><br>GeoSpatial<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 5')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 5:</font><font class="sessionFont2"><br>Uncertain Data<br></font></div></a></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 6')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 6:</font><font class="sessionFont2"><br>Database Design<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 7')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 7:</font><font class="sessionFont2"><br>Query Processing<br></font></div></a></td>
+			</tr>	
+			<tr>
+				<td  colspan="2" class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">Challenges and Vision 1</div></a></td>
+				<td class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 2:</font><font class="sessionFont2"><br>Flash Storage<br></font></div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">Demos</div></a></td>
+			</tr>
+			
+			<tr>
+				<td class="time">3:30 - 4:00</td>
+				<td colspan="4" class="event">Coffe Break (Grand Foyer)</td>
+			</tr>
  
-			 <tr height="21">
-			  <td rowspan="3" height="63" class="xl686916">1:30 - 3:30</td>
-			  <td rowspan="3" class="xl826916" width="79"><a href="#" onclick="info()"><div><font class="font66916">Research 4:</font><font class="font56916"><br>GeoSpatial<br></font></div></a></td>
-			  <td rowspan="3" class="xl826916" width="78"><a href="#" onclick="info()"><div><font class="font66916">Research 5:</font><font class="font56916"><br>Uncertain Data<br></font></div></a></td>
-			  <td rowspan="3" class="xl826916" width="76"><a href="#" onclick="info()"><div><font class="font66916">Research 6:</font><font class="font56916"><br>Database Design<br></font></div></a></td>
-			  <td rowspan="3" class="xl826916" width="72"><a href="#" onclick="info()"><div><font class="font66916">Research 7:</font><font class="font56916"><br>Query Processing<br></font></div></a></td>
-			  <td rowspan="3" class="xl1286916" width="72"><a href="#" style="color:black" onclick="info()"><div>Challenges and Vision 1</div></a></td>
-			  <td rowspan="3" class="xl1216916" width="61"><a href="#" onclick="info()"><div><font class="font76916">Tutorial 2:</font><font class="font86916"><br>Flash Storage</font></div></a></td>
-			  	<td rowspan="3" class="xl1196916" width="94"><a href="#" style="color:black" onclick="info()"><div>Demos</div></a></td>
-			 </tr>
+			<tr>
+				<td rowspan="3" class="time">4:00 - 6:00</td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 8')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 8:</font><font class="sessionFont2"><br>Graph Data<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 9')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 9:</font><font class="sessionFont2"><br>New HW Architecture<br></font></div></a></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research 10')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 10:</font><font class="sessionFont2"><br>Causality, Quality, Dependencies<br></font></div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 2:</font><font class="sessionFont2"><br>Flash Storage<br></font></div></a></td>
+			</tr>	
+			<tr>
+				<td  colspan="2" class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">Challenges and Vision 2</div></a></td>
+				<td class="sessionSecondType"><a href="#" onclick="info()"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 2:</font><font class="sessionFont2"><br>Flash Storage<br></font></div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">Demos</div></a></td>
+			</tr>
+			  
+			<tr>
+				<td class="time" height="70">6:00 - 9:00</td>
+				<td colspan="4" class="event" height="70">Microsoft Reception</td>
+			</tr>
  
-			 <tr height="21"></tr>
-			 <tr height="21"></tr>
- 
-			 <tr height="21">
-			  <td height="21" class="xl686916">3:30 - 4:00</td>
-			  <td colspan="7" class="xl756916" width="532" style="border-right:.5pt solid black; width:400pt">Coffe Break (Grand Foyer)</td>
-			 </tr>
- 
-			 <tr height="21">
-			  <td rowspan="3" height="63" class="xl686916">4:00 - 6:00</td>
-			  <td rowspan="3" class="xl826916" width="79"><a href="#" onclick="info()"><div><font class="font66916">Research 8:</font><font class="font56916"><br>Graph Data<br></font></div></a></td>
-			  <td rowspan="3" class="xl826916" width="78"><a href="#" onclick="info()"><div><font class="font66916">Research 9:</font><font class="font56916"><br>New HW Architecture<br></font></div></a></td>
-			  <td rowspan="3" class="xl826916" width="76"><a href="#" onclick="info()"><div><font class="font66916">Research 10:</font><font class="font56916"><br>Causality, Quality, Dependencies<br></font></div></a></td>
-			   <td rowspan="3" class="xl1216916" width="61"><a href="#" onclick="info()"><div><font class="font76916">Tutorial 2:</font><font class="font86916"><br>Flash Storage</font></div></a></td>
-			  <td rowspan="3" class="xl1286916" width="72"><a href="#" style="color:black" onclick="info()"><div>Challenges and Vision 2</div></a></td>			
-			  <td rowspan="3" class="xl1216916" width="61"><a href="#" onclick="info()"><div><font class="font76916">Tutorial 2:</font><font class="font86916"><br>Flash Storage</font></div></a></td>
-				<td rowspan="3" class="xl1196916" width="94"><a href="#" style="color:black" onclick="info()"><div>Demos</div></a></td>
-			 </tr>
-			 
-			 <tr height="21"></tr>
-			 <tr height="21"></tr>
- 
-			<tr height="21">
-			  <td rowspan="3" height="63" class="xl686916">6:00 - 9:00</td>
-			  <td colspan="7" rowspan="3" class="xl1586915" width="532" style="border-right:.5pt solid black; border-bottom:.5pt solid black">Microsoft Reception</td>
-			 </tr>
- 
-			 <tr height="21"></tr>
-			 <tr height="21"></tr>
- 
-			 <tr height="21"></tr>
+			<tr height="25"></tr>
 		</table>
 		</div>
 		
