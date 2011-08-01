@@ -19,6 +19,6 @@ html, body {
 /* @group Both Sidebars */
 .both #main {
   width: 100%;
-  float: right ;
+  float: left ;
 }
 

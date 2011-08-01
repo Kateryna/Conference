@@ -58,14 +58,18 @@ h2 {
 }
 h3 {
   font-size: 1.6em;
+  text-align:center;
 }
 h4 {
   font-size: 1.4em;
+  
 }
 h5 {
   font-size: 1.2em;
 }
 /* @end */
+
+/*main buttons group*/
 a.button{
 
 height: 128px;
@@ -104,3 +108,60 @@ a.button:hover{
     -moz-box-shadow:3px 3px 3px #333;
     -webkit-box-shadow:3px 3px 3px #333;
 }
+/*end of main buttons*/
+/*style of floor plans*/
+.zitem {
+    width:210px;
+    height:297px;  
+    border:2px solid #222; 
+    margin:20px 20px 20px 0;
+     
+    /* required to hide the image after resized */
+    overflow:hidden;
+     
+    /* for child absolute position */
+    position:relative;
+     
+    /* display div in line */
+    float:left;
+}
+ 
+.zitem .caption {
+    width:210px;
+    height:30px;
+    background:#000;
+    color:#fff;
+         
+    /* fix it at the bottom */
+    position:relative;
+    bottom:-1px; /* fix IE issue */
+    left:0;
+ 
+    /* hide it by default */
+    display:none;
+ 
+    /* opacity setting */
+    filter:alpha(opacity=70);    /* ie  */
+    -moz-opacity:0.7;    /* old mozilla browser like netscape  */
+    -khtml-opacity: 0.7;    /* for really really old safari */ 
+    opacity: 0.7;    /* css standard, currently it works in most modern browsers like firefox,  */
+ 
+}
+ 
+.zitem .caption a {
+    text-decoration:none;
+    color:#fff;
+    font-size:12px;
+     
+    /* add spacing and make the whole row clickable*/
+    padding:5px;
+    display:block;
+}
+ 
+img {
+    border:0;
+     
+    /* allow javascript moves the img position*/
+    position:relative;
+}
+/*end style of floor plans*/
