@@ -43,11 +43,12 @@ for (i = 0; i < articles.length; i++) {
 			.push(xmlDoc.getElementsByTagName("articleId")[i].childNodes[0].nodeValue);
 }
 
-
-
-function getArticles(tagName) {
 	var resultArticle = [];
 	var resultArticleAbstr = new Array();
+
+function getArticles(tagName) {
+	resultArticle=[];
+	resultArticleAbstr=[];
 	var tagArray = [];
 
 	var tagCloud = [ 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
