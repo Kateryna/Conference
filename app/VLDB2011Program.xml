@@ -3,9 +3,10 @@
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Research 1</sessionName>
-		<sessionDescription>Distributed Query Processing and Replication</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 1</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Distributed Systems</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>16</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -15,9 +16,10 @@
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Research 1</sessionName>
-		<sessionDescription>Distributed Query Processing and Replication</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 1</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Distributed Systems</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>148</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -27,9 +29,10 @@
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Research 1</sessionName>
-		<sessionDescription>Distributed Query Processing and Replication</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 1</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Distributed Systems</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>568</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -39,21 +42,23 @@
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Research 2</sessionName>
+		<sessionName>Research Session 2</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Entity Matching</sessionDescription>
-		<location>Grand 2</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>209</submissionId>
 		<presentationOrder>1</presentationOrder>
 		<submissionTitle>Entity Matching: How Similar Is Similar</submissionTitle>
-		<submissionAuthors>Jiannan Wang (Tsinghua University), Guoliang Li (Tsinghua), Jeffrey Xu Yu (Chinese University of Hong Kong), Jianhua Feng (Tsinghua University)</submissionAuthors>
+		<submissionAuthors>Jiannan Wang (Tsinghua University), Guoliang Li (Tsinghua University), Jeffrey Xu Yu (Chinese University of Hong Kong), Jianhua Feng (Tsinghua University)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Research 2</sessionName>
+		<sessionName>Research Session 2</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Entity Matching</sessionDescription>
-		<location>Grand 2</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>310</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -63,9 +68,10 @@
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Research 2</sessionName>
+		<sessionName>Research Session 2</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Entity Matching</sessionDescription>
-		<location>Grand 2</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>506</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -75,9 +81,10 @@
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Research 3</sessionName>
+		<sessionName>Research Session 3</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Web Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>63</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -87,9 +94,10 @@
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Research 3</sessionName>
+		<sessionName>Research Session 3</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Web Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>80</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -99,19 +107,21 @@
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Research 3</sessionName>
+		<sessionName>Research Session 3</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Web Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>134</submissionId>
 		<presentationOrder>3</presentationOrder>
 		<submissionTitle>Recovering Semantics of Tables on the Web </submissionTitle>
-		<submissionAuthors>Petros Venetis (Stanford University), Alon Halevy (Google), Jayant Madhavan (Google Inc), Marius Pasca (Google Inc), Warren Shen (Google), Fei Wu (Google Inc), Gengxin Miao (University of California, Santa Barbara), Chung Wu ()</submissionAuthors>
+		<submissionAuthors>Petros Venetis (Stanford University), Alon Halevy (Google), Jayant Madhavan (Google Inc), Marius Pasca (Google Inc), Warren Shen (Google), Fei Wu (Google Inc), Gengxin Miao (University of California, Santa Barbara), Chung Wu</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Industrial 1</sessionName>
+		<sessionName>Industrial Session 1</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Database Systems Testing, Debugging, and Analysis</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -123,7 +133,8 @@
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Industrial 1</sessionName>
+		<sessionName>Industrial Session 1</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Database Systems Testing, Debugging, and Analysis</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -135,7 +146,8 @@
 	<record>
 		<startDate>8/30/2011 10:30:00 AM</startDate>
 		<endDate>8/30/2011 12:00:00 PM</endDate>
-		<sessionName>Industrial 1</sessionName>
+		<sessionName>Industrial Session 1</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Database Systems Testing, Debugging, and Analysis</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -147,105 +159,10 @@
 	<record>
 		<startDate>8/30/2011 1:30:00 PM</startDate>
 		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 4</sessionName>
-		<sessionDescription>Uncertain Data</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>22</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>A Generic Framework for Handling Uncertain Data with Local Correlations</submissionTitle>
-		<submissionAuthors>Xiang Lian (HKUST), Lei Chen (HKUST)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 4</sessionName>
-		<sessionDescription>Uncertain Data</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>250</submissionId>
-		<presentationOrder>2</presentationOrder>
-		<submissionTitle>Efficient Probabilistic Reverse Nearest Neighbor Query Processing on Uncertain Data</submissionTitle>
-		<submissionAuthors>Thomas Bernecker (Ludwig-Maximilians-University), Tobias Emrich (Ludwig-Maximilians-University), Hans-Peter Kriegel ( Univ. of Munchen,  Germany ), Matthias Renz (Ludwig-Maximilians-University), Stefan Zankl (Ludwig-Maximilians-Universität München), Andreas Züfle (Ludwig-Maximilians-University)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 4</sessionName>
-		<sessionDescription>Uncertain Data</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>573</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>Queries with Difference on Probabilistic Databases</submissionTitle>
-		<submissionAuthors>Sanjeev Khanna (University of Pennsylvania), Sudeepa Roy (University of Pennsylvania), Val Tannen (University of Pennsylvania)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 4</sessionName>
-		<sessionDescription>Uncertain Data</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>618</submissionId>
-		<presentationOrder>4</presentationOrder>
-		<submissionTitle>Optimizing Probabilistic Query Processing on Continuous Uncertain Data</submissionTitle>
-		<submissionAuthors>Liping Peng (UMass Amherst), Yanlei Diao (University of Massachusetts), Anna Liu (UMass Amherst)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 5</sessionName>
-		<sessionDescription>Database Design</sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>45</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>CRIUS: User-Friendly Database Design</submissionTitle>
-		<submissionAuthors>Li Qian (University of Michigan), Kristen LeFevre (Univ. of Michigan), H. Jagadish (University of Michigan)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 5</sessionName>
-		<sessionDescription>Database Design</sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>103</submissionId>
-		<presentationOrder>2</presentationOrder>
-		<submissionTitle>CoPhy: A Scalable, Portable, and Interactive Index Advisor for Large Workloads</submissionTitle>
-		<submissionAuthors>Debabrata Dash (ArcSight), Neoklis Polyzotis (UC Santa Cruz), Anastasia Ailamaki (Ecole Polytechnique Fédérale de Lausanne  (EPFL))</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 5</sessionName>
-		<sessionDescription>Database Design</sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>244</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>Compression Aware Physical Database Design</submissionTitle>
-		<submissionAuthors>Hideaki Kimura (Brown University), Vivek Narasayya (Microsoft Research), Manoj Syamala (Microsoft Research)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 5</sessionName>
-		<sessionDescription>Database Design</sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>471</submissionId>
-		<presentationOrder>4</presentationOrder>
-		<submissionTitle>Summary Graphs for Relational Database Schemas</submissionTitle>
-		<submissionAuthors>Xiaoyan Yang (National Univ. of Singapore), Cecilia Procopiuc (AT&amp;T Labs-Research), Divesh Srivastava (AT&amp;T Labs)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 6</sessionName>
-		<sessionDescription>GeoSpatial Data Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 4</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>GeoSpatial</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>38</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -255,9 +172,10 @@
 	<record>
 		<startDate>8/30/2011 1:30:00 PM</startDate>
 		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 6</sessionName>
-		<sessionDescription>GeoSpatial Data Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 4</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>GeoSpatial</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>49</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -267,9 +185,10 @@
 	<record>
 		<startDate>8/30/2011 1:30:00 PM</startDate>
 		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 6</sessionName>
-		<sessionDescription>GeoSpatial Data Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 4</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>GeoSpatial</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>163</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -279,9 +198,10 @@
 	<record>
 		<startDate>8/30/2011 1:30:00 PM</startDate>
 		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 6</sessionName>
-		<sessionDescription>GeoSpatial Data Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 4</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>GeoSpatial</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>510</submissionId>
 		<presentationOrder>4</presentationOrder>
@@ -291,7 +211,113 @@
 	<record>
 		<startDate>8/30/2011 1:30:00 PM</startDate>
 		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 7</sessionName>
+		<sessionName>Research Session 5</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Uncertain Data</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>22</submissionId>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>A Generic Framework for Handling Uncertain Data with Local Correlations</submissionTitle>
+		<submissionAuthors>Xiang Lian (HKUST), Lei Chen (HKUST)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Research Session 5</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Uncertain Data</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>250</submissionId>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>Efficient Probabilistic Reverse Nearest Neighbor Query Processing on Uncertain Data</submissionTitle>
+		<submissionAuthors>Thomas Bernecker (Ludwig-Maximilians-University), Tobias Emrich (Ludwig-Maximilians-University), Hans-Peter Kriegel ( Univ. of Munchen,  Germany ), Matthias Renz (Ludwig-Maximilians-University), Stefan Zankl (Ludwig-Maximilians-Universität München), Andreas Züfle (Ludwig-Maximilians-University)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Research Session 5</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Uncertain Data</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>573</submissionId>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>Queries with Difference on Probabilistic Databases</submissionTitle>
+		<submissionAuthors>Sanjeev Khanna (University of Pennsylvania), Sudeepa Roy (University of Pennsylvania), Val Tannen (University of Pennsylvania)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Research Session 5</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Uncertain Data</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>618</submissionId>
+		<presentationOrder>4</presentationOrder>
+		<submissionTitle>Optimizing Probabilistic Query Processing on Continuous Uncertain Data</submissionTitle>
+		<submissionAuthors>Liping Peng (UMass Amherst), Yanlei Diao (University of Massachusetts), Anna Liu (UMass Amherst)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Research Session 6</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Database Design</sessionDescription>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<submissionId>45</submissionId>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>CRIUS: User-Friendly Database Design</submissionTitle>
+		<submissionAuthors>Li Qian (University of Michigan), Kristen LeFevre (Univ. of Michigan), H. Jagadish (University of Michigan)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Research Session 6</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Database Design</sessionDescription>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<submissionId>103</submissionId>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>CoPhy: A Scalable, Portable, and Interactive Index Advisor for Large Workloads</submissionTitle>
+		<submissionAuthors>Debabrata Dash (ArcSight), Neoklis Polyzotis (UC Santa Cruz), Anastasia Ailamaki (Ecole Polytechnique Fédérale de Lausanne  (EPFL))</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Research Session 6</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Database Design</sessionDescription>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<submissionId>244</submissionId>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>Compression Aware Physical Database Design</submissionTitle>
+		<submissionAuthors>Hideaki Kimura (Brown University), Vivek Narasayya (Microsoft Research), Manoj Syamala (Microsoft Research)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Research Session 6</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Database Design</sessionDescription>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<submissionId>471</submissionId>
+		<presentationOrder>4</presentationOrder>
+		<submissionTitle>Summary Graphs for Relational Database Schemas</submissionTitle>
+		<submissionAuthors>Xiaoyan Yang (National Univ. of Singapore), Cecilia Procopiuc (AT&amp;T Labs-Research), Divesh Srivastava (AT&amp;T Labs)</submissionAuthors>
+	</record>
+	
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Research Session 7</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Query Processing</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -303,7 +329,8 @@
 	<record>
 		<startDate>8/30/2011 1:30:00 PM</startDate>
 		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 7</sessionName>
+		<sessionName>Research Session 7</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Query Processing</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -315,7 +342,8 @@
 	<record>
 		<startDate>8/30/2011 1:30:00 PM</startDate>
 		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 7</sessionName>
+		<sessionName>Research Session 7</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Query Processing</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -327,7 +355,8 @@
 	<record>
 		<startDate>8/30/2011 1:30:00 PM</startDate>
 		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Research 7</sessionName>
+		<sessionName>Research Session 7</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Query Processing</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -337,71 +366,12 @@
 		<submissionAuthors>Giorgio Orsi (Oxford University), Andreas Pieris (Oxford University)</submissionAuthors>
 	</record>
 	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Challenges and Vision 1</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>736</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Data Markets in the Cloud: An Opportunity for the Database Community</submissionTitle>
-		<submissionAuthors>Magdalena Balazinska (University of Washington), Bill Howe (University of Washington), Dan Suciu (University of Washington)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Challenges and Vision 1</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>808</submissionId>
-		<presentationOrder>2</presentationOrder>
-		<submissionTitle>Data is Dead... Without What-if Models</submissionTitle>
-		<submissionAuthors>Peter Haas (IBM Almaden Research Center), Paul Maglio (IBM Almaden Research Center), Patricia Selinger (IBM Almaden Research Center), Wang-Chiew Tan (IBM Research - Almaden &amp; UCSC)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Challenges and Vision 1</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>694</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>Data Generation for Application-Specific Benchmarking</submissionTitle>
-		<submissionAuthors>Y.C. Tay (National Univ. of Singapore)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Challenges and Vision 1</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>818</submissionId>
-		<presentationOrder>4</presentationOrder>
-		<submissionTitle>Reverse Data Management</submissionTitle>
-		<submissionAuthors>Alexandra Meliou (University of Washington), Wolfgang Gatterbauer (University of Washington), Dan Suciu (University of Washington)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 1:30:00 PM</startDate>
-		<endDate>8/30/2011 3:30:00 PM</endDate>
-		<sessionName>Challenges and Vision 1</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>732</submissionId>
-		<presentationOrder>5</presentationOrder>
-		<submissionTitle>Anthropocentric Data Systems</submissionTitle>
-		<submissionAuthors>Peter Triantafillou (University of Patras)</submissionAuthors>
-	</record>
-	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 8</sessionName>
-		<sessionDescription>Searching and Querying Graph Structures</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 8</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Graph Data</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>34</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -411,9 +381,10 @@
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 8</sessionName>
-		<sessionDescription>Searching and Querying Graph Structures</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 8</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Graph Data</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>74</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -423,9 +394,10 @@
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 8</sessionName>
-		<sessionDescription>Searching and Querying Graph Structures</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 8</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Graph Data</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>377</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -435,9 +407,10 @@
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 8</sessionName>
-		<sessionDescription>Searching and Querying Graph Structures</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 8</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Graph Data</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>424</submissionId>
 		<presentationOrder>4</presentationOrder>
@@ -447,57 +420,10 @@
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 9</sessionName>
-		<sessionDescription>Causality, Quality, and Dependencies</sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>94</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>The Complexity of Causality and Responsibility for Query Answers and non-Answers</submissionTitle>
-		<submissionAuthors>Alexandra Meliou (University of Washington), Wolfgang Gatterbauer (University of Washington), Katherine Moore (University of Washington), Dan Suciu (University of Washington)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 4:00:00 PM</startDate>
-		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 9</sessionName>
-		<sessionDescription>Causality, Quality, and Dependencies</sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>110</submissionId>
-		<presentationOrder>2</presentationOrder>
-		<submissionTitle>Guided Data Repair</submissionTitle>
-		<submissionAuthors>Mohamed Yakout (Purdue University), Ahmed Elmagarmid (Qatar Computing Research Institute), Jennifer Neville (Purdue University), Mourad Ouzzani (Purdue University), Ihab Ilyas (University of Waterloo)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 4:00:00 PM</startDate>
-		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 9</sessionName>
-		<sessionDescription>Causality, Quality, and Dependencies</sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>614</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>Stratification Criteria and Rewriting Techniques for Checking Chase Termination</submissionTitle>
-		<submissionAuthors>Sergio Greco (Università della Calabria), Francesca Spezzano (Università della calabria), Irina Trubitsyna (DEIS, Università della Calabria)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 4:00:00 PM</startDate>
-		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 9</sessionName>
-		<sessionDescription>Causality, Quality, and Dependencies</sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>388</submissionId>
-		<presentationOrder>4</presentationOrder>
-		<submissionTitle>Completeness of Queries over Incomplete Databases</submissionTitle>
-		<submissionAuthors>Simon Razniewski (FU Bozen), Werner Nutt (FU Bozen)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 4:00:00 PM</startDate>
-		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 10</sessionName>
+		<sessionName>Research Session 9</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>New Hardware Architecture</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>54</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -507,9 +433,10 @@
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 10</sessionName>
+		<sessionName>Research Session 9</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>New Hardware Architecture</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>119</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -519,9 +446,10 @@
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 10</sessionName>
+		<sessionName>Research Session 9</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>New Hardware Architecture</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>230</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -531,9 +459,10 @@
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Research 10</sessionName>
+		<sessionName>Research Session 9</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>New Hardware Architecture</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>422</submissionId>
 		<presentationOrder>4</presentationOrder>
@@ -543,105 +472,62 @@
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Challenges and Vision 2</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
+		<sessionName>Research Session 10</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Causality, Quality, and Dependencies</sessionDescription>
+		<location>Cascade 1A</location>
 		<sessionChairs/>
-		<submissionId>660</submissionId>
+		<submissionId>94</submissionId>
 		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Resiliency-Aware Data Management</submissionTitle>
-		<submissionAuthors>Matthias Boehm (TU Dresden), Wolfgang Lehner (TU Dresden), Christof Fetzer (TU Dresden)</submissionAuthors>
+		<submissionTitle>The Complexity of Causality and Responsibility for Query Answers and non-Answers</submissionTitle>
+		<submissionAuthors>Alexandra Meliou (University of Washington), Wolfgang Gatterbauer (University of Washington), Katherine Moore (University of Washington), Dan Suciu (University of Washington)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Challenges and Vision 2</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
+		<sessionName>Research Session 10</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Causality, Quality, and Dependencies</sessionDescription>
+		<location>Cascade 1A</location>
 		<sessionChairs/>
-		<submissionId>666</submissionId>
+		<submissionId>110</submissionId>
 		<presentationOrder>2</presentationOrder>
-		<submissionTitle>Guided Interaction: Rethinking the Query-Result Paradigm</submissionTitle>
-		<submissionAuthors>Arnab Nandi (University of Michigan), H Jagadish (U. Mich)</submissionAuthors>
+		<submissionTitle>Guided Data Repair</submissionTitle>
+		<submissionAuthors>Mohamed Yakout (Purdue University), Ahmed Elmagarmid (Qatar Computing Research Institute), Jennifer Neville (Purdue University), Mourad Ouzzani (Purdue University), Ihab Ilyas (University of Waterloo)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Challenges and Vision 2</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
+		<sessionName>Research Session 10</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Causality, Quality, and Dependencies</sessionDescription>
+		<location>Cascade 1A</location>
 		<sessionChairs/>
-		<submissionId>726</submissionId>
+		<submissionId>614</submissionId>
 		<presentationOrder>3</presentationOrder>
-		<submissionTitle>The Researcher's Guide to the Data Deluge: Querying a Scientific Database in Just a Few Seconds</submissionTitle>
-		<submissionAuthors>Martin Kersten (CWI), Stratos Idreos (CWI), Stefan Manegold (CWI), Erietta Liarou (CWI)</submissionAuthors>
+		<submissionTitle>Stratification Criteria and Rewriting Techniques for Checking Chase Termination</submissionTitle>
+		<submissionAuthors>Sergio Greco (Università della Calabria), Francesca Spezzano (Università della calabria), Irina Trubitsyna (DEIS, Università della Calabria)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
 		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Challenges and Vision 2</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
+		<sessionName>Research Session 10</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Causality, Quality, and Dependencies</sessionDescription>
+		<location>Cascade 1A</location>
 		<sessionChairs/>
-		<submissionId>822</submissionId>
+		<submissionId>388</submissionId>
 		<presentationOrder>4</presentationOrder>
-		<submissionTitle>Exploring the Coming Repositories of Reproducible Experiments: Challenges and Opportunities</submissionTitle>
-		<submissionAuthors>Juliana Freire (University of Utah), Philippe Bonnet (University of Copenhagen, Denmark), Dennis Shasha (New York University)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/30/2011 4:00:00 PM</startDate>
-		<endDate>8/30/2011 6:00:00 PM</endDate>
-		<sessionName>Challenges and Vision 2</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>838</submissionId>
-		<presentationOrder>5</presentationOrder>
-		<submissionTitle>Databases will Visualize Queries too</submissionTitle>
-		<submissionAuthors>Wolfgang Gatterbauer (University of Washington)</submissionAuthors>
+		<submissionTitle>Completeness of Queries over Incomplete Databases</submissionTitle>
+		<submissionAuthors>Simon Razniewski (FU Bozen), Werner Nutt (FU Bozen)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/31/2011 10:30:00 AM</startDate>
 		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Research 11</sessionName>
-		<sessionDescription>Cloud Computing and High-Availability</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>191</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Albatross: Lightweight Elasticity in Shared Storage Databases for the Cloud using Live Data Migration</submissionTitle>
-		<submissionAuthors>Sudipto Das (UC Santa Barbara), Shoji Nishimura (NEC Corporation), Divyakant Agrawal (University of California, Santa Barbara), Amr El Abbadi (UC Santa Barbara)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 10:30:00 AM</startDate>
-		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Research 11</sessionName>
-		<sessionDescription>Cloud Computing and High-Availability</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>252</submissionId>
-		<presentationOrder>2</presentationOrder>
-		<submissionTitle>iCBS: Incremental Cost-based Scheduling under Piecewise Linear SLAs</submissionTitle>
-		<submissionAuthors>Yun Chi (NEC Laboratories, America), Hyun Moon (NEC Labs America), Hakan Hacigumus (NEC Labs America)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 10:30:00 AM</startDate>
-		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Research 11</sessionName>
-		<sessionDescription>Cloud Computing and High-Availability</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>386</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>RemusDB: Transparent High-Availability for Database Systems</submissionTitle>
-		<submissionAuthors>Umar Farooq Minhas (University of Waterloo), Shriram Rajagopalan (University of British Columbia), Brendan Cully (University of British Columbia), Ashraf Aboulnaga (University of Waterloo), Ken Salem (University of Waterloo), Andrew Warfield (University of British Columbia)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 10:30:00 AM</startDate>
-		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Research 12</sessionName>
-		<sessionDescription>Graph Processing and SPARQL</sessionDescription>
-		<location>Grand 2</location>
+		<sessionName>Research Session 11</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Graph Data</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>188</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -651,9 +537,10 @@
 	<record>
 		<startDate>8/31/2011 10:30:00 AM</startDate>
 		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Research 12</sessionName>
-		<sessionDescription>Graph Processing and SPARQL</sessionDescription>
-		<location>Grand 2</location>
+		<sessionName>Research Session 11</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Graph Data</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>461</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -663,9 +550,10 @@
 	<record>
 		<startDate>8/31/2011 10:30:00 AM</startDate>
 		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Research 12</sessionName>
-		<sessionDescription>Graph Processing and SPARQL</sessionDescription>
-		<location>Grand 2</location>
+		<sessionName>Research Session 11</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Graph Data</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>599</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -675,9 +563,50 @@
 	<record>
 		<startDate>8/31/2011 10:30:00 AM</startDate>
 		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Research 13</sessionName>
+		<sessionName>Research Session 12</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Cloud Computing and High-Availability</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>191</submissionId>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>Albatross: Lightweight Elasticity in Shared Storage Databases for the Cloud using Live Data Migration</submissionTitle>
+		<submissionAuthors>Sudipto Das (UC Santa Barbara), Shoji Nishimura (NEC Corporation), Divyakant Agrawal (University of California, Santa Barbara), Amr El Abbadi (UC Santa Barbara)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 10:30:00 AM</startDate>
+		<endDate>8/31/2011 12:00:00 PM</endDate>
+		<sessionName>Research Session 12</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Cloud Computing and High-Availability</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>252</submissionId>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>iCBS: Incremental Cost-based Scheduling under Piecewise Linear SLAs</submissionTitle>
+		<submissionAuthors>Yun Chi (NEC Laboratories, America), Hyun Moon (NEC Labs America), Hakan Hacigumus (NEC Labs America)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 10:30:00 AM</startDate>
+		<endDate>8/31/2011 12:00:00 PM</endDate>
+		<sessionName>Research Session 12</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Cloud Computing and High-Availability</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>386</submissionId>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>RemusDB: Transparent High-Availability for Database Systems</submissionTitle>
+		<submissionAuthors>Umar Farooq Minhas (University of Waterloo), Shriram Rajagopalan (University of British Columbia), Brendan Cully (University of British Columbia), Ashraf Aboulnaga (University of Waterloo), Ken Salem (University of Waterloo), Andrew Warfield (University of British Columbia)</submissionAuthors>
+	</record>
+	
+	<record>
+		<startDate>8/31/2011 10:30:00 AM</startDate>
+		<endDate>8/31/2011 12:00:00 PM</endDate>
+		<sessionName>Research Session 13</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Human-Computer Interaction</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>28</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -687,9 +616,10 @@
 	<record>
 		<startDate>8/31/2011 10:30:00 AM</startDate>
 		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Research 13</sessionName>
+		<sessionName>Research Session 13</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Human-Computer Interaction</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>52</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -699,9 +629,10 @@
 	<record>
 		<startDate>8/31/2011 10:30:00 AM</startDate>
 		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Research 13</sessionName>
+		<sessionName>Research Session 13</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Human-Computer Interaction</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>96</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -711,8 +642,9 @@
 	<record>
 		<startDate>8/31/2011 10:30:00 AM</startDate>
 		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Industrial 2</sessionName>
-		<sessionDescription>Languages and Evaluation Strategies for Large Scale Data Analysis</sessionDescription>
+		<sessionName>Industrial Session 2</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Large Scale Analytics</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>737</submissionId>
@@ -723,8 +655,9 @@
 	<record>
 		<startDate>8/31/2011 10:30:00 AM</startDate>
 		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Industrial 2</sessionName>
-		<sessionDescription>Languages and Evaluation Strategies for Large Scale Data Analysis</sessionDescription>
+		<sessionName>Industrial Session 2</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Large Scale Analytics</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>718</submissionId>
@@ -735,8 +668,9 @@
 	<record>
 		<startDate>8/31/2011 10:30:00 AM</startDate>
 		<endDate>8/31/2011 12:00:00 PM</endDate>
-		<sessionName>Industrial 2</sessionName>
-		<sessionDescription>Languages and Evaluation Strategies for Large Scale Data Analysis</sessionDescription>
+		<sessionName>Industrial Session 2</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Large Scale Analytics</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>648</submissionId>
@@ -747,45 +681,10 @@
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
 		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Research 14</sessionName>
-		<sessionDescription>Distributed Processing</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>111</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore </submissionTitle>
-		<submissionAuthors>Jun Rao (LinkedIn), Eugene Shekita (IBM Research), Sandeep Tata (IBM Research)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 1:30:00 PM</startDate>
-		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Research 14</sessionName>
-		<sessionDescription>Distributed Processing</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>372</submissionId>
-		<presentationOrder>2</presentationOrder>
-		<submissionTitle>A Framework for Supporting DBMS-like Indexes in the Cloud</submissionTitle>
-		<submissionAuthors>Gang Chen (Zhejiang University), Hoang Tam Vo (School of Computing), Sai Wu (National Univ. of Singapore), Beng Chin Ooi (National University of Singapo), M. Tamer Özsu (University of Waterloo)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 1:30:00 PM</startDate>
-		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Research 14</sessionName>
-		<sessionDescription>Distributed Processing</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>421</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>Serializable Snapshot Isolation for Replicated Databases in High-Update Scenarios</submissionTitle>
-		<submissionAuthors>Hyungsoo Jung (University of Sydney), Hyuck Han (Seoul National Univeristy), Alan Fekete (University of Sydney), Uwe Roehm (University of Sydney)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 1:30:00 PM</startDate>
-		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Research 15</sessionName>
-		<sessionDescription>Database Integrity Maintenance</sessionDescription>
-		<location>Grand 2</location>
+		<sessionName>Research Session 14</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Integrity Maintenance</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>88</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -795,9 +694,10 @@
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
 		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Research 15</sessionName>
-		<sessionDescription>Database Integrity Maintenance</sessionDescription>
-		<location>Grand 2</location>
+		<sessionName>Research Session 14</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Integrity Maintenance</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>480</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -807,9 +707,10 @@
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
 		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Research 15</sessionName>
-		<sessionDescription>Database Integrity Maintenance</sessionDescription>
-		<location>Grand 2</location>
+		<sessionName>Research Session 14</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Integrity Maintenance</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>431</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -819,43 +720,86 @@
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
 		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Research 16</sessionName>
-		<sessionDescription>Complex Event Processing and Selectivity Estimation</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 15</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Distributed Systems</sessionDescription>
+		<location>Cascade 2</location>
 		<sessionChairs/>
-		<submissionId>449</submissionId>
+		<submissionId>111</submissionId>
 		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Lightweight Graphical Models for Selectivity Estimation Without Independence Assumptions</submissionTitle>
-		<submissionAuthors>Kostas Tzoumas (Aalborg University, Denmark), Amol Deshpande (University of Maryland), Christian Jensen (Aarhus University)</submissionAuthors>
+		<submissionTitle>Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore </submissionTitle>
+		<submissionAuthors>Jun Rao (LinkedIn), Eugene Shekita (IBM Research), Sandeep Tata (IBM Research)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
 		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Research 16</sessionName>
-		<sessionDescription>Complex Event Processing and Selectivity Estimation</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 15</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Distributed Systems</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>372</submissionId>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>A Framework for Supporting DBMS-like Indexes in the Cloud</submissionTitle>
+		<submissionAuthors>Gang Chen (Zhejiang University), Hoang Tam Vo (School of Computing), Sai Wu (National Univ. of Singapore), Beng Chin Ooi (National University of Singapo), M. Tamer Özsu (University of Waterloo)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 1:30:00 PM</startDate>
+		<endDate>8/31/2011 3:00:00 PM</endDate>
+		<sessionName>Research Session 15</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Distributed Systems</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>421</submissionId>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>Serializable Snapshot Isolation for Replicated Databases in High-Update Scenarios</submissionTitle>
+		<submissionAuthors>Hyungsoo Jung (University of Sydney), Hyuck Han (Seoul National Univeristy), Alan Fekete (University of Sydney), Uwe Roehm (University of Sydney)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 1:30:00 PM</startDate>
+		<endDate>8/31/2011 3:00:00 PM</endDate>
+		<sessionName>Research Session 16</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Streams and Events</sessionDescription>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>223</submissionId>
-		<presentationOrder>2</presentationOrder>
+		<presentationOrder>1</presentationOrder>
 		<submissionTitle>Active Complex Event Processing over Event Streams</submissionTitle>
 		<submissionAuthors>Di Wang (Worcester Polytechnic Institut), Elke Rundensteiner (Worcester Polytechnic Institute), Richard Ellison III (University of Massachusetts Medical School)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
 		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Research 16</sessionName>
-		<sessionDescription>Complex Event Processing and Selectivity Estimation</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 16</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Streams and Events</sessionDescription>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>621</submissionId>
-		<presentationOrder>3</presentationOrder>
+		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Massive Scale-out of Expensive Continuous Queries</submissionTitle>
 		<submissionAuthors>Erik Zeitler (Uppsala University), Tore Risch (Uppsala University)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
 		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Industrial 3</sessionName>
+		<sessionName>Research Session 16</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Streams and Events</sessionDescription>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<submissionId>621</submissionId>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>Incrementally Maintaining Classification using an RDBMS</submissionTitle>
+		<submissionAuthors>Mehmet Levent Koc (University of Wisconsin-Madison), Christopher Ré (University of Wisconsin-Madison) </submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 1:30:00 PM</startDate>
+		<endDate>8/31/2011 3:00:00 PM</endDate>
+		<sessionName>Industrial Session 3</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Techniques for Large Scale Data Management</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -867,7 +811,8 @@
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
 		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Industrial 3</sessionName>
+		<sessionName>Industrial Session 3</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Techniques for Large Scale Data Management</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -879,7 +824,8 @@
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
 		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Industrial 3</sessionName>
+		<sessionName>Industrial Session 3</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Techniques for Large Scale Data Management</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -891,105 +837,10 @@
 	<record>
 		<startDate>8/31/2011 3:30:00 PM</startDate>
 		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 17</sessionName>
-		<sessionDescription>Ranking</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>160</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>On Pruning for Top-K Ranking in Uncertain Databases</submissionTitle>
-		<submissionAuthors>Chonghai Wang (University of Alberta), Li Yan Yuan (University of Alberta), Jia-Huai  You (University of Alberta), Osmar Zaiane (University of Alberta), Jian Pei (Simon Fraser University)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 3:30:00 PM</startDate>
-		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 17</sessionName>
-		<sessionDescription>Ranking</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>531</submissionId>
-		<presentationOrder>2</presentationOrder>
-		<submissionTitle>PathSim: Meta Path-Based Top-K Similarity Search in Heterogeneous Information Networks</submissionTitle>
-		<submissionAuthors>Yizhou Sun (UIUC), Jiawei Han (UIUC), Xifeng Yan (UCSB), Philip Yu (UIC), Tianyi Wu (Microsoft)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 3:30:00 PM</startDate>
-		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 17</sessionName>
-		<sessionDescription>Ranking</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>554</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>Optimizing and Parallelizing Ranked Enumeration</submissionTitle>
-		<submissionAuthors>Konstantin Golenberg (The Hebrew University), Benny Kimelfeld (IBM Research - Almaden), Yehoshua Sagiv (Hebrew University, Jerusalem)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 3:30:00 PM</startDate>
-		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 17</sessionName>
-		<sessionDescription>Ranking</sessionDescription>
-		<location>Grand 1</location>
-		<sessionChairs/>
-		<submissionId>655</submissionId>
-		<presentationOrder>4</presentationOrder>
-		<submissionTitle>Efficient Rank Join with Aggregation Constraints</submissionTitle>
-		<submissionAuthors>Min Xie (University of British Columbia), Laks Lakshmanan (University of British Columbia), Peter Wood (Birkbeck, University of London)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 3:30:00 PM</startDate>
-		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 18</sessionName>
-		<sessionDescription>MapReduce and Hadoop </sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>208</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Column-Oriented Storage Techniques for MapReduce</submissionTitle>
-		<submissionAuthors>Avrilia Floratou (University of Wisconsin-Madison), Jignesh Patel (University of Wisconsin-Madison), Eugene Shekita (IBM Research), Sandeep Tata (IBM Research)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 3:30:00 PM</startDate>
-		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 18</sessionName>
-		<sessionDescription>MapReduce and Hadoop </sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>214</submissionId>
-		<presentationOrder>2</presentationOrder>
-		<submissionTitle>Automatic Optimization for MapReduce Programs</submissionTitle>
-		<submissionAuthors>Eaman Jahani (University of Michigan), Michael Cafarella (University of Michigan), Christopher Ré (University of Wisconsin-Madison)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 3:30:00 PM</startDate>
-		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 18</sessionName>
-		<sessionDescription>MapReduce and Hadoop </sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>255</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>CoHadoop: Flexible Data Placement and Its Exploitation in Hadoop</submissionTitle>
-		<submissionAuthors>Mohamed Eltabakh (IBM), Yuanyuan Tian (IBM Almaden Research), Fatma Ozcan (IBM Almden Research Center), Rainer Gemulla (Max-Planck-Institut für Informatik), Aljoscha Krettek (IBM Germany), John McPherson (IBM Almaden Research Center)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 3:30:00 PM</startDate>
-		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 18</sessionName>
-		<sessionDescription>MapReduce and Hadoop </sessionDescription>
-		<location>Grand 2</location>
-		<sessionChairs/>
-		<submissionId>591</submissionId>
-		<presentationOrder>4</presentationOrder>
-		<submissionTitle>Profiling, What-if Analysis, and Cost-based Optimization of MapReduce Programs</submissionTitle>
-		<submissionAuthors>Herodotos Herodotou (Duke University), Shivnath Babu (Duke University)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>8/31/2011 3:30:00 PM</startDate>
-		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 19</sessionName>
-		<sessionDescription>Data Privacy and Protection</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 17</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Privacy and Protection</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>178</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -999,9 +850,10 @@
 	<record>
 		<startDate>8/31/2011 3:30:00 PM</startDate>
 		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 19</sessionName>
-		<sessionDescription>Data Privacy and Protection</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 17</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Privacy and Protection</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>578</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -1011,9 +863,10 @@
 	<record>
 		<startDate>8/31/2011 3:30:00 PM</startDate>
 		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 19</sessionName>
-		<sessionDescription>Data Privacy and Protection</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 17</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Privacy and Protection</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>602</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -1023,9 +876,10 @@
 	<record>
 		<startDate>8/31/2011 3:30:00 PM</startDate>
 		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 19</sessionName>
-		<sessionDescription>Data Privacy and Protection</sessionDescription>
-		<location>Grand Crescent</location>
+		<sessionName>Research Session 17</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Privacy and Protection</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>842</submissionId>
 		<presentationOrder>4</presentationOrder>
@@ -1035,7 +889,112 @@
 	<record>
 		<startDate>8/31/2011 3:30:00 PM</startDate>
 		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 20</sessionName>
+		<sessionName>Research Session 18</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>MapReduce and Hadoop</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>208</submissionId>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>Column-Oriented Storage Techniques for MapReduce</submissionTitle>
+		<submissionAuthors>Avrilia Floratou (University of Wisconsin-Madison), Jignesh Patel (University of Wisconsin-Madison), Eugene Shekita (IBM Research), Sandeep Tata (IBM Research)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 3:30:00 PM</startDate>
+		<endDate>8/31/2011 5:30:00 PM</endDate>
+		<sessionName>Research Session 18</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>MapReduce and Hadoop</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>214</submissionId>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>Automatic Optimization for MapReduce Programs</submissionTitle>
+		<submissionAuthors>Eaman Jahani (University of Michigan), Michael Cafarella (University of Michigan), Christopher Ré (University of Wisconsin-Madison)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 3:30:00 PM</startDate>
+		<endDate>8/31/2011 5:30:00 PM</endDate>
+		<sessionName>Research Session 18</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>MapReduce and Hadoop</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>255</submissionId>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>CoHadoop: Flexible Data Placement and Its Exploitation in Hadoop</submissionTitle>
+		<submissionAuthors>Mohamed Eltabakh (IBM), Yuanyuan Tian (IBM Almaden Research), Fatma Ozcan (IBM Almden Research Center), Rainer Gemulla (Max-Planck-Institut für Informatik), Aljoscha Krettek (IBM Germany), John McPherson (IBM Almaden Research Center)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 3:30:00 PM</startDate>
+		<endDate>8/31/2011 5:30:00 PM</endDate>
+		<sessionName>Research Session 18</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>MapReduce and Hadoop</sessionDescription>
+		<location>Cascade 2</location>
+		<sessionChairs/>
+		<submissionId>591</submissionId>
+		<presentationOrder>4</presentationOrder>
+		<submissionTitle>Profiling, What-if Analysis, and Cost-based Optimization of MapReduce Programs</submissionTitle>
+		<submissionAuthors>Herodotos Herodotou (Duke University), Shivnath Babu (Duke University)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 3:30:00 PM</startDate>
+		<endDate>8/31/2011 5:30:00 PM</endDate>
+		<sessionName>Research Session 19</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Ranking</sessionDescription>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<submissionId>160</submissionId>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>On Pruning for Top-K Ranking in Uncertain Databases</submissionTitle>
+		<submissionAuthors>Chonghai Wang (University of Alberta), Li Yan Yuan (University of Alberta), Jia-Huai  You (University of Alberta), Osmar Zaiane (University of Alberta), Jian Pei (Simon Fraser University)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 3:30:00 PM</startDate>
+		<endDate>8/31/2011 5:30:00 PM</endDate>
+		<sessionName>Research Session 19</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Ranking</sessionDescription>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<submissionId>531</submissionId>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>PathSim: Meta Path-Based Top-K Similarity Search in Heterogeneous Information Networks</submissionTitle>
+		<submissionAuthors>Yizhou Sun (UIUC), Jiawei Han (UIUC), Xifeng Yan (UCSB), Philip Yu (UIC), Tianyi Wu (Microsoft)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 3:30:00 PM</startDate>
+		<endDate>8/31/2011 5:30:00 PM</endDate>
+		<sessionName>Research Session 19</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Ranking</sessionDescription>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<submissionId>554</submissionId>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>Optimizing and Parallelizing Ranked Enumeration</submissionTitle>
+		<submissionAuthors>Konstantin Golenberg (The Hebrew University), Benny Kimelfeld (IBM Research - Almaden), Yehoshua Sagiv (Hebrew University, Jerusalem)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 3:30:00 PM</startDate>
+		<endDate>8/31/2011 5:30:00 PM</endDate>
+		<sessionName>Research Session 19</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Ranking</sessionDescription>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<submissionId>655</submissionId>
+		<presentationOrder>4</presentationOrder>
+		<submissionTitle>Efficient Rank Join with Aggregation Constraints</submissionTitle>
+		<submissionAuthors>Min Xie (University of British Columbia), Laks Lakshmanan (University of British Columbia), Peter Wood (Birkbeck, University of London)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 3:30:00 PM</startDate>
+		<endDate>8/31/2011 5:30:00 PM</endDate>
+		<sessionName>Research Session 20</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Statistical Methods</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -1047,7 +1006,8 @@
 	<record>
 		<startDate>8/31/2011 3:30:00 PM</startDate>
 		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 20</sessionName>
+		<sessionName>Research Session 20</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Statistical Methods</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -1059,7 +1019,8 @@
 	<record>
 		<startDate>8/31/2011 3:30:00 PM</startDate>
 		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 20</sessionName>
+		<sessionName>Research Session 20</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Statistical Methods</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -1071,7 +1032,8 @@
 	<record>
 		<startDate>8/31/2011 3:30:00 PM</startDate>
 		<endDate>8/31/2011 5:30:00 PM</endDate>
-		<sessionName>Research 20</sessionName>
+		<sessionName>Research Session 20</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Statistical Methods</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
@@ -1083,9 +1045,10 @@
 	<record>
 		<startDate>9/1/2011 10:30:00 AM</startDate>
 		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>Research 21</sessionName>
-		<sessionDescription>Graph-oriented Processing</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 21</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Graph Data</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>243</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -1095,9 +1058,10 @@
 	<record>
 		<startDate>9/1/2011 10:30:00 AM</startDate>
 		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>Research 21</sessionName>
-		<sessionDescription>Graph-oriented Processing</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 21</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Graph Data</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>283</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -1107,9 +1071,10 @@
 	<record>
 		<startDate>9/1/2011 10:30:00 AM</startDate>
 		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>Research 21</sessionName>
-		<sessionDescription>Graph-oriented Processing</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 21</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Graph Data</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>376</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -1119,9 +1084,10 @@
 	<record>
 		<startDate>9/1/2011 10:30:00 AM</startDate>
 		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>Research 22</sessionName>
-		<sessionDescription>Data Integration and Fusion</sessionDescription>
-		<location>Grand 2</location>
+		<sessionName>Research Session 22</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Data Integration</sessionDescription>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>157</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -1131,9 +1097,10 @@
 	<record>
 		<startDate>9/1/2011 10:30:00 AM</startDate>
 		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>Research 22</sessionName>
-		<sessionDescription>Data Integration and Fusion</sessionDescription>
-		<location>Grand 2</location>
+		<sessionName>Research Session 22</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Data Integration</sessionDescription>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>494</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -1143,9 +1110,10 @@
 	<record>
 		<startDate>9/1/2011 10:30:00 AM</startDate>
 		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>Research 23</sessionName>
+		<sessionName>Research Session 23</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Social Networks</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>227</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -1155,9 +1123,10 @@
 	<record>
 		<startDate>9/1/2011 10:30:00 AM</startDate>
 		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>Research 23</sessionName>
+		<sessionName>Research Session 23</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Social Networks</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>268</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -1167,9 +1136,10 @@
 	<record>
 		<startDate>9/1/2011 10:30:00 AM</startDate>
 		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>Research 23</sessionName>
+		<sessionName>Research Session 23</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Social Networks</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>344</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -1177,47 +1147,12 @@
 		<submissionAuthors>Gianmarco De Francisci Morales (IMT Lucca), Aristides Gionis (Yahoo! Research), Mauro Sozio (MPI)</submissionAuthors>
 	</record>
 	<record>
-		<startDate>9/1/2011 10:30:00 AM</startDate>
-		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>PhD Workshop 1</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>698</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Query Processing in a Self-Organized Storage System</submissionTitle>
-		<submissionAuthors>Hannes Mühleisen (Freie Universität Berlin)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>9/1/2011 10:30:00 AM</startDate>
-		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>PhD Workshop 1</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>803</submissionId>
-		<presentationOrder>2</presentationOrder>
-		<submissionTitle>Efficient Top-k Searching According to User Preferences Based on Fuzzy Functions With Usage of Tree-Oriented Data Structures</submissionTitle>
-		<submissionAuthors>Matus Ondreicka (Charles University in Prague)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>9/1/2011 10:30:00 AM</startDate>
-		<endDate>9/1/2011 12:00:00 PM</endDate>
-		<sessionName>PhD Workshop 1</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>825</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>Top-k Web Service Compositions in the context of user preferences</submissionTitle>
-		<submissionAuthors>Karim Benouaret (LIRIS), Djamal Benslimane (), allel Hadjali ()</submissionAuthors>
-	</record>
-	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Research 24</sessionName>
+		<sessionName>Research Session 24</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Searching and Ranking</sessionDescription>
-		<location>Grand 1</location>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>77</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -1227,9 +1162,10 @@
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Research 24</sessionName>
+		<sessionName>Research Session 24</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Searching and Ranking</sessionDescription>
-		<location>Grand 1</location>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>340</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -1239,9 +1175,10 @@
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Research 24</sessionName>
+		<sessionName>Research Session 24</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Searching and Ranking</sessionDescription>
-		<location>Grand 1</location>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>633</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -1251,33 +1188,36 @@
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Research 25</sessionName>
+		<sessionName>Research Session 25</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Statistical Methods</sessionDescription>
-		<location>Grand 2</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>139</submissionId>
 		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Incrementally Maintaining Classification using an RDBMS</submissionTitle>
-		<submissionAuthors>Mehmet Levent Koc (University of Wisconsin-Madison), Christopher Ré (University of Wisconsin-Madison)</submissionAuthors>
+		<submissionTitle>Lightweight Graphical Models for Selectivity Estimation Without Independence Assumptions</submissionTitle>
+		<submissionAuthors>Kostas Tzoumas (Aalborg University, Denmark), Amol Deshpande (University of Maryland), Christian Jensen (Aarhus University)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Research 25</sessionName>
+		<sessionName>Research Session 25</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Statistical Methods</sessionDescription>
-		<location>Grand 2</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>332</submissionId>
 		<presentationOrder>2</presentationOrder>
-		<submissionTitle>An Incremental Hausdorff Distance Calculation Algorithm </submissionTitle>
+		<submissionTitle>An Incremental Hausdorff Distance Calculation Algorithm</submissionTitle>
 		<submissionAuthors>Sarana Nutanong (University of Maryland), Edwin Jacox (University of Maryland), Hanan Samet (University of Maryland)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Research 25</sessionName>
+		<sessionName>Research Session 25</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Statistical Methods</sessionDescription>
-		<location>Grand 2</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>425</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -1287,21 +1227,23 @@
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Research 26</sessionName>
+		<sessionName>Research Session 26</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Recommender Systems</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>333</submissionId>
 		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Personalized Social Recommendations -  Accurate or Private?</submissionTitle>
+		<submissionTitle>Personalized Social Recommendations - Accurate or Private?</submissionTitle>
 		<submissionAuthors>Ashwin Machanavajjhala (Yahoo! Research), Aleksandra Korolova (Stanford University), Atish Das Sarma (Google)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Research 26</sessionName>
+		<sessionName>Research Session 26</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Recommender Systems</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>476</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -1311,32 +1253,35 @@
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Research 26</sessionName>
+		<sessionName>Research Session 26</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Recommender Systems</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>575</submissionId>
 		<presentationOrder>3</presentationOrder>
 		<submissionTitle>MRI: Meaningful Interpretations of Collaborative Ratings</submissionTitle>
-		<submissionAuthors>Mahashweta Das (University of Texas at Arlington), Sihem Amer-Yahia (Yahoo Research,  USA ), Gautam Das (University of Texas, Arlington), Cong Yu (Google Research)</submissionAuthors>
+		<submissionAuthors>Mahashweta Das (University of Texas at Arlington), Sihem Amer-Yahia (Yahoo Research,  USA), Gautam Das (University of Texas, Arlington), Cong Yu (Google Research)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Industrial 4</sessionName>
-		<sessionDescription>Large Scale Distributed Systems</sessionDescription>
+		<sessionName>Industrial Session 4</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Distributed Systems</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>742</submissionId>
 		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Tenzing - A SQL Implementation On The MapReduce  Framework</submissionTitle>
+		<submissionTitle>Tenzing - A SQL Implementation On The MapReduce Framework</submissionTitle>
 		<submissionAuthors>Biswapesh Chattopadhyay (Google), Liang Lin (Google), Weiran Liu (Google), Sagar Mittal (Google), Prathyusha Aragonda (Google), Vera Lychagina (Google), Younghee Kwon (Google), Michael Wong (Google)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Industrial 4</sessionName>
-		<sessionDescription>Large Scale Distributed Systems</sessionDescription>
+		<sessionName>Industrial Session 4</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Distributed Systems</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>747</submissionId>
@@ -1347,8 +1292,9 @@
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>Industrial 4</sessionName>
-		<sessionDescription>Large Scale Distributed Systems</sessionDescription>
+		<sessionName>Industrial Session 4</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Distributed Systems</sessionDescription>
 		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>762</submissionId>
@@ -1357,47 +1303,12 @@
 		<submissionAuthors>V. Srinivasan (Citrusleaf), Brian Bulkowski (Citrusleaf)</submissionAuthors>
 	</record>
 	<record>
-		<startDate>9/1/2011 1:30:00 PM</startDate>
-		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>PhD Workshop 2</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>812</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Mixed Workload Management for In-Memory Databases</submissionTitle>
-		<submissionAuthors>Johannes Wust (Hasso-Plattner-Institute )</submissionAuthors>
-	</record>
-	<record>
-		<startDate>9/1/2011 1:30:00 PM</startDate>
-		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>PhD Workshop 2</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>832</submissionId>
-		<presentationOrder>2</presentationOrder>
-		<submissionTitle>Scaling Web Applications: A Temporal Approach</submissionTitle>
-		<submissionAuthors>Zhiwu Xie (University of New Mexico)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>9/1/2011 1:30:00 PM</startDate>
-		<endDate>9/1/2011 3:00:00 PM</endDate>
-		<sessionName>PhD Workshop 2</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
-		<sessionChairs/>
-		<submissionId>833</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>Research on a Schema and Data Versioning System</submissionTitle>
-		<submissionAuthors>Bob Wall (Montana State University)</submissionAuthors>
-	</record>
-	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 27</sessionName>
-		<sessionDescription>GPU-based Architectures</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 27</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>GPU-based Architectures and Column-store Indexing</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>75</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -1407,9 +1318,10 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 27</sessionName>
-		<sessionDescription>GPU-based Architectures</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 27</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>GPU-based Architectures and Column-store Indexing</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>145</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -1419,9 +1331,10 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 27</sessionName>
-		<sessionDescription>GPU-based Architectures</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 27</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>GPU-based Architectures and Column-store Indexing</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>172</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -1431,9 +1344,10 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 27</sessionName>
-		<sessionDescription>GPU-based Architectures</sessionDescription>
-		<location>Grand 1</location>
+		<sessionName>Research Session 27</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>GPU-based Architectures and Column-store Indexing</sessionDescription>
+		<location>Cascade 1BC</location>
 		<sessionChairs/>
 		<submissionId>278</submissionId>
 		<presentationOrder>4</presentationOrder>
@@ -1443,9 +1357,10 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 28</sessionName>
+		<sessionName>Research Session 28</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Transaction Processing</sessionDescription>
-		<location>Grand 2</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>184</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -1455,9 +1370,10 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 28</sessionName>
+		<sessionName>Research Session 28</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Transaction Processing</sessionDescription>
-		<location>Grand 2</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>320</submissionId>
 		<presentationOrder>2</presentationOrder>
@@ -1467,9 +1383,10 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 28</sessionName>
+		<sessionName>Research Session 28</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Transaction Processing</sessionDescription>
-		<location>Grand 2</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>468</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -1479,9 +1396,10 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 28</sessionName>
+		<sessionName>Research Session 28</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Transaction Processing</sessionDescription>
-		<location>Grand 2</location>
+		<location>Cascade 2</location>
 		<sessionChairs/>
 		<submissionId>498</submissionId>
 		<presentationOrder>4</presentationOrder>
@@ -1491,9 +1409,10 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 29</sessionName>
+		<sessionName>Research Session 29</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Web Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>123</submissionId>
 		<presentationOrder>1</presentationOrder>
@@ -1503,21 +1422,23 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 29</sessionName>
+		<sessionName>Research Session 29</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Web Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>527</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Optimal Schemes for Robust Web Extraction</submissionTitle>
-		<submissionAuthors>Aditya Parameswaran (Stanford University), Nilesh Dalvi (Yahoo! ), Hector Garcia-Molina (Stanford University), Rajeev Rastogi (Yahoo! India)</submissionAuthors>
+		<submissionAuthors>Aditya Parameswaran (Stanford University), Nilesh Dalvi (Yahoo!), Hector Garcia-Molina (Stanford University), Rajeev Rastogi (Yahoo! India)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 29</sessionName>
+		<sessionName>Research Session 29</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Web Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>549</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -1527,45 +1448,49 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 29</sessionName>
+		<sessionName>Research Session 29</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Web Processing</sessionDescription>
-		<location>Grand Crescent</location>
+		<location>Fifth Avenue</location>
 		<sessionChairs/>
 		<submissionId>589</submissionId>
 		<presentationOrder>4</presentationOrder>
 		<submissionTitle>Randomized Generalization for Aggregate Suppression over Hidden Web Databases</submissionTitle>
 		<submissionAuthors>Xin Jin (George Washington U), Nan Zhang (George Washington U), Aditya Mone (UT Arlington), Gautam Das (UT Arlington)</submissionAuthors>
 	</record>
-	<record>
+		<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 30</sessionName>
+		<sessionName>Research Session 30</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Skyline and String Matching</sessionDescription>
-		<location>Fifth Avenue</location>
-		<sessionChairs/>
-		<submissionId>122</submissionId>
-		<presentationOrder>1</presentationOrder>
-		<submissionTitle>QSkycube: Efficient Skycube Computation Using Point-Based Space Partitioning</submissionTitle>
-		<submissionAuthors>Jongwuk Lee (POSTECH), Seung-won Hwang (POSTECH)</submissionAuthors>
-	</record>
-	<record>
-		<startDate>9/1/2011 3:30:00 PM</startDate>
-		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 30</sessionName>
-		<sessionDescription>Skyline and String Matching</sessionDescription>
-		<location>Fifth Avenue</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>161</submissionId>
-		<presentationOrder>2</presentationOrder>
+		<presentationOrder>1</presentationOrder>
 		<submissionTitle>ZINC: Efficient Indexing for Skyline Computation</submissionTitle>
 		<submissionAuthors>Bin Liu (National Univ of Singapore), Chee-Yong Chan (National University of Singapore)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 30</sessionName>
+		<sessionName>Research Session 30</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Skyline and String Matching</sessionDescription>
-		<location>Fifth Avenue</location>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<submissionId>122</submissionId>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>QSkycube: Efficient Skycube Computation Using Point-Based Space Partitioning</submissionTitle>
+		<submissionAuthors>Jongwuk Lee (POSTECH), Seung-won Hwang (POSTECH)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>9/1/2011 3:30:00 PM</startDate>
+		<endDate>9/1/2011 5:30:00 PM</endDate>
+		<sessionName>Research Session 30</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
+		<sessionDescription>Skyline and String Matching</sessionDescription>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>401</submissionId>
 		<presentationOrder>3</presentationOrder>
@@ -1575,9 +1500,10 @@
 	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
-		<sessionName>Research 30</sessionName>
+		<sessionName>Research Session 30</sessionName>
+		<sessionCategory>Research and Industrial</sessionCategory>
 		<sessionDescription>Skyline and String Matching</sessionDescription>
-		<location>Fifth Avenue</location>
+		<location>Vashon</location>
 		<sessionChairs/>
 		<submissionId>412</submissionId>
 		<presentationOrder>4</presentationOrder>
@@ -1585,13 +1511,505 @@
 		<submissionAuthors>Tingjian Ge (University of Kentucky), Zheng Li (University of Kentucky)</submissionAuthors>
 	</record>
 	<record>
+		<startDate>8/30/2011 8:45:00 AM</startDate>
+		<endDate>8/30/2011 10:00:00 AM</endDate>
+		<sessionName>Keynote 1</sessionName>
+		<location>Grand 1 &amp; 2</location>
+		<submissionTitle>Towards a Global Brain</submissionTitle>
+		<submissionAuthors>Tim O'Reilly (O'Reilly Media)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/31/2011 9:00:00 AM</startDate>
+		<endDate>8/31/2011 10:00:00 AM</endDate>
+		<sessionName>Keynote 2</sessionName>
+		<location>Grand 1 &amp; 2</location>
+		<submissionTitle>Is it Still "Big Data" if it Fits in My Pocket?</submissionTitle>
+		<submissionAuthors>David Campbell (Microsoft)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Tutorial 1</sessionName>
+		<location>St. Helens</location>
+		<submissionTitle>New Frontiers in Business Intelligence</submissionTitle>
+		<submissionAuthors>Surajit Chaudhuri and Vivek Narasayya</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Tutorial 2</sessionName>
+		<location>St. Helens</location>
+		<submissionTitle>System Co-Design and Data Managment for Flash Devices</submissionTitle>
+		<submissionAuthors>Philippe Bonnet, Luc Bouganim, Ioannis Koltsidas, and Stratis D. Viglas</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Tutorial 3</sessionName>
+		<location>St. Helens</location>
+		<submissionTitle>Exploration of Deep Web Repositories</submissionTitle>
+		<submissionAuthors>Nan Zhang and Gautam Das</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Tutorial 4</sessionName>
+		<location>St. Helens</location>
+		<submissionTitle>Crowdsourcing Applications and Platforms: A Data Management Perspective</submissionTitle>
+		<submissionAuthors>Anhai Doan, Michael Franklin, Donald Kossmann, and Tim Kraska</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Tutorial 5</sessionName>
+		<location>St. Helens</location>
+		<submissionTitle>Graph Data Management Systems for New Application Domains</submissionTitle>
+		<submissionAuthors>Philippe Cudre-Mauroux and Sameh Elniket</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Tutorial 6</sessionName>
+		<location>St. Helens</location>
+		<submissionTitle>Information Diffusion In Social Networks: Observing and Influencing Societal Interests</submissionTitle>
+		<submissionAuthors>Divyakant Agrawal, Ceren Budak, and Amr El Abbadi</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Panel 1</sessionName>
+		<location>Fifth Avenue</location>
+		<submissionTitle>Data Management for Meeting Global Health Challenges</submissionTitle>
+		<submissionAuthors>Kuang Chen (UC Berkeley), Lucky Gunasekara (Global Viral Forecasting Initiative), Alon Halevy (Google), Andy Kanter (Columbia University), Rowena Luk (Dimagi Inc.), Peter Speyer (University of Washington)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Panel 2</sessionName>
+		<location>Vashon</location>
+		<submissionTitle>Panel Discussion: Maximizing Impact</submissionTitle>
+		<submissionAuthors>David DeWitt (Microsoft), Juliana Freire (NYU Polytechnic), Ed Lazowska (University of Washington), Sam Madden (MIT), Jennifer Widom (Stanford)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session A</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>BROAD: Diversified Keyword Search in Databases</submissionTitle>
+		<submissionAuthors>Feng Zhao (National University of Singapore), Xiaolong Zhang (Zhejiang University), Anthony Tung (National University of Singapore), Gang Chen (Zhejiang University)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session A</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>CerFix: A System for Cleaning Data with Certain Fixes</submissionTitle>
+		<submissionAuthors>Wenfei Fan (University of Edinburgh), Jianzhong Li (Harbin Institute of Technology), Shuai Ma (Beihang University), Nan Tang (University of Edinburgh), Wenyuan Yu (University of Edinburgh)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session A</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>Debugging Data Exchange with Vagabond</submissionTitle>
+		<submissionAuthors>Boris Glavic (University of Toronto), Jiang Du (University of Toronto), Renee Miller (University of Toronto), Gustavo Alonso (ETH Zurich), Laura Haas (IBM Research - Almaden)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session A</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>4</presentationOrder>
+		<submissionTitle>DivDB: A System for Diversifying Query Results</submissionTitle>
+		<submissionAuthors>Marcos Vieira (UCR), Humberto Razente (UFABC), Maria Camila Barioni (UFABC), Marios Hadjieleftheriou (AT&amp;T Labs), Divesh Srivastava (AT&amp;T Labs), Caetano Traina Jr. (ICMC-USP), Vassilis Tsotras (UCR)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session A</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>5</presentationOrder>
+		<submissionTitle>HOMES: A Higher-Order Mapping Evaluation System</submissionTitle>
+		<submissionAuthors>Huy Vu (Oxford University), Michael Benedikt (Oxford University)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session A</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>6</presentationOrder>
+		<submissionTitle>EIRENE: Interactive Design and Refinement of Schema Mappings via Data Examples</submissionTitle>
+		<submissionAuthors>Bogdan Alexe (UC Santa Cruz), Balder ten Cate (UC Santa Cruz), Phokion Kolaitis (UCSC &amp; IBM Research - Almaden), Wang-Chiew Tan (IBM Research - Almaden &amp; UCSC)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session A</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>7</presentationOrder>
+		<submissionTitle>FuDoCS: A Web Service Composition System Based on Fuzzy Dominance for Preference Query Answering</submissionTitle>
+		<submissionAuthors>Karim Benouaret (University of Lyon), Djamal Benslimane (University of Lyon), Allel Hadjali (University of Rennes), Mahmoud Barhamgi</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session A</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>8</presentationOrder>
+		<submissionTitle>++Spicy: an Open-Source Tool for Second-Generation Schema Mapping and Data Exchange</submissionTitle>
+		<submissionAuthors>Bruno Marnette (INRIA Saclay &amp; ENS Cachan), Giansalvatore Mecca (Università della Basilicata), Paolo Papotti (Università Roma Tre), Salvatore Raunich (University of Leipzig), Donatello Santoro (Università della Basilicata)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session A</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>9</presentationOrder>
+		<submissionTitle>AIDA: An Online Tool for Accurate Disambiguation of Named Entities in Text and Tables</submissionTitle>
+		<submissionAuthors>BMohamed Amir Yosef (Max Planck Institute for Informatics), Johannes Hoffart (Max Planck Institute for Informatics), Ilaria Bordino (Yahoo! Research), Marc Spaniol (Max Planck Institute for Informatics), Gerhard Weikum ( Max Planck Institute, Germany)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session A</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>10</presentationOrder>
+		<submissionTitle>Microsoft Codename "Montego" - Data Import, Transformation, and Publication for Information Workers</submissionTitle>
+		<submissionAuthors>Stephen Maine (Microsoft Corporation), Lorenz Prem (Microsoft Corporation), Clemens Szyperski (Microsoft Corporation), James Terwilliger (Microsoft Corporation)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session B</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Modern Hardware, Streaming, and Benchmarking</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>TrustedDB: A Trusted Hardware based Outsourced Database Engine</submissionTitle>
+		<submissionAuthors>Sumeet Bajaj (Stony Brook University), Radu Sion (Stony Brook University)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session B</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Modern Hardware, Streaming, and Benchmarking</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>IPL-P: In-Page Logging with PCRAM</submissionTitle>
+		<submissionAuthors>Kang-Nyeon Kim (Sungkyunkwan University), Sang-Won Lee (Sungkyunkwan University), Bongki Moon (University of Arizona), Chanik Park (Samsung Electronics), Joo-Young Hwang (Samsung Electronics)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session B</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Modern Hardware, Streaming, and Benchmarking</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>HyPer-sonic Combined Transaction AND Query Processing</submissionTitle>
+		<submissionAuthors>Florian Funke (Technische Universität München), Alfons Kemper (Technische Universität München), Thomas Neumann (Technische Universität München)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session B</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Modern Hardware, Streaming, and Benchmarking</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>4</presentationOrder>
+		<submissionTitle>Analytics for the Real-Time Web</submissionTitle>
+		<submissionAuthors>Maxim Grinev (ETH Zurich), Maria Grineva (ETH Zurich), Martin Hentschel (ETH Zurich), Donald Kossmann (ETH Zurich)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session B</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Modern Hardware, Streaming, and Benchmarking</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>5</presentationOrder>
+		<submissionTitle>Proactive Detection and Repair of Data Corruption: Towards a Hassle-free Declarative Approach with Amulet</submissionTitle>
+		<submissionAuthors>Nedyalko Borisov (Duke University), Shivnath Babu (Duke University)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session B</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Modern Hardware, Streaming, and Benchmarking</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>6</presentationOrder>
+		<submissionTitle>Automatic Workload Driven Index Defragmentation</submissionTitle>
+		<submissionAuthors>Vivek Narasayya (Microsoft Research), Hyunjung Park (Stanford University), Manoj Syamala (Microsoft Research)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session B</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Modern Hardware, Streaming, and Benchmarking</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>7</presentationOrder>
+		<submissionTitle>DataSynth: Generating Synthetic Data using Declarative Constraints</submissionTitle>
+		<submissionAuthors>Arvind Arasu (Microsoft Research), Raghav Kaushik (Microsoft Research), Jian Li (University of Maryland)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session B</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>Modern Hardware, Streaming, and Benchmarking</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>8</presentationOrder>
+		<submissionTitle>A Demonstration of HYRISE - A Main Memory Hybrid Storage Engine</submissionTitle>
+		<submissionAuthors>Martin Grund (Hasso-Plattner-Institute), Philippe Cudre-Mauroux (MIT), Samuel Madden (MIT)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session C</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>MapReduce, Crowd Sourcing, and Mining</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>RAMP: A System for Capturing and Tracing Provenance in MapReduce Workflows</submissionTitle>
+		<submissionAuthors>Hyunjung Park (Stanford University), Robert Ikeda (Stanford University), Jennifer Widom (Stanford University)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session C</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>MapReduce, Crowd Sourcing, and Mining</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>GrouPeer: A System for Clustering PDMSs</submissionTitle>
+		<submissionAuthors>Verena Kantere (CUT), Dimos Bousounis (ETH Zurich), Timos Selis (NTUA)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session C</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>MapReduce, Crowd Sourcing, and Mining</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>Online Visualization of Geospatial Stream Data using the WorldWide Telescope</submissionTitle>
+		<submissionAuthors>Mohamed Ali (Microsoft), Badrish Chandramouli (Microsoft Research), Jonathan Fay (Microsoft), Curtis Wong (Microsoft), Steven Drucker (Microsoft), Balan Sethu Raman (Microsoft)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session C</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>MapReduce, Crowd Sourcing, and Mining</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>4</presentationOrder>
+		<submissionTitle>CrowdDB: Query Processing with the VLDB Crowd</submissionTitle>
+		<submissionAuthors>Amber Feng (UC Berkeley), Michael Franklin (UC Berkeley), Donald Kossmann (ETH Zurich), Tim Kraska (UC Berkeley), Samuel Madden (MIT), Sukriti Ramesh (ETH Zurich), Andrew Wang (UC Berkeley), Reynold Xin (UC Berkeley)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session C</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>MapReduce, Crowd Sourcing, and Mining</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>5</presentationOrder>
+		<submissionTitle>Whodunit: An Auditing Tool for Detecting Data Breaches</submissionTitle>
+		<submissionAuthors>Raghav Kaushik (Microsoft Research), Ravi Ramamurthy (Microsoft Research)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session C</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>MapReduce, Crowd Sourcing, and Mining</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>6</presentationOrder>
+		<submissionTitle>InfoNetOLAPer: Integrating InfoNetWarehouse and InfoNetCube with InfoNetOLAP</submissionTitle>
+		<submissionAuthors>Chuan Li (Sichuan University &amp; UIC), Philip Yu (University of Illinois at Chicago), Lei Zhao (University of Science and Technology of China), Yan Xie (University of Illinois at Chicago), Wangqun Lin (University of Illinois at Chicago)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session C</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>MapReduce, Crowd Sourcing, and Mining</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>7</presentationOrder>
+		<submissionTitle>From SPARQL to MapReduce: The Journey Using a Nested TripleGroup Algebra</submissionTitle>
+		<submissionAuthors>HyeongSik Kim (North Carolina State University), Padmashree Ravindra (North Carolina State University), Kemafor Anyanwu (North Carolina State University)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session C</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>MapReduce, Crowd Sourcing, and Mining</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>8</presentationOrder>
+		<submissionTitle>MapReduce Programming and Cost-based Optimization? Crossing this Chasm with Starfish</submissionTitle>
+		<submissionAuthors>Herodotos Herodotou (Duke University), Fei Dong (Duke University), Shivnath Babu (Duke University)</submissionAuthors>
+	</record>
+	<record>
+		<sessionName>Demo Session C</sessionName>
+		<sessionCategory>Demo</sessionCategory>
+		<sessionDescription>MapReduce, Crowd Sourcing, and Mining</sessionDescription>
+		<location>Grand Crescent</location>
+		<sessionChairs/>
+		<presentationOrder>9</presentationOrder>
+		<submissionTitle>SocialSpamGuard: A Data Mining-Based Spam Detection System for Social Media Networks</submissionTitle>
+		<submissionAuthors>Xin Jin (UIUC), Xide Lin (UIUC), Jiebo Luo (Kodak Research), Jiawei Han (UIUC)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Challenges and Vision Session 1</sessionName>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>Data Markets in the Cloud: An Opportunity for the Database Community</submissionTitle>
+		<submissionAuthors>Magdalena Balazinska (University of Washington), Bill Howe (University of Washington), Dan Suciu (University of Washington)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Challenges and Vision Session 1</sessionName>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>Data is Dead... Without What-if Models</submissionTitle>
+		<submissionAuthors>Peter Haas (IBM Almaden Research Center), Paul Maglio (IBM Almaden Research Center), Patricia Selinger (IBM Almaden Research Center), Wang-Chiew Tan (IBM Research - Almaden &amp; UCSC)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Challenges and Vision Session 1</sessionName>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>Data Generation for Application-Specific Benchmarking</submissionTitle>
+		<submissionAuthors>Y.C. Tay (National Univ. of Singapore)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Challenges and Vision Session 1</sessionName>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<presentationOrder>4</presentationOrder>
+		<submissionTitle>Reverse Data Management</submissionTitle>
+		<submissionAuthors>Alexandra Meliou (University of Washington), Wolfgang Gatterbauer (University of Washington), Dan Suciu (University of Washington)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 1:30:00 PM</startDate>
+		<endDate>8/30/2011 3:30:00 PM</endDate>
+		<sessionName>Challenges and Vision Session 1</sessionName>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<presentationOrder>5</presentationOrder>
+		<submissionTitle>Anthropocentric Data Systems</submissionTitle>
+		<submissionAuthors>Peter Triantafillou (University of Patras)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 4:00:00 PM</startDate>
+		<endDate>8/30/2011 6:00:00 PM</endDate>
+		<sessionName>Challenges and Vision Session 2</sessionName>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>Resiliency-Aware Data Management</submissionTitle>
+		<submissionAuthors>Matthias Boehm (TU Dresden), Wolfgang Lehner (TU Dresden), Christof Fetzer (TU Dresden)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 4:00:00 PM</startDate>
+		<endDate>8/30/2011 6:00:00 PM</endDate>
+		<sessionName>Challenges and Vision Session 2</sessionName>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>Guided Interaction: Rethinking the Query-Result Paradigm</submissionTitle>
+		<submissionAuthors>Arnab Nandi (University of Michigan), H Jagadish (U. Mich)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 4:00:00 PM</startDate>
+		<endDate>8/30/2011 6:00:00 PM</endDate>
+		<sessionName>Challenges and Vision Session 2</sessionName>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>The Researcher's Guide to the Data Deluge: Querying a Scientific Database in Just a Few Seconds</submissionTitle>
+		<submissionAuthors>Martin Kersten (CWI), Stratos Idreos (CWI), Stefan Manegold (CWI), Erietta Liarou (CWI)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 4:00:00 PM</startDate>
+		<endDate>8/30/2011 6:00:00 PM</endDate>
+		<sessionName>Challenges and Vision Session 2</sessionName>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<presentationOrder>4</presentationOrder>
+		<submissionTitle>Exploring the Coming Repositories of Reproducible Experiments: Challenges and Opportunities</submissionTitle>
+		<submissionAuthors>Juliana Freire (University of Utah), Philippe Bonnet (University of Copenhagen, Denmark), Dennis Shasha (New York University)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>8/30/2011 4:00:00 PM</startDate>
+		<endDate>8/30/2011 6:00:00 PM</endDate>
+		<sessionName>Challenges and Vision Session 2</sessionName>
+		<location>Vashon</location>
+		<sessionChairs/>
+		<presentationOrder>5</presentationOrder>
+		<submissionTitle>Databases will Visualize Queries too</submissionTitle>
+		<submissionAuthors>Wolfgang Gatterbauer (University of Washington)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>9/1/2011 10:30:00 AM</startDate>
+		<endDate>9/1/2011 12:00:00 PM</endDate>
+		<sessionName>PhD Workshop 1</sessionName>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>Query Processing in a Self-Organized Storage System</submissionTitle>
+		<submissionAuthors>Hannes Mühleisen (Freie Universität Berlin)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>9/1/2011 10:30:00 AM</startDate>
+		<endDate>9/1/2011 12:00:00 PM</endDate>
+		<sessionName>PhD Workshop 1</sessionName>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>Efficient Top-k Searching According to User Preferences Based on Fuzzy Functions With Usage of Tree-Oriented Data Structures</submissionTitle>
+		<submissionAuthors>Matus Ondreicka (Charles University in Prague)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>9/1/2011 10:30:00 AM</startDate>
+		<endDate>9/1/2011 12:00:00 PM</endDate>
+		<sessionName>PhD Workshop 1</sessionName>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>Top-k Web Service Compositions in the context of user preferences</submissionTitle>
+		<submissionAuthors>Karim Benouaret (LIRIS), Djamal Benslimane, Allel Hadjali</submissionAuthors>
+	</record>
+	<record>
+		<startDate>9/1/2011 1:30:00 PM</startDate>
+		<endDate>9/1/2011 3:00:00 PM</endDate>
+		<sessionName>PhD Workshop 2</sessionName>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>Mixed Workload Management for In-Memory Databases</submissionTitle>
+		<submissionAuthors>Johannes Wust (Hasso-Plattner-Institute)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>9/1/2011 1:30:00 PM</startDate>
+		<endDate>9/1/2011 3:00:00 PM</endDate>
+		<sessionName>PhD Workshop 2</sessionName>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<presentationOrder>2</presentationOrder>
+		<submissionTitle>Scaling Web Applications: A Temporal Approach</submissionTitle>
+		<submissionAuthors>Zhiwu Xie (University of New Mexico)</submissionAuthors>
+	</record>
+	<record>
+		<startDate>9/1/2011 1:30:00 PM</startDate>
+		<endDate>9/1/2011 3:00:00 PM</endDate>
+		<sessionName>PhD Workshop 2</sessionName>
+		<location>Cascade 1A</location>
+		<sessionChairs/>
+		<presentationOrder>3</presentationOrder>
+		<submissionTitle>Research on a Schema and Data Versioning System</submissionTitle>
+		<submissionAuthors>Bob Wall (Montana State University)</submissionAuthors>
+	</record>
+	<record>
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
 		<sessionName>PhD Workshop 3</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
+		<location>Cascade 1A</location>
 		<sessionChairs/>
-		<submissionId>796</submissionId>
 		<presentationOrder>1</presentationOrder>
 		<submissionTitle>Matching tree patterns on partial-trees</submissionTitle>
 		<submissionAuthors>Shachar Harussi (Tau), Amir Averbuch (TAU)</submissionAuthors>
@@ -1600,10 +2018,8 @@
 		<startDate>9/1/2011 3:30:00 PM</startDate>
 		<endDate>9/1/2011 5:30:00 PM</endDate>
 		<sessionName>PhD Workshop 3</sessionName>
-		<sessionDescription/>
-		<location>Vashon</location>
+		<location>Cascade 1A</location>
 		<sessionChairs/>
-		<submissionId>813</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Knowledge-Based Complex Event Processing</submissionTitle>
 		<submissionAuthors>Kia Teymourian (Free University Berlin)</submissionAuthors>
