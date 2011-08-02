@@ -25,6 +25,36 @@ var info = function(){
 	alert("VLDB is a premier annual international forum for data management and database researchers, vendors, practitioners, application developers, and users. The conference will feature research talks, tutorials, demonstrations, and workshops. It will cover current issues in data management, database and information systems research. Data management and databases remain among the main technological cornerstones of emerging applications of the twenty-first century. VLDB 2011 will take place at the Westin Hotel in Seattle, WA on August 29 - September 3.");
 };
 
+var addEvent = function(){
+	var a = 	alert("VLDB is a premier annual international forum for data management and database researchers, vendors, practitioners, application developers, and users. The conference will feature research talks, tutorials, demonstrations, and workshops. It will cover current issues in data management, database and information systems research. Data management and databases remain among the main technological cornerstones of emerging applications of the twenty-first century. VLDB 2011 will take place at the Westin Hotel in Seattle, WA on August 29 - September 3.");
+	var x=window.confirm("Do you want to add to your calendar?")
+if (x){
+window.alert("Good!");
+var db = window.openDatabase("events", "1.0", "Events", 1000000);
+db.transaction(populateDB, errorCB, successCB);
+
+}
+else
+window.alert("Too bad")	
+	};
+
+function populateDB(tx) {
+     tx.executeSql('DROP TABLE IF EXISTS DEMO');
+     tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+     tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+     tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+}
+function errorCB(err) {
+    alert("Error processing SQL: "+err.code);
+}
+
+function successCB() {
+    alert("success!");
+}
+
+
+
+
 var vibrate = function() {
     navigator.notification.vibrate(0);
 };
@@ -34,6 +64,8 @@ function roundNumber(num) {
     var result = Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);
     return result;
 }
+
+
 
 var accelerationWatch = null;
 
