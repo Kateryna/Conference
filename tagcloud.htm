@@ -25,9 +25,7 @@ margin: 0px;
   text-decoration: none;
 	padding-top: 5px;
 	
-a.disappear:visited {
-display:none;
-}
+
 }
 </style>
 
@@ -45,11 +43,11 @@ for (i = 0; i < articles.length; i++) {
 			.push(xmlDoc.getElementsByTagName("articleId")[i].childNodes[0].nodeValue);
 }
 
-var resultArticle = [];
-var resultArticleAbstr = new Array();
+
 
 function getArticles(tagName) {
-
+	var resultArticle = [];
+	var resultArticleAbstr = new Array();
 	var tagArray = [];
 
 	var tagCloud = [ 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -267,15 +265,15 @@ function getArticles(tagName) {
 	}
 	console.log(resultArticle);
 
-	var table = fastMakeTable("", resultArticle.length, 1, resultArticle
-			);
+	var table = fastMakeTable("", resultArticle.length, 1, resultArticle,
+			resultArticleAbstr);
 	console.log(table);
 
 	document.getElementById("result").innerHTML = table;
 
 };
 
-function fastMakeTable(buf, row, col, cell) {
+function fastMakeTable(buf, row, col, cell, undercell) {
 	var COLS = col;
 	var ROWS = row;
 
