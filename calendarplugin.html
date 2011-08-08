@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Calendar plugin test</title>
+
+<script type="text/javascript" src="app/calendar/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="app/calendar/jquery.icalendar.js"></script>
+
+
+ <script type="text/javascript">
+
+  $(function () {
+
+$.icalendar.addSite('another', 'Test Calendar', 'app/calendar/icalendar.png', 
+    'http://www.anothercal.com/add?title={t}&desc={d}' + 
+    '&start={s}&end={e}&loc={l}'); 
+	$('#basicICal').icalendar($.extend({sites:['google','outlook','icalendar','yahoo','another'], copyFlash:''}, {start: new Date(2008, 1-1, 26, 11, 30, 00),
+    end: new Date(2008, 1-1, 26, 12, 45, 00),
+    title: 'Australia Day lunch',
+    description: 'A traditional barbeque for our big day',
+    location: 'On your local beach'}));
+    
+    $('#basicICal1').icalendar($.extend({popup:true, popupText: 'Send to'}, {start: new Date(2008, 1-1, 26, 11, 30, 00),
+    end: new Date(2008, 1-1, 26, 12, 45, 00),
+    title: 'Australia Day lunch',
+    description: 'A traditional barbeque for our big day',
+    location: 'On your local beach'}));
+//	$('#basicICal').icalendar({start: new Date(2008, 1-1, 26, 11, 30, 00),
+//		end: new Date(2008, 1-1, 26, 12, 45, 00),
+//		title: 'Australia Day lunch',
+//		description: 'A traditional barbeque for our big day',
+//		location: 'On your local beach'});
+});
+
+  </script>
+<style type="text/css">
+@import "app/calendar/jquery.icalendar.css";
+</style>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+<a>Send</a>  
+  <div id="basicICal">There should be something</div><br>
+  <p>
+  <div id="basicICal1">There should be something</div>
+ </p>
+  </div>
+</body>
+</html>

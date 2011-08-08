@@ -6,6 +6,11 @@
 		<link type="text/css" rel="stylesheet" media="all" href="app/layout.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
 	
+		<link type="text/css" rel="stylesheet" media="all" href="./app/default.css">
+		<script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="app/jquery-impromptu.3.1.js"></script>	
+	
+	
 		<script type="text/javascript">
 			
 			xmlhttp=new XMLHttpRequest();	
@@ -57,7 +62,9 @@
 						submissionAuthors = records[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue;	
 					};
 				}
-				alert (session + ' ('+location+')'+ '\n' + '\n' +'Title: "'+submissionTitle+'"'+'\n' + 'Authors: '+submissionAuthors);
+				var txt ='<h1>'+ session + '</h1><a href="rooms.html#grand1">('+location+')</a><br>'+ '\n' + '\n' +'Title: "'+submissionTitle+'"'+'\n' + 'Authors: '+submissionAuthors;
+				//alert (txt);
+				$.prompt(txt);
 			}
 			
 			function getInfoChallengesAndVision(session){
