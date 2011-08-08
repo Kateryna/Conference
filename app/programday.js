@@ -1,3 +1,17 @@
+
+	var hello1 = function hello(){
+	var txt = 'Please enter your name:<br /><form><input type="checkbox" id="alertName" name="alertName" value="OK">Add to my calendar</input></form>';
+	function mycallbackform(v,m,f){
+	console.log(v);
+	if (v==1)
+	location="calendarplugin.html";
+	}
+	$.prompt(txt,{
+			callback: mycallbackform,
+			buttons: { "Add to my calendar": '1', Close: '2' }
+	});
+	};
+
 			function getInfo(session){
 				var sessionDescription;
 				var location;
@@ -20,13 +34,16 @@
 				var allPresentation = '';			
 				for (j=0; j<presentationOrder.length; j++){
 					if (sessionCategory == 'Research and Industrial') {
-						presentation = 'Presentation # '+presentationOrder[j]+ '\n' +'Title: "'+submissionTitle[j]+'"'+'\n' + 'Authors: '+submissionAuthors[j]+ '\n'+ '\n';
+						presentation = '<p class = "presentationName">Presentation # '+presentationOrder[j]+'</p><p><b>Title:</b> "'+submissionTitle[j]+'"</p><p><b>Authors:</b> '+submissionAuthors[j]+'</p>';
 					} else {
-						presentation = 'Demo # '+presentationOrder[j]+ '\n' +'Title: "'+submissionTitle[j]+'"'+'\n' + 'Authors: '+submissionAuthors[j]+ '\n'+ '\n';
+						presentation = '<p class = "presentationName">Demo # '+presentationOrder[j]+'</p><p><b>Title:</b> "'+submissionTitle[j]+'"</p><p><b>Authors:</b> '+submissionAuthors[j]+'</p>';
 					}
 					allPresentation = allPresentation + presentation;
-				}			
-				alert (session+': '+sessionDescription+' ('+location+')'+ '\n' + '\n' +allPresentation);
+				}		
+						
+			$.prompt('<div class = "firstHeader"><div class = "sessionName">'+session+': '+sessionDescription+'</div><a class="location" href="#"> ('+location+')</a></div></br><div class = "allPresentations">'+allPresentation+'</div>');
+			
+				//alert (session+': '+sessionDescription+' ('+location+')'+ '\n' + '\n' +allPresentation);
 			};
 			
 			function getInfoKeynoteTutorial(session){
@@ -41,7 +58,10 @@
 						submissionAuthors = records[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue;	
 					};
 				}
-				alert (session + ' ('+location+')'+ '\n' + '\n' +'Title: "'+submissionTitle+'"'+'\n' + 'Authors: '+submissionAuthors);
+				
+				$.prompt('<div class = "firstHeader"><div class = "sessionName">'+session+'</div><a class="location" href="#"> ('+location+')</a></div></br><div class = "allPresentations"><p><b>Title:</b> "'+submissionTitle+'"</p><p><b>Authors:</b> '+submissionAuthors+'</p></div>');
+				
+				//alert (session + ' ('+location+')'+ '\n' + '\n' +'Title: "'+submissionTitle+'"'+'\n' + 'Authors: '+submissionAuthors);
 			}
 			
 			function getInfoChalAndVisPhDWork(session){
@@ -61,10 +81,13 @@
 
 				var allPresentation = '';			
 				for (j=0; j<presentationOrder.length; j++){
-					presentation = 'Presentation # '+presentationOrder[j]+ '\n' +'Title: "'+submissionTitle[j]+'"'+'\n' + 'Authors: '+submissionAuthors[j]+ '\n'+ '\n';
+					presentation = '<p class = "presentationName">Presentation # '+presentationOrder[j]+'</p><p><b>Title:</b> "'+submissionTitle[j]+'"</p><p><b>Authors:</b> '+submissionAuthors[j]+'</p>';
 					allPresentation = allPresentation + presentation;
-				}			
-				alert (session+' ('+location+')'+ '\n' + '\n' +allPresentation);
+				}		
+				
+				$.prompt('<div class = "firstHeader"><div class = "sessionName">'+session+'</div><a class="location" href="#"> ('+location+')</a></div></br><div class = "allPresentations">'+allPresentation+'</div>');				
+				
+				//alert (session+' ('+location+')'+ '\n' + '\n' +allPresentation);
 			};
 					
 			function getGeneralInfo(workshop){
@@ -81,7 +104,9 @@
 						organizers = workshops[i].getElementsByTagName("organizers")[0].childNodes[0].nodeValue;
 					};
 				}
-				alert (workshopName+'\n'+'\n'+'Room: '+location+'\n'+'Organizers: '+organizers+'\n'+'\n'+workshopDescription);
+				$.prompt('<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="#">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p></br><div class = "workshopDescription">'+workshopDescription+'</div>');
+				
+			//	alert (workshopName+'\n'+'\n'+'Room: '+location+'\n'+'Organizers: '+organizers+'\n'+'\n'+workshopDescription);
 			};
 				
 			function getDetailInfo(workshop) {
@@ -140,24 +165,27 @@
 			
 				var allInfo;
 				if (sessionCategory == 'KeynoteSession') {
-					allInfo = sessionNameKeynote+'\n'+'\n'+'Title: "'+submissionTitle+'"'+'\n' + 'Authors: '+submissionAuthors;
+					allInfo = '<p class = "sessionName">'+sessionNameKeynote+'</p></br><p><b>Title:</b> "'+submissionTitle+'"</p><p><b>Authors:</b> '+submissionAuthors+'</p>';
 				} else if (sessionCategory == 'ResearchSession') {
 					var allPresentation = '';		
 					for (j=0; j<presentationOrderAr.length; j++){
-								presentation = 'Presentation # '+presentationOrderAr[j]+ '\n' +'Title: "'+submissionTitleAr[j]+'"'+'\n' + 'Authors: '+submissionAuthorsAr[j]+ '\n'+ '\n';
+								presentation = '<p class = "presentationName">Presentation # '+presentationOrderAr[j]+'</p><p><b>Title:</b> "'+submissionTitleAr[j]+'"</p><p><b>Authors:</b> '+submissionAuthorsAr[j]+'</p>';
 							allPresentation = allPresentation + presentation;
 						}		
-					allInfo = sessionName+'\n'+'\n'+allPresentation; 	
+					allInfo = '<p class = "sessionName">'+sessionName+'</p><br>'+allPresentation; 	
 				} else if (sessionCategory == 'KeynoteResearchSession'){
-					var allInfo1 = sessionNameAr[0]+'\n'+'\n'+'Title: "'+submissionTitleArKR[0]+'"'+'\n' + 'Authors: '+submissionAuthorsArKR[0];
+					var allInfo1 = '<p class = "sessionName">'+sessionNameAr[0]+'</p></br><p><b>Title: </b>"'+submissionTitleArKR[0]+'"</p><p><b>Authors: </b>'+submissionAuthorsArKR[0]+'</p>';
 					var allInfo2 = '';
 					for (l=1; l<presentationOrderArKR.length; l++){
-							presentation = 'Presentation # '+presentationOrderArKR[l]+ '\n' +'Title: "'+submissionTitleArKR[l]+'"'+'\n' + 'Authors: '+submissionAuthorsArKR[l]+ '\n'+ '\n';
+							presentation = '<p class = "presentationName">Presentation # '+presentationOrderArKR[l]+'</p><p><b>Title:</b> "'+submissionTitleArKR[l]+'"</p><p><b>Authors:</b> '+submissionAuthorsArKR[l]+'</p>';
 						allInfo2 = allInfo2 + presentation;
 					}		
-					allInfo = allInfo1 +'\n'+'\n'+ sessionNameAr[1]+'\n'+'\n'+allInfo2;		
+					allInfo = allInfo1+'</br>'+'<p class = "sessionName">'+sessionNameAr[1]+'<p></br>'+allInfo2;		
 				}
-				alert (workshopName+'\n'+'\n'+'Room: '+location+'\n'+'Organizers: '+organizers+'\n'+'\n'+allInfo);
+				
+				$.prompt('<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="#">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p></br><div class = "allPresentations">'+allInfo+'</div>');
+							
+				//alert (workshopName+'\n'+'\n'+'Room: '+location+'\n'+'Organizers: '+organizers+'\n'+'\n'+allInfo);
 			}	
 			
 			function getDetailMergedInfo(workshop) {
@@ -210,14 +238,25 @@
 
 				var allInfo;
 				if (sessionCategory == 'KeynoteSession') {
-					allInfo = sessionNameKeynote+'\n'+'\n'+'Title: "'+submissionTitle+'"'+'\n' + 'Authors: '+submissionAuthors+'\n'+'\n';
+					allInfo = '<p class = "sessionName">'+sessionNameKeynote+'</p></br><p><b>Title:</b> "'+submissionTitle+'"</p><p><b>Authors:</b> '+submissionAuthors+'</p>';
 				} else if (sessionCategory == 'ResearchSession') {
 					var allPresentation = '';		
 					for (j=0; j<presentationOrderAr.length; j++){
-								presentation = 'Presentation # '+presentationOrderAr[j]+ '\n' +'Title: "'+submissionTitleAr[j]+'"'+'\n' + 'Authors: '+submissionAuthorsAr[j]+ '\n'+ '\n';
+								presentation = '<p class = "presentationName">Presentation # '+presentationOrderAr[j]+'</p><p><b>Title:</b> "'+submissionTitleAr[j]+'"</p><p><b>Authors:</b> '+submissionAuthorsAr[j]+'</p>';
 							allPresentation = allPresentation + presentation;
 						}		
-					allInfo = sessionName+'\n'+'\n'+allPresentation; 	
+					allInfo = '<p class = "sessionName">'+sessionName+'</p></br>'+allPresentation; 	
 				} 
-				alert (workshopName+'\n'+'\n'+'Room: '+location+'\n'+'Organizers: '+organizers+'\n'+'\n'+allInfo+'\n'+workshopNameMerged+'\n'+'\n'+'Room: '+location+'\n'+'Organizers: '+organizersMerged+'\n'+'Website: '+websiteMerged+'\n'+'\n'+'Description: '+workshopDescriptionMerged);
+				
+				$.prompt('<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="#">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p></br><div class = "allPresentations">'+allInfo+'</div></br><div class = "workshopName">'+workshopNameMerged+'</div></br><p class = "room"><b>Room: </b><a href="#">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizersMerged+'</p><p class = "website"><b>Website: </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p></br><div class = "workshopDescription">'+workshopDescriptionMerged+'</div>');
+				
+			//	alert (workshopName+'\n'+'\n'+'Room: '+location+'\n'+'Organizers: '+organizers+'\n'+'\n'+allInfo+'\n'+workshopNameMerged+'\n'+'\n'+'Room: '+location+'\n'+'Organizers: '+organizersMerged+'\n'+'Website: '+websiteMerged+'\n'+'\n'+'Description: '+workshopDescriptionMerged);
 			}	
+	
+			
+			
+			
+			
+			
+			
+			
