@@ -7,14 +7,12 @@
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
 	
 		<script type="text/javascript">
-			
-			function info(){
-				alert("Detailed Information");
-			};
-			
-			
+			xmlhttp=new XMLHttpRequest();	
+			xmlhttp.open("GET","app/XMLworkshops.xml",false);
+			xmlhttp.send();
+			xmlDoc=xmlhttp.responseXML;
 		</script>
-
+		<script type="text/javascript" src="app/programday.js"></script>
 	</head>
 
 	<body>
@@ -37,14 +35,14 @@
  
 			<tr>
 				<td rowspan="2" class="time">8:30 - 10:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">PersDB</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">SDM</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('PersDBpart1')"><div class="sessionFirstTypeDiv">PersDB</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('LADISpart1FR')"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('SDM')"><div class="sessionFirstTypeDiv">SDM</div></a></td>
 			</tr>		
 			<tr>	
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">BIRTE</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">VLDS</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">ADMS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('BIRTEpart1')"><div class="sessionFirstTypeDiv">BIRTE</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('VLDSpart1')"><div class="sessionFirstTypeDiv">VLDS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('ADMSpart1')"><div class="sessionFirstTypeDiv">ADMS</div></a></td>
 			</tr>	
  
 			<tr>
@@ -54,14 +52,14 @@
  
 			<tr>
 				<td rowspan="2" class="time">10:30 - 12:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">PersDB</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">SDM</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('PersDBpart2')"><div class="sessionFirstTypeDiv">PersDB</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('LADISpart2FR')"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('SDM')"><div class="sessionFirstTypeDiv">SDM</div></a></td>
 			</tr>
 			<tr>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">BIRTE</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">VLDS</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">ADMS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('BIRTEpart2')"><div class="sessionFirstTypeDiv">BIRTE</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('VLDSpart2')"><div class="sessionFirstTypeDiv">VLDS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('ADMSpart2')"><div class="sessionFirstTypeDiv">ADMS</div></a></td>
 			</tr>	
  
 			<tr>
@@ -71,14 +69,14 @@
  
 			<tr>
 				<td rowspan="2" class="time">1:30 - 3:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">PersDB</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">SDM</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('PersDBpart3')"><div class="sessionFirstTypeDiv">PersDB</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('LADISpart3FR')"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('SDM')"><div class="sessionFirstTypeDiv">SDM</div></a></td>
 			</tr> 
 			<tr>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">BIRTE</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">VLDS</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">ADMS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('BIRTEpart3')"><div class="sessionFirstTypeDiv">BIRTE</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('VLDSpart3')"><div class="sessionFirstTypeDiv">VLDS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('ADMSpart3')"><div class="sessionFirstTypeDiv">ADMS</div></a></td>
 			</tr>
  
 			<tr>
@@ -88,14 +86,14 @@
  
 			<tr>
 				<td rowspan="2" class="time">3:30 - 5:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">PersDB</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">SDM</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('PersDBpart4')"><div class="sessionFirstTypeDiv">PersDB</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('LADISpart4FR')"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('SDM')"><div class="sessionFirstTypeDiv">SDM</div></a></td>
 			</tr>
 			<tr>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">BIRTE</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">VLDS</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">ADMS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('BIRTEpart4')"><div class="sessionFirstTypeDiv">BIRTE</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('VLDSpart4')"><div class="sessionFirstTypeDiv">VLDS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('ADMSpart4')"><div class="sessionFirstTypeDiv">ADMS</div></a></td>
 			</tr>
 			
 			<tr height="25"></tr>

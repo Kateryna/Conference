@@ -7,84 +7,12 @@
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
 	
 		<script type="text/javascript">
-			
 			xmlhttp=new XMLHttpRequest();	
-			xmlhttp.open("GET","app/VLDB_2011_Program.xml",false);
+			xmlhttp.open("GET","app/VLDB2011Program.xml",false);
 			xmlhttp.send();
 			xmlDoc=xmlhttp.responseXML;
-			
-			
-			function getInfo(session){
-				var sessionDescription;
-				var location;
-				var sessionCategory;
-				var presentationOrder = new Array();
-				var submissionTitle = new Array();
-				var submissionAuthors = new Array();
-				records = xmlDoc.getElementsByTagName("record");
-				for (i=0; i<records.length; i++) {
-					if (records[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue == session) {
-						sessionDescription = records[i].getElementsByTagName("sessionDescription")[0].childNodes[0].nodeValue;
-						location = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
-						sessionCategory = records[i].getElementsByTagName("sessionCategory")[0].childNodes[0].nodeValue;
-						presentationOrder.push (records[i].getElementsByTagName("presentationOrder")[0].childNodes[0].nodeValue);	
-						submissionTitle.push (records[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue);	
-						submissionAuthors.push (records[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue);	
-					};
-				}
-
-				var allPresentation = '';			
-				for (j=0; j<presentationOrder.length; j++){
-					if (sessionCategory == 'Research and Industrial') {
-						presentation = 'Presentation # '+presentationOrder[j]+ '\n' +'Title: "'+submissionTitle[j]+'"'+'\n' + 'Authors: '+submissionAuthors[j]+ '\n'+ '\n';
-					} else {
-						presentation = 'Demo # '+presentationOrder[j]+ '\n' +'Title: "'+submissionTitle[j]+'"'+'\n' + 'Authors: '+submissionAuthors[j]+ '\n'+ '\n';
-					}
-					allPresentation = allPresentation + presentation;
-				}			
-				alert (session+': '+sessionDescription+' ('+location+')'+ '\n' + '\n' +allPresentation);
-			};
-			
-			function getInfoKeynoteTutorial(session){
-				var location;
-				var submissionTitle;
-				var submissionAuthors;
-				records = xmlDoc.getElementsByTagName("record");
-				for (i=0; i<records.length; i++) {
-					if (records[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue == session) {
-						location = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
-						submissionTitle = records[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue;	
-						submissionAuthors = records[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue;	
-					};
-				}
-				alert (session + ' ('+location+')'+ '\n' + '\n' +'Title: "'+submissionTitle+'"'+'\n' + 'Authors: '+submissionAuthors);
-			}
-			
-			function getInfoPhDWorkshop(session){
-				var location;
-				var presentationOrder = new Array();
-				var submissionTitle = new Array();
-				var submissionAuthors = new Array();
-				records = xmlDoc.getElementsByTagName("record");
-				for (i=0; i<records.length; i++) {
-					if (records[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue == session) {
-						location = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
-						presentationOrder.push (records[i].getElementsByTagName("presentationOrder")[0].childNodes[0].nodeValue);	
-						submissionTitle.push (records[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue);	
-						submissionAuthors.push (records[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue);	
-					};
-				}
-
-				var allPresentation = '';			
-				for (j=0; j<presentationOrder.length; j++){
-					presentation = 'Presentation # '+presentationOrder[j]+ '\n' +'Title: "'+submissionTitle[j]+'"'+'\n' + 'Authors: '+submissionAuthors[j]+ '\n'+ '\n';
-					allPresentation = allPresentation + presentation;
-				}			
-				alert (session+' ('+location+')'+ '\n' + '\n' +allPresentation);
-			};
-						
 		</script>
-
+		<script type="text/javascript" src="app/programday.js"></script>
 	</head>
 
 	<body>
@@ -122,7 +50,7 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 22')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 22:</font><font class="sessionFont2"><br>Data Integration<br></font></div></a></td>
 			</tr>
 			<tr>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoPhDWorkshop('PhD Workshop 1')"><div class="sessionFirstTypeDiv">PhD Workshop 1</div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoChalAndVisPhDWork('PhD Workshop 1')"><div class="sessionFirstTypeDiv">PhD Workshop 1</div></a></td>
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 23')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 23:</font><font class="sessionFont2"><br>Social Networks<br></font></div></a></td>
 			</tr>	
 			<tr>
@@ -141,7 +69,7 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 25')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 25:</font><font class="sessionFont2"><br>Statistical Methods<br></font></div></a></td>
 			</tr>
 			<tr>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoPhDWorkshop('PhD Workshop 2')"><div class="sessionFirstTypeDiv">PhD Workshop 2</div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoChalAndVisPhDWork('PhD Workshop 2')"><div class="sessionFirstTypeDiv">PhD Workshop 2</div></a></td>
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Industrial Session 4')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Industrial 4:</font><font class="sessionFont2"><br>Large Scale Distributed Systems<br></font></div></a></td>
 			</tr>	
 			<tr>
@@ -160,7 +88,7 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 28')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 28:</font><font class="sessionFont2"><br>Transaction Processing<br></font></div></a></td>
 			</tr>
 			<tr>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoPhDWorkshop('PhD Workshop 3')"><div class="sessionFirstTypeDiv">PhD Workshop 3</div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoChalAndVisPhDWork('PhD Workshop 3')"><div class="sessionFirstTypeDiv">PhD Workshop 3</div></a></td>
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 29')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 29:</font><font class="sessionFont2"><br>Web Processing<br></font></div></a></td>
 			</tr>	
 			<tr>
