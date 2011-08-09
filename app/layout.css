@@ -13,12 +13,11 @@ html, body {
 }
 .main-inner {
   padding: 2em 2em 2em 2em;
-  width: 100%;
-
+  width: 95%;
 }
 /* @group Both Sidebars */
 .both #main {
-  width: 100%;
+  width: 95%;
   float: left ;
 }
 

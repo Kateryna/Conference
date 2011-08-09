@@ -31,10 +31,11 @@ function fastMakeTable(buf, row, col, cell) {
 
 
 function roomId(roomName){
+//console.log("room id " + roomName);
 var roomid;
 
 	switch (roomName) {
-	case "Grand Crescent":
+case "Grand Crescent":
 		roomid = "grandCrescent";
 		break;
 case "Grand 1":
@@ -43,42 +44,22 @@ case "Grand 1":
 case "Grand 2":
 		roomid = "grand2";
 		break;
-		case "Grand 3":
+case "Grand 3":
 		roomid = "grand3";
 		break;
-case "Cascade 1"||"Cascsde 2":
+case "Cascade 1"||"Cascade 2"||"Cascade 1 & 2":
 		roomid = "cascade";
 		break;
-		case "Vashon":
+case "Vashon":
 		roomid = "vashon";
 		break;
 case "Fifth Avenue":
 		roomid = "fifthAvenueRoom";
 		break;
 case "Not defined":
-		roomid = "";
+		roomid = "hello";
 		break;
-/*		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
+<<<<<<< HEAD
 		case "Grand Crescent":
 		tagArray = tagCloud;
 		break;
@@ -101,4 +82,9 @@ case "Grand Crescent":
 		
 }
 return roomid;
+=======
+}
+	return roomid;
+//console.log(roomid);	
+>>>>>>> 933255a6617ee79250cb4b7d80cad6ce5c96f037
 }

@@ -1,7 +1,7 @@
 var articlesIdArray = new Array();
 var articles = getDoc("XMLarticlesAbstr.xml", "article");
 var allRecords = getDoc("Program.xml", "record");
-//console.log(allRecords);
+console.log(allRecords[3]);
 //console.log(articles[0]);
 
 for (i = 0; i < articles.length; i++) {
@@ -239,7 +239,9 @@ function getArticles(tagName) {
 			resultArticleAbstr
 					.push(articles[i].getElementsByTagName("abstract")[0].childNodes[0].nodeValue);
 					for (j=0; j<allRecords.length; j++){
-						if (allRecords[j].getElementsByTagName("submissionId")[0].childNodes[0].nodeValue == articlesIdArray[i])
+						var subId;
+						try {subId = allRecords[j].getElementsByTagName("submissionId")[0].childNodes[0].nodeValue;} catch (err){subId="";}
+						if ( subId == articlesIdArray[i])
 						{
 							authors.push(allRecords[j].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue);
 							try {start.push(allRecords[j].getElementsByTagName("startDate")[0].childNodes[0].nodeValue);}
@@ -272,8 +274,6 @@ function getArticles(tagName) {
 
 };
 
-
-
 function getAbstract(num) {
 	var element=document.getElementById("article" + num+"abstract"); 
    var parent = document.getElementById("table").childNodes[0];
@@ -286,10 +286,12 @@ parent.removeChild(element);
 	var titlRow = document.getElementById("article" + num);
 		
 	if (authors[num]==null||start[num]==null||end[num]==null||loc[num]==null){
+		
 	abstrRow.innerHTML = "<td class='event'><div>" + resultArticleAbstr[num]+"</div></td>";
 	}
 	else {
-		abstrRow.innerHTML = "<td class='event'><div>" + resultArticleAbstr[num]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+authors[num]+"</div><div class='textSmall'><i>"+start[num]+" - "+end[num]+"</i></div><div class='textSmall'><a href='rooms.html#'"+roomId(loc[num])+">"+loc[num]+"</a><br><div>"+category[num]+"</div></div></td>";
+			
+		abstrRow.innerHTML = "<td class='event'><div>" + resultArticleAbstr[num]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+authors[num]+"</div><div class='textSmall'><i>"+start[num]+" - "+end[num]+"</i></div><div class='textSmall'><a href='rooms.html#"+roomId(loc[num])+"'>"+loc[num]+"</a><br><div>"+category[num]+"</div></div></td>";
 }
  	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
 			titlRow.nextSibling);
