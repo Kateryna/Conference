@@ -1,4 +1,3 @@
-
 	var hello1 = function hello(){
 	var txt = 'Please enter your name:<br /><form><input type="checkbox" id="alertName" name="alertName" value="OK">Add to my calendar</input></form>';
 	function mycallbackform(v,m,f){
@@ -11,7 +10,7 @@
 			buttons: { "Add to my calendar": '1', Close: '2' }
 	});
 	};
-
+ 
 			function getInfo(session){
 				var sessionDescription;
 				var location;
@@ -19,7 +18,8 @@
 				var presentationOrder = new Array();
 				var submissionTitle = new Array();
 				var submissionAuthors = new Array();
-				records = xmlDoc.getElementsByTagName("record");
+				records = getDoc("Program.xml", "record");
+				console.log(records[0].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue);
 				for (i=0; i<records.length; i++) {
 					if (records[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue == session) {
 						sessionDescription = records[i].getElementsByTagName("sessionDescription")[0].childNodes[0].nodeValue;

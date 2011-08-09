@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * jQuery Impromptu
  * By: Trent Richardson [http://trentrichardson.com]
@@ -356,7 +355,7 @@
 	}
 	
 }(jQuery));
-=======
+
 /*
  * jQuery Impromptu
  * By: Trent Richardson [http://trentrichardson.com]
@@ -714,4 +713,4 @@
 	}
 	
 }(jQuery));
->>>>>>> f96f7567928a3c71f3d7c283fa079e07460f64f1
+

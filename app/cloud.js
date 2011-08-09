@@ -1,6 +1,6 @@
 var articlesIdArray = new Array();
 var articles = getDoc("XMLarticlesAbstr.xml", "article");
-var allRecords = getDoc("VLDB2011Program.xml", "record");
+var allRecords = getDoc("Program.xml", "record");
 //console.log(allRecords);
 //console.log(articles[0]);
 

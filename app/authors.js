@@ -1,5 +1,5 @@
 //console.log(programDoc);
-var allRecords = getDoc("VLDB2011Program.xml", "record");
+var allRecords = getDoc("Program.xml", "record");
 var authorsArray = new Array();
 var firstAuthorsArray = new Array();
 //console.log(allRecords);

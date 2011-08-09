@@ -1,5 +1,5 @@
 //console.log(programDoc);
-var allRecords = getDoc("VLDB2011Program.xml", "record");
+var allRecords = getDoc("Program.xml", "record");
 
 function goToCategory(categoryId){
 	location="demo.html?category="+categoryId;
