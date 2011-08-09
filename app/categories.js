@@ -8,30 +8,8 @@ function goToCategory(categoryId){
 	
 function init(){
 	var hash = window.location.search.substring(1);
-	var categorydata = hash.replace("category=","");
-	var categoryId;
-	
-	switch(categorydata){
-	case 	"Research":
-		categoryId = "Research and Industrial";
-		break;
-	case 	"Industrial":
-		categoryId = "Research and Industrial";
-		break;
-	case 	"Challenges":
-		categoryId = "Challenges and Vision";
-		break;
-	case 	"Tutorial":
-		categoryId = "Tutorial";
-		break;
-	case 	"Demo":
-		categoryId = "Demo";
-		break; 
-	case 	"Workshop":
-		categoryId = "Workshop";
-		break;
-	return categoryId;
-	}
+	var categoryId = hash.replace("category=","");
+
 		
 	console.log(categoryId)
 	var articles = new Array();
