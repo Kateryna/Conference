@@ -1,10 +1,5 @@
-
-xmlhttp1 = new XMLHttpRequest();
-xmlhttp1.open("GET","app/VLDB2011program.xml", false);
-xmlhttp1.send();
-programDoc = xmlhttp1.responseXML;
 //console.log(programDoc);
-var allRecords = programDoc.getElementsByTagName("record");
+var allRecords = getDoc("VLDB2011Program.xml", "record");
 var authorsArray = new Array();
 var firstAuthorsArray = new Array();
 //console.log(allRecords);
@@ -15,12 +10,11 @@ firstAuthor = allAuthors.split(",",1);
 authorsArray.push(allAuthors);
 firstAuthorsArray
 			.push(firstAuthor);
-
+}
 firstAuthorsArraySorted=firstAuthorsArray.sort();
 authorsArraySorted=authorsArray.sort();
-}
-//console.log(firstAuthorsArraySorted);
-//console.log(authorsArraySorted);
+console.log(firstAuthorsArraySorted.length);
+console.log(authorsArraySorted);
 
 
 function init(){

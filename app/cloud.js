@@ -1,29 +1,21 @@
-xmlhttp = new XMLHttpRequest();
-xmlhttp.open("GET", "app/XMLarticlesAbstr.xml", false);
-xmlhttp.send();
-xmlDoc = xmlhttp.responseXML;
-console.log(xmlDoc);
-xmlhttp1 = new XMLHttpRequest();
-xmlhttp1.open("GET","app/VLDB2011program.xml", false);
-xmlhttp1.send();
-programDoc = xmlhttp1.responseXML;
-console.log(programDoc);
 var articlesIdArray = new Array();
-var articles = xmlDoc.getElementsByTagName("articleId");
-var allRecords = programDoc.getElementsByTagName("record");
-console.log(allRecords);
+var articles = getDoc("XMLarticlesAbstr.xml", "article");
+var allRecords = getDoc("VLDB2011Program.xml", "record");
+//console.log(allRecords);
+//console.log(articles[0]);
 
 for (i = 0; i < articles.length; i++) {
 	articlesIdArray
-			.push(xmlDoc.getElementsByTagName("articleId")[i].childNodes[0].nodeValue);
+			.push(articles[i].getElementsByTagName("articleId")[0].childNodes[0].nodeValue);
 }
-
+//console.log(articlesIdArray);
 	var resultArticle = [];
 	var resultArticleAbstr = new Array();
 var authors = new Array();
 var start = new Array ();
 var end = new Array();
-var loc = new Array(); 
+var loc = new Array();
+var category = new Array(); 
 	
 function getArticles(tagName) {
 	resultArticle=[];
@@ -32,6 +24,7 @@ function getArticles(tagName) {
 	start=[];
 	end=[];
 	loc=[];
+	category=[];
 	var tagArray = [];
 
 	var tagCloud = [ 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -242,9 +235,9 @@ function getArticles(tagName) {
 		if (tagArray[i] == 1) {
 			
 			resultArticle
-					.push(xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue);
+					.push(articles[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
 			resultArticleAbstr
-					.push(xmlDoc.getElementsByTagName("abstract")[i].childNodes[0].nodeValue);
+					.push(articles[i].getElementsByTagName("abstract")[0].childNodes[0].nodeValue);
 					for (j=0; j<allRecords.length; j++){
 						if (allRecords[j].getElementsByTagName("submissionId")[0].childNodes[0].nodeValue == articlesIdArray[i])
 						{
@@ -267,37 +260,19 @@ function getArticles(tagName) {
 		}
 
 	}
-	console.log(resultArticle);
-	console.log(authors);
-	console.log(start);
-	console.log(end);
-	console.log(loc);
+//	console.log(resultArticle);
+//	console.log(authors);
+//	console.log(start);
+//	console.log(end);
+//	console.log(loc);
 	var table = fastMakeTable("", resultArticle.length, 1, resultArticle);
-	console.log(table);
+//	console.log(table);
 
 	document.getElementById("result").innerHTML = table;
 
 };
 
-function fastMakeTable(buf, row, col, cell) {
-	var COLS = col;
-	var ROWS = row;
 
-	buf += "<div align='center'><table id='table' style='bordborder-collapse:collapse;table-layout:fixed;width:90%'>";
-	for ( var i = 0; i < ROWS; i++) {
-		var row = "<tr id='article" + i + "'>";
-		for ( var j = 0; j < COLS; j++) {
-			row += "<td class='sessionFirstType'><a href='#'  onclick='getAbstract("
-					+ i + ")'><div>" + cell[i] + "</div></a></td>";
-		}
-		row += "</tr>";
-
-		buf += row;
-	}
-	buf += "</table></div>";
-
-	return buf;
-};
 
 function getAbstract(num) {
 	var element=document.getElementById("article" + num+"abstract"); 
@@ -314,7 +289,7 @@ parent.removeChild(element);
 	abstrRow.innerHTML = "<td class='event'><div>" + resultArticleAbstr[num]+"</div></td>";
 	}
 	else {
-		abstrRow.innerHTML = "<td class='event'><div>" + resultArticleAbstr[num]+"</div><br><hr/><div class='text'><b>Authors: </b>"+authors[num]+"</div><div class='text'><i>"+start[num]+" - "+end[num]+"</i></div><div class='text'><a href='rooms.html#'"+roomId(loc[num])+">"+loc[num]+"</a><br><div id='calendar'>"+category[num]+"</div></div></td>";
+		abstrRow.innerHTML = "<td class='event'><div>" + resultArticleAbstr[num]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+authors[num]+"</div><div class='textSmall'><i>"+start[num]+" - "+end[num]+"</i></div><div class='textSmall'><a href='rooms.html#'"+roomId(loc[num])+">"+loc[num]+"</a><br><div>"+category[num]+"</div></div></td>";
 }
  	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
 			titlRow.nextSibling);
@@ -322,74 +297,3 @@ parent.removeChild(element);
 }
 };
 
-function roomId(roomName){
-var roomid;
-
-	switch (roomName) {
-	case "Grand Crescent":
-		roomid = "grandCrescent";
-		break;
-case "Grand 1":
-		roomid = "grand1";
-		break;
-case "Grand 2":
-		roomid = "grand2";
-		break;
-		case "Grand 3":
-		roomid = "grand3";
-		break;
-case "Cascade 1"||"Cascsde 2":
-		roomid = "cascade";
-		break;
-		case "Vashon":
-		roomid = "vashon";
-		break;
-case "Fifth Avenue":
-		roomid = "fifthAvenueRoom";
-		break;
-case "Not defined":
-		roomid = "";
-		break;
-/*		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-case "Grand Crescent":
-		tagArray = tagCloud;
-		break;*/
-		
-		return roomid;
-}
-}
