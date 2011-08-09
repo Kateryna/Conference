@@ -111,8 +111,8 @@ a.button:hover{
 /*end of main buttons*/
 /*style of floor plans*/
 .zitem {
-    width:210px;
-    height:297px;  
+    width:150px;
+    height:160px;  
     border:2px solid #222; 
     margin:20px 20px 20px 0;
      
@@ -127,7 +127,7 @@ a.button:hover{
 }
  
 .zitem .caption {
-    width:210px;
+    width:140px;
     height:30px;
     background:#000;
     color:#fff;

@@ -1,3 +1,10 @@
+//var newwindow = function open_new_window2() {
+//	dlg = window.open ("","NewWindowName2","width=400,height=400,toolbar=no,location=no, 13 directories=no,status=no,menubar=no,scrollbars=no,resizable=no") 
+//	dlg.document.write ("<BODY bgColor='#FFFFFF'>") 
+//	dlg.document.write ("<CENTER>This is text that has been added on the fly using Javascript.</CENTER>") 
+//dlg.document.write ("</BODY>") }; 
+
+
 var deviceInfo = function() {
     document.getElementById("platform").innerHTML = device.platform;
     document.getElementById("version").innerHTML = device.version;
@@ -37,6 +44,9 @@ db.transaction(populateDB, errorCB, successCB);
 else
 window.alert("Too bad")	
 	};
+
+
+
 
 function populateDB(tx) {
      tx.executeSql('DROP TABLE IF EXISTS DEMO');

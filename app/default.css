@@ -6,8 +6,9 @@
 .jqifade{
 	position: absolute; 
 	background-color: #aaaaaa; 
-	
+
 }
+
 div.jqi{ 
 	width: 450px; 
 	height: 400px; 
@@ -22,7 +23,7 @@ div.jqi{
 	-webkit-border-radius: 10px;
 	padding: 7px;
 	overflow:auto;
-	
+
 }
 div.jqi .jqicontainer{ 
 	font-weight: bold; 
@@ -34,7 +35,7 @@ div.jqi .jqiclose{
 	cursor: default; 
 	color: #bbbbbb; 
 	font-weight: bold; 
-	
+
 }
 div.jqi .jqimessage{ 
 	padding: 10px; 
@@ -56,15 +57,18 @@ div.jqi button{
 	font-weight: bold; 
 	font-size: 14px; 
 	font-family:Arial, sans-serif;
+
 }
 div.jqi button:hover{ 
 	background-color: #728A8C;
 }
 div.jqi button.jqidefaultbutton{
-	background-color: #fd9c7f;
+	background-color: #1F497D;
 }
+
 .jqiwarning .jqi .jqibuttons{ 
-	background-color: #fd9c7f;
+	background-color: #1F497D;
+
 }
 
 
