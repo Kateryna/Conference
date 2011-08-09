@@ -5,6 +5,9 @@
 		<title>Program for Tuesday</title>
 		<link type="text/css" rel="stylesheet" media="all" href="app/layout.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
+		<link type="text/css" rel="stylesheet" media="all" href="app/default.css">
+		<script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="app/jquery-impromptu.js"></script>
 	
 		<link type="text/css" rel="stylesheet" media="all" href="./app/default.css">
 		<script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
@@ -12,11 +15,11 @@
 	
 	
 		<script type="text/javascript">
-			
 			xmlhttp=new XMLHttpRequest();	
 			xmlhttp.open("GET","app/VLDB2011Program.xml",false);
 			xmlhttp.send();
 			xmlDoc=xmlhttp.responseXML;
+<<<<<<< HEAD
 			
 			
 			function getInfo(session){
@@ -90,8 +93,10 @@
 				alert (session+' ('+location+')'+ '\n' + '\n' +allPresentation);
 			};
 		
+=======
+>>>>>>> f96f7567928a3c71f3d7c283fa079e07460f64f1
 		</script>
-
+		<script type="text/javascript" src="app/programday.js"></script>
 	</head>
 
 	<body>
@@ -157,7 +162,7 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 7')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 7:</font><font class="sessionFont2"><br>Query Processing<br></font></div></a></td>
 			</tr>	
 			<tr>
-				<td  colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoChallengesAndVision('Challenges and Vision Session 1')"><div class="sessionFirstTypeDiv">Challenges and Vision 1</div></a></td>
+				<td  colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoChalAndVisPhDWork('Challenges and Vision Session 1')"><div class="sessionFirstTypeDiv">Challenges and Vision 1</div></a></td>
 				<td class="sessionSecondType"><a href="#" onclick="getInfoKeynoteTutorial('Tutorial 2')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 2:</font><font class="sessionFont2"><br>Flash Storage<br></font></div></a></td>
 				<td class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session B')"><div class="sessionFirstTypeDiv">Demos</div></a></td>
 			</tr>
@@ -177,7 +182,7 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfoKeynoteTutorial('Panel 1')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Panel 1:</font><font class="sessionFont2"><br>Data Mangement for Meeting Global Health Challenges<br></font></div></a></td>
 			</tr>	
 			<tr>
-				<td  colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoChallengesAndVision('Challenges and Vision Session 2')"><div class="sessionFirstTypeDiv">Challenges and Vision 2</div></a></td>
+				<td  colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoChalAndVisPhDWork('Challenges and Vision Session 2')"><div class="sessionFirstTypeDiv">Challenges and Vision 2</div></a></td>
 				<td class="sessionSecondType"><a href="#" onclick="getInfoKeynoteTutorial('Tutorial 2')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 2:</font><font class="sessionFont2"><br>Flash Storage<br></font></div></a></td>
 				<td class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session C')"><div class="sessionFirstTypeDiv">Demos</div></a></td>
 			</tr>

@@ -110,6 +110,7 @@
 a {
 	text-decoration:none;
 	}
+<<<<<<< HEAD
 div.text{
 	text-align:left;
 	font-size: 15.0pt;
@@ -121,3 +122,50 @@ div.textSmall{
 	padding-left: 20pt;
 	}
 	
+=======
+
+.firstHeader{
+	text-align:center;
+	
+	}
+.sessionName, .workshopName {
+	text-align:center;
+	font-family:Arial, sans-serif;
+	font-size:16.0pt;
+	font-weight:600;
+	}
+.location{
+	font-family:Arial, sans-serif;
+	font-size:14.0pt;
+	font-weight:600;
+	}
+.presentationName{
+	font-family:Arial, sans-serif;
+	text-align:center;
+	font-size:13.0pt;
+	font-weight:600;
+}
+.allPresentations, .workshopDescription{
+	font-family:Arial, sans-serif;
+	font-size:12.0pt;
+	font-weight:400;
+}
+
+.room, .organizers, .website{
+	font-family:Arial, sans-serif;
+	font-size:13.0pt;
+	font-weight:400;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> f96f7567928a3c71f3d7c283fa079e07460f64f1

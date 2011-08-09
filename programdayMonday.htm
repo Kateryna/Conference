@@ -5,16 +5,17 @@
 		<title>Program for Monday</title>
 		<link type="text/css" rel="stylesheet" media="all" href="app/layout.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
-	
+		<link type="text/css" rel="stylesheet" media="all" href="app/default.css">
+		<script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="app/jquery-impromptu.js"></script>
+		
 		<script type="text/javascript">
-			
-			function info(){
-				alert("Detailed Information");
-			};
-			
-			
+			xmlhttp=new XMLHttpRequest();	
+			xmlhttp.open("GET","app/XMLworkshops.xml",false);
+			xmlhttp.send();
+			xmlDoc=xmlhttp.responseXML;
 		</script>
-
+		<script type="text/javascript" src="app/programday.js"></script>
 	</head>
 
 	<body>
@@ -37,13 +38,13 @@
 			 
 			<tr>
 				<td rowspan="2" class="time">8:30 - 10:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DMSN</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DBRank/MUD</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DBPL</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('DMSN')"><div class="sessionFirstTypeDiv">DMSN</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailMergedInfo('DBRank/MUDpart1')"><div class="sessionFirstTypeDiv">DBRank/MUD</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('DBPL')"><div class="sessionFirstTypeDiv">DBPL</div></a></td>
 			</tr>		
 			<tr>	
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">QDB</div></a></td>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">TPCTC</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('QDBpart1')"><div class="sessionFirstTypeDiv">QDB</div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getGeneralInfo('TPCTC')"><div class="sessionFirstTypeDiv">TPCTC</div></a></td>
 			</tr>	
 					
 			<tr>
@@ -53,13 +54,13 @@
 			
 			<tr>
 				<td rowspan="2" class="time">10:30 - 12:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DMSN</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DBRank/MUD</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DBPL</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('DMSN')"><div class="sessionFirstTypeDiv">DMSN</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailMergedInfo('DBRank/MUDpart2')"><div class="sessionFirstTypeDiv">DBRank/MUD</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('DBPL')"><div class="sessionFirstTypeDiv">DBPL</div></a></td>
 			</tr>
 			<tr>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">QDB</div></a></td>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">TPCTC</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('QDBpart2')"><div class="sessionFirstTypeDiv">QDB</div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getGeneralInfo('TPCTC')"><div class="sessionFirstTypeDiv">TPCTC</div></a></td>
 			</tr>	
 						 
 			<tr>
@@ -69,13 +70,13 @@
  	
 			<tr>
 				<td rowspan="2" class="time">1:30 - 3:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DMSN</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DBRank/MUD</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DBPL</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('DMSN')"><div class="sessionFirstTypeDiv">DMSN</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailMergedInfo('DBRank/MUDpart3')"><div class="sessionFirstTypeDiv">DBRank/MUD</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('DBPL')"><div class="sessionFirstTypeDiv">DBPL</div></a></td>
 			</tr> 
 			<tr>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">QDB</div></a></td>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">TPCTC</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('QDBpart3')"><div class="sessionFirstTypeDiv">QDB</div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getGeneralInfo('TPCTC')"><div class="sessionFirstTypeDiv">TPCTC</div></a></td>
 			</tr>
 					
 			<tr>
@@ -85,13 +86,13 @@
  
 			<tr>
 				<td rowspan="2" class="time">3:30 - 5:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DMSN</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DBRank/MUD</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">DBPL</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('DMSN')"><div class="sessionFirstTypeDiv">DMSN</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailMergedInfo('DBRank/MUDpart4')"><div class="sessionFirstTypeDiv">DBRank/MUD</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getGeneralInfo('DBPL')"><div class="sessionFirstTypeDiv">DBPL</div></a></td>
 			</tr>
 			<tr>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">QDB</div></a></td>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">TPCTC</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('QDBpart4')"><div class="sessionFirstTypeDiv">QDB</div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getGeneralInfo('TPCTC')"><div class="sessionFirstTypeDiv">TPCTC</div></a></td>
 			</tr>
 					
 			<tr>

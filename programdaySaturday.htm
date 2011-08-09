@@ -5,16 +5,17 @@
 		<title>Program for Saturday</title>
 		<link type="text/css" rel="stylesheet" media="all" href="app/layout.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
-	
+		<link type="text/css" rel="stylesheet" media="all" href="app/default.css">
+		<script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="app/jquery-impromptu.js"></script>
+		
 		<script type="text/javascript">
-			
-			function info(){
-				alert("Detailed Information");
-			};
-			
-			
+			xmlhttp=new XMLHttpRequest();	
+			xmlhttp.open("GET","app/XMLworkshops.xml",false);
+			xmlhttp.send();
+			xmlDoc=xmlhttp.responseXML;
 		</script>
-
+		<script type="text/javascript" src="app/programday.js"></script>
 	</head>
 
 	<body>
@@ -35,7 +36,7 @@
 	 
 			<tr>
 				<td class="time">8:30 - 10:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('LADISpart1SAT')"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
 			</tr>	
  
 			<tr>
@@ -45,7 +46,7 @@
 			
 			<tr>
 				<td class="time">10:30 - 12:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('LADISpart2SAT')"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
 			</tr>	
 			
 			<tr>
@@ -55,7 +56,7 @@
 			
 			<tr>
 				<td class="time">1:30 - 3:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('LADISpart3SAT')"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
 			</tr>	
 			
 			<tr>
@@ -65,7 +66,7 @@
 			 
 			<tr>
 				<td class="time">3:30 - 5:00</td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getDetailInfo('LADISpart4SAT')"><div class="sessionFirstTypeDiv">LADIS</div></a></td>
 			</tr>	
 			
 			<tr height="25"></tr>

@@ -5,63 +5,17 @@
 		<title>Program for Wednesday</title>
 		<link type="text/css" rel="stylesheet" media="all" href="app/layout.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
-	
+		<link type="text/css" rel="stylesheet" media="all" href="app/default.css">
+		<script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="app/jquery-impromptu.js"></script>
+		
 		<script type="text/javascript">
-			
 			xmlhttp=new XMLHttpRequest();	
 			xmlhttp.open("GET","app/VLDB2011Program.xml",false);
 			xmlhttp.send();
 			xmlDoc=xmlhttp.responseXML;
-			
-			
-			function getInfo(session){
-				var sessionDescription;
-				var location;
-				var sessionCategory;
-				var presentationOrder = new Array();
-				var submissionTitle = new Array();
-				var submissionAuthors = new Array();
-				records = xmlDoc.getElementsByTagName("record");
-				for (i=0; i<records.length; i++) {
-					if (records[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue == session) {
-						sessionDescription = records[i].getElementsByTagName("sessionDescription")[0].childNodes[0].nodeValue;
-						location = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
-						sessionCategory = records[i].getElementsByTagName("sessionCategory")[0].childNodes[0].nodeValue;
-						presentationOrder.push (records[i].getElementsByTagName("presentationOrder")[0].childNodes[0].nodeValue);	
-						submissionTitle.push (records[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue);	
-						submissionAuthors.push (records[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue);	
-					};
-				}
-
-				var allPresentation = '';			
-				for (j=0; j<presentationOrder.length; j++){
-					if (sessionCategory == 'Research and Industrial') {
-						presentation = 'Presentation # '+presentationOrder[j]+ '\n' +'Title: "'+submissionTitle[j]+'"'+'\n' + 'Authors: '+submissionAuthors[j]+ '\n'+ '\n';
-					} else {
-						presentation = 'Demo # '+presentationOrder[j]+ '\n' +'Title: "'+submissionTitle[j]+'"'+'\n' + 'Authors: '+submissionAuthors[j]+ '\n'+ '\n';
-					}
-					allPresentation = allPresentation + presentation;
-				}			
-				alert (session+': '+sessionDescription+' ('+location+')'+ '\n' + '\n' +allPresentation);
-			};
-			
-			function getInfoKeynoteTutorial(session){
-				var location;
-				var submissionTitle;
-				var submissionAuthors;
-				records = xmlDoc.getElementsByTagName("record");
-				for (i=0; i<records.length; i++) {
-					if (records[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue == session) {
-						location = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
-						submissionTitle = records[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue;	
-						submissionAuthors = records[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue;	
-					};
-				}
-				alert (session + ' ('+location+')'+ '\n' + '\n' +'Title: "'+submissionTitle+'"'+'\n' + 'Authors: '+submissionAuthors);
-			}
-			
 		</script>
-
+		<script type="text/javascript" src="app/programday.js"></script>
 	</head>
 
 	<body>
