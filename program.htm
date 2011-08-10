@@ -7,16 +7,102 @@
 		<link type="text/css" rel="stylesheet" media="all" href="./app/style.css">
 		
 		<script type="text/javascript" src="./app/androidScript.js"></script>
+	<script type="text/javascript" src="./app/jquery-1.6.2.min.js"></script>
+		<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script> 
+
+		<script type="text/javascript" >
+$(function() {
+	// setup ul.tabs to work as tabs for each div directly under div.panes
+	$("ul.tabs").tabs("div.panes > div");
+});
+</script>
+<style>
+
+/* root element for tabs  */
+ul.tabs {  
+	margin:0 !important; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #666;	 	
+}
+
+/* single tab */
+ul.tabs li {  
+	float:left;	 
+	padding:0; 
+	margin:0;  
+	list-style-type:none;	
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	float:left;
+	font-size:13px;
+	display:block;
+	padding:5px 30px;	
+	text-decoration:none;
+	border:1px solid #666;	
+	border-bottom:0px;
+	height:18px;
+	background-color:#efefef;
+	color:#777;
+	margin-right:2px;
+	position:relative;
+	top:1px;	
+	outline:0;
+	-moz-border-radius:4px 4px 0 0;	
+}
+
+ul.tabs a:hover {
+	background-color:#F7F7F7;
+	color:#333;
+}
+	
+/* selected tab */
+ul.tabs a.current {
+	background-color:#ddd;
+	border-bottom:1px solid #ddd;	
+	color:#000;	
+	cursor:default;
+}
+
+	
+/* tab pane */
+.panes div {
+	display:none;
+	border:1px solid #666;
+	border-width:0 1px 1px 1px;
+	min-height:150px;
+	padding:15px 20px;
+	background-color:#ddd;	
+}
+</style>
     </head>
 	
 	<body>
 		<div id="header-inner"><img src="./img/vldb2011header.png" width="100%"></a></div> 
         <div id="main">
 			<div class="main-inner">
-			<a href="weekschedule.htm" class="button"><div><img src="img/evolutioncalendar.png"><b>General schedule</b></img></div></a> 
-			<a href="categories.htm" class="button"><div><img src="img/category.png"><b>Paper categories</b></img></div></a>
-			<a href="authors.htm" class="button"><div><img src="img/authors.png"><b>Authors</b></img></div></a>
-			<a href="tagcloud.htm" class="button" ><div><img src="img/TagCloud.gif"><b>Tag cloud</b></img></div></a>
+			
+			<!-- the tabs -->
+<ul class="tabs">
+	<li><a href="#">Mon</a></li>
+	<li><a href="#">Tue</a></li>
+	<li><a href="#">Wed</a></li>
+	<li><a href="#">Thu</a></li>
+	<li><a href="#">Fri</a></li>
+	<li><a href="#">Sat</a></li>
+</ul>
+<!-- tab "panes" -->
+<div class="panes">
+	<div>First tab content. Tab contents are called "panes"</div>
+	<div>Second tab content</div>
+	<div>Third tab content</div>
+<div>First tab content. Tab contents are called "panes"</div>
+	<div>Second tab content</div>
+	<div>Third tab content</div>
+</div>
+		
 			</div>
         </div>
       <div id="header-inner">
