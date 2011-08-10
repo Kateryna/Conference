@@ -6,15 +6,9 @@
 		<link type="text/css" rel="stylesheet" media="all" href="app/layout.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/default.css">
+		<script type="text/javascript" src="app/commonjs.js"></script>	
 		<script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="app/jquery-impromptu.js"></script>
-		
-		<script type="text/javascript">
-			xmlhttp=new XMLHttpRequest();	
-			xmlhttp.open("GET","app/VLDB2011Program.xml",false);
-			xmlhttp.send();
-			xmlDoc=xmlhttp.responseXML;
-		</script>
 		<script type="text/javascript" src="app/programday.js"></script>
 	</head>
 
@@ -44,7 +38,7 @@
 	 
 			<tr>
 				<td class="time">9:00 - 10:00</td>
-				<td colspan="4" class="sessionFirstType"><a href="#" onclick="getInfoKeynoteTutorial('Keynote 2')"><div class="sessionFirstTypeDiv">Keynote 2: David Campbell (Grand 1 &amp; 2)</div></a></td>
+				<td colspan="4" class="sessionFirstType"><a href="#" onclick="getInfo('Keynote 2')"><div class="sessionFirstTypeDiv">Keynote 2: David Campbell (Grand 1 &amp; 2)</div></a></td>
 			</tr>
  
 			<tr>
@@ -62,8 +56,8 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 13')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 13:</font><font class="sessionFont2"><br>HCI<br></font></div></a></td>
 			</tr>	
 			<tr>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfoKeynoteTutorial('Tutorial 3')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 3:</font><font class="sessionFont2"><br>Deep Web</font></div></a></td>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session B')"><div class="sessionFirstTypeDiv">Demos</div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Tutorial 3')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 3:</font><font class="sessionFont2"><br>Deep Web</font></div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session B')"><div class="sessionFirstTypeDiv">Demo B</div></a></td>
 			</tr>	 
 			
 			<tr>
@@ -81,8 +75,8 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 16')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 16:</font><font class="sessionFont2"><br>Streams and Events<br></font></div></a></td>
 			</tr>	
 			<tr>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfoKeynoteTutorial('Tutorial 4')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 4:</font><font class="sessionFont2"><br>Crowd-sourcing</font></div></a></td>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session C')"><div class="sessionFirstTypeDiv">Demos</div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Tutorial 4')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 4:</font><font class="sessionFont2"><br>Crowd-sourcing</font></div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session C')"><div class="sessionFirstTypeDiv">Demo C</div></a></td>
 			</tr>	 
 			
 			<tr>
@@ -100,9 +94,9 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 20')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 20:</font><font class="sessionFont2"><br>Statistical Methods<br></font></div></a></td>
 			</tr>	
 			<tr>
-				<td  colspan="2" class="sessionSecondType"><a href="#" onclick="getInfoKeynoteTutorial('Panel 2')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Panel 2:</font><font class="sessionFont2"><br>Maximizing Impact<br></font></div></a></td>
-				<td class="sessionSecondType"><a href="#" onclick="getInfoKeynoteTutorial('Tutorial 4')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 4:</font><font class="sessionFont2"><br>Crowd-sourcing<br></font></div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session A')"><div class="sessionFirstTypeDiv">Demos</div></a></td>
+				<td  colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Panel 2')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Panel 2:</font><font class="sessionFont2"><br>Maximizing Impact<br></font></div></a></td>
+				<td class="sessionSecondType"><a href="#" onclick="getInfo('Tutorial 4')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 4:</font><font class="sessionFont2"><br>Crowd-sourcing<br></font></div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session A')"><div class="sessionFirstTypeDiv">Demo A</div></a></td>
 			</tr>
  
 			<tr>

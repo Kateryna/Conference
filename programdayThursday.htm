@@ -6,17 +6,10 @@
 		<link type="text/css" rel="stylesheet" media="all" href="app/layout.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/default.css">
+		<script type="text/javascript" src="app/commonjs.js"></script>	
 		<script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="app/jquery-impromptu.js"></script>
-		
-		<script type="text/javascript">
-			xmlhttp=new XMLHttpRequest();	
-			xmlhttp.open("GET","app/VLDB2011Program.xml",false);
-			xmlhttp.send();
-			xmlDoc=xmlhttp.responseXML;
-		</script>
 		<script type="text/javascript" src="app/programday.js"></script>
-		
 	</head>
 
 	<body>
@@ -54,12 +47,12 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 22')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 22:</font><font class="sessionFont2"><br>Data Integration<br></font></div></a></td>
 			</tr>
 			<tr>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoChalAndVisPhDWork('PhD Workshop 1')"><div class="sessionFirstTypeDiv">PhD Workshop 1</div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfo('PhD Workshop 1')"><div class="sessionFirstTypeDiv">PhD Workshop 1</div></a></td>
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 23')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 23:</font><font class="sessionFont2"><br>Social Networks<br></font></div></a></td>
 			</tr>	
 			<tr>
-				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfoKeynoteTutorial('Tutorial 5')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 5:</font><font class="sessionFont2"><br>Graph Data Mgmt</font></div></a></td>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session C')"><div class="sessionFirstTypeDiv">Demos</div></a></td>
+				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Tutorial 5')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 5:</font><font class="sessionFont2"><br>Graph Data Mgmt</font></div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session C')"><div class="sessionFirstTypeDiv">Demo C</div></a></td>
 			</tr>	 
 		
 			<tr>
@@ -73,13 +66,13 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 25')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 25:</font><font class="sessionFont2"><br>Statistical Methods<br></font></div></a></td>
 			</tr>
 			<tr>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoChalAndVisPhDWork('PhD Workshop 2')"><div class="sessionFirstTypeDiv">PhD Workshop 2</div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfo('PhD Workshop 2')"><div class="sessionFirstTypeDiv">PhD Workshop 2</div></a></td>
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Industrial Session 4')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Industrial 4:</font><font class="sessionFont2"><br>Large Scale Distributed Systems<br></font></div></a></td>
 			</tr>	
 			<tr>
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 26')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 26:</font><font class="sessionFont2"><br>Recommender Systems<br></font></div></a></td>
-				<td class="sessionSecondType"><a href="#" onclick="getInfoKeynoteTutorial('Tutorial 6')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 6:</font><font class="sessionFont2"><br>Social Nets<br></font></div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session B')"><div class="sessionFirstTypeDiv">Demos</div></a></td>
+				<td class="sessionSecondType"><a href="#" onclick="getInfo('Tutorial 6')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 6:</font><font class="sessionFont2"><br>Social Nets<br></font></div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session B')"><div class="sessionFirstTypeDiv">Demo B</div></a></td>
 			</tr>
 
 			<tr>
@@ -92,13 +85,13 @@
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 28')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 28:</font><font class="sessionFont2"><br>Transaction Processing<br></font></div></a></td>
 			</tr>
 			<tr>
-				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfoChalAndVisPhDWork('PhD Workshop 3')"><div class="sessionFirstTypeDiv">PhD Workshop 3</div></a></td>
+				<td colspan="2" class="sessionFirstType"><a href="#" onclick="getInfo('PhD Workshop 3')"><div class="sessionFirstTypeDiv">PhD Workshop 3</div></a></td>
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 29')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 29:</font><font class="sessionFont2"><br>Web Processing<br></font></div></a></td>
 			</tr>	
 			<tr>
 				<td colspan="2" class="sessionSecondType"><a href="#" onclick="getInfo('Research Session 30')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Research 30:</font><font class="sessionFont2"><br>Skyline and String Matching<br></font></div></a></td>
-				<td class="sessionSecondType"><a href="#" onclick="getInfoKeynoteTutorial('Tutorial 6')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 6:</font><font class="sessionFont2"><br>Social Nets<br></font></div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session A')"><div class="sessionFirstTypeDiv">Demos</div></a></td>
+				<td class="sessionSecondType"><a href="#" onclick="getInfo('Tutorial 6')"><div class="sessionSecondTypeDiv"><font class="sessionFont1">Tutorial 6:</font><font class="sessionFont2"><br>Social Nets<br></font></div></a></td>
+				<td class="sessionFirstType"><a href="#" onclick="getInfo('Demo Session A')"><div class="sessionFirstTypeDiv">Demo A</div></a></td>
 			</tr>
 
 			<tr height="25"></tr>

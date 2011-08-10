@@ -59,7 +59,10 @@ case "Fifth Avenue":
 case "Not defined":
 		roomid = "hello";
 		break;
+		
+		
 }
-	return roomid;
-//console.log(roomid);	
+return roomid;
+
 }
+

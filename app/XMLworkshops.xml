@@ -6,7 +6,7 @@
 		<workshopID>DMSN</workshopID>
 		<workshopName>8th International Workshop on Data Management for Sensor Networks (DMSN 2011)</workshopName>
 		<workshopDescription>The workshop's scope includes all important aspects of sensor data management, including data acquisition, processing, and storage in remote wireless networks; the handling of uncertain sensor data; and the management of heterogeneous and sometimes sensitive sensor data in databases. The resource-constrained, lossy, noisy, distributed, and remote nature of wireless sensor networks implies that traditional database techniques often cannot be applied without significant retooling. Challenges associated with acquiring, processing, and archiving large-scale, heterogeneous sets of live sensor data also call for novel data management techniques. The inherently incomplete and noisy nature of sensor data further calls for techniques for data cleaning, inference, approximation. Finally, in many applications, the collecting of sensor data raises important privacy and security concerns that require new protection and anonymization techniques.</workshopDescription>
-		<location>Cascade 1AB</location>
+		<location>St. Helens</location>
 		<website>http://www.softnet.tuc.gr/dmsn11/</website>
 		<organizers>Mohamed Mokbel, Suman Nath</organizers>
 	</workshop>
@@ -16,7 +16,7 @@
 		<workshopID>DBPL</workshopID>
 		<workshopName>13th International Symposium on Database Programming Languages (DBPL 2011)</workshopName>
 		<workshopDescription>For over 20 years, DBPL has established itself as the principal venue for publishing and discussing new ideas at the intersection of databases and programming languages. Many key contributions in query languages for object-oriented data, persistent databases, nested relational data, semistructured data, as well as fundamental ideas in types for query languages were first announced at DBPL. Today, the emergence of new data management applications such as Semantic Web and Web services, XML processing, Social and Sensor Networks, Cloud Computing and Peer-to-peer data management has lead to a new flurry of creative research in this area. DBPL is an established destination for such new ideas.</workshopDescription>
-		<location>Cascade 1C</location>
+		<location>Cascade 1A  </location>
 		<website>http://www.cs.cornell.edu/conferences/dbpl2011</website>
 		<organizers>Nate Foster, Anastasios Kementsietsidis</organizers>
 	</workshop>
@@ -26,7 +26,7 @@
 		<workshopID>TPCTC</workshopID>
 		<workshopName>3rd TPC Technology Conference on Performance Evaluation and Benchmarking (TPCTC 2011)</workshopName>
 		<workshopDescription>Over the past two decades, the Transaction Processing Performance Council (TPC) has had a significant impact on the computing industry’s use of industry-standard benchmarks. For example, vendors and endusers rely on TPC benchmarks to provide real-world data that is backed by a stringent and independent review process. Vendors also use TPC benchmarks to demonstrate performance competitiveness for their existing products, and to improve/monitor the performance of products-under-development. Many buyers often use TPC benchmark results as points of comparison when purchasing new computing systems. The technology landscape is continually evolving and challenging industry experts and researchers to develop innovative techniques to evaluate and benchmark computing systems. The TPC remains committed to developing highly relevant benchmark standards and will continue to develop new benchmarks to keep pace. With this conference, the TPC encourages researchers and industry experts to submit novel ideas and methodologies in performance evaluation, measurement, and characterization.</workshopDescription>
-		<location>Grand Crescent</location>
+		<location> Cascade 1BC</location>
 		<website>http://www.tpc.org/tpctc2011</website>
 		<organizers>Raghunath Nambiar, Meikel Poess</organizers>
 	</workshop>
@@ -36,7 +36,7 @@
 		<workshopID>SDM</workshopID>
 		<workshopName>8th Workshop on Secure Data Management (SDM 2011)</workshopName>
 		<workshopDescription>Although cryptography and security techniques have been around for quite some time, emerging technologies such as ubiquitous computing and ambient intelligence that exploit increasingly interconnected networks, mobility and personalization, put new requirements on security with respect to data management. As data is accessible anytime anywhere, according to these new concepts, it becomes much easier to get unauthorized data access. Furthermore, it becomes simpler to collect, store, and search personal information and endanger people's privacy. Therefore, research in the area of secure data management is of growing importance, attracting attention of both the data management and security research communities. The interesting problems range from traditional ones such as, access control (with all variations, like dynamic, context-aware, role-based), database security (e.g. efficient database encryption schemes, search over encrypted data, etc.), privacy preserving data mining to controlled sharing of data. The aim of the workshop is to bring together people from the security research community and data management research community in order to exchange ideas on the secure management of data. The workshop will provide forum for discussing practical experiences and theoretical research efforts that can help in solving the critical problems in secure data management.</workshopDescription>
-		<location>Cascade 1C</location>
+		<location> Cascade 1A  </location>
 		<website>http://www.hitech-projects.com/sdm-workshop/sdm11.html</website>
 		<organizers>Willem Jonker, Milan Petkovic</organizers>
 	</workshop>
@@ -436,7 +436,7 @@
 		<workshopID>ADMSpart1</workshopID>
 		<workshopName>2nd International Workshop on Accelerating Data Management Systems Using Modern Processors and Storage Architectures (ADMS 2011)</workshopName>
 		<workshopDescription>This workshop aims to understand impact of modern hardware technologies on accelerating core components of data management workloads. Specifically, the workshop hopes to explore the interplay between overall system design, core algorithms, query optimization strategies, programming approaches, performance modelling and evaluation, etc., from the perspective of data management applications.</workshopDescription>
-		<location>Grand Crescent</location>
+		<location>St. Helens</location>
 		<website>http://www.adms-conf.org</website>
 		<organizers>Rajesh Bordawekar, Christian Lang</organizers>
 		<sessionName>Keynote</sessionName>
@@ -451,7 +451,7 @@
 		<workshopID>ADMSpart2</workshopID>
 		<workshopName>2nd International Workshop on Accelerating Data Management Systems Using Modern Processors and Storage Architectures (ADMS 2011)</workshopName>
 		<workshopDescription>This workshop aims to understand impact of modern hardware technologies on accelerating core components of data management workloads. Specifically, the workshop hopes to explore the interplay between overall system design, core algorithms, query optimization strategies, programming approaches, performance modelling and evaluation, etc., from the perspective of data management applications.</workshopDescription>
-		<location>Grand Crescent</location>
+		<location>St. Helens</location>
 		<website>http://www.adms-conf.org</website>
 		<organizers>Rajesh Bordawekar, Christian Lang</organizers>
 		<sessionName>Session 1: "Optimizing for Multi-core Processors"</sessionName>
@@ -466,7 +466,7 @@
 		<workshopID>ADMSpart2</workshopID>
 		<workshopName>2nd International Workshop on Accelerating Data Management Systems Using Modern Processors and Storage Architectures (ADMS 2011)</workshopName>
 		<workshopDescription>This workshop aims to understand impact of modern hardware technologies on accelerating core components of data management workloads. Specifically, the workshop hopes to explore the interplay between overall system design, core algorithms, query optimization strategies, programming approaches, performance modelling and evaluation, etc., from the perspective of data management applications.</workshopDescription>
-		<location>Grand Crescent</location>
+		<location>St. Helens</location>
 		<website>http://www.adms-conf.org</website>
 		<organizers>Rajesh Bordawekar, Christian Lang</organizers>
 		<sessionName>Session 1: "Optimizing for Multi-core Processors"</sessionName>
@@ -481,7 +481,7 @@
 		<workshopID>ADMSpart2</workshopID>
 		<workshopName>2nd International Workshop on Accelerating Data Management Systems Using Modern Processors and Storage Architectures (ADMS 2011)</workshopName>
 		<workshopDescription>This workshop aims to understand impact of modern hardware technologies on accelerating core components of data management workloads. Specifically, the workshop hopes to explore the interplay between overall system design, core algorithms, query optimization strategies, programming approaches, performance modelling and evaluation, etc., from the perspective of data management applications.</workshopDescription>
-		<location>Grand Crescent</location>
+		<location>St. Helens</location>
 		<website>http://www.adms-conf.org</website>
 		<organizers>Rajesh Bordawekar, Christian Lang</organizers>
 		<sessionName>Session 1: "Optimizing for Multi-core Processors"</sessionName>
@@ -496,7 +496,7 @@
 		<workshopID>ADMSpart3</workshopID>
 		<workshopName>2nd International Workshop on Accelerating Data Management Systems Using Modern Processors and Storage Architectures (ADMS 2011)</workshopName>
 		<workshopDescription>This workshop aims to understand impact of modern hardware technologies on accelerating core components of data management workloads. Specifically, the workshop hopes to explore the interplay between overall system design, core algorithms, query optimization strategies, programming approaches, performance modelling and evaluation, etc., from the perspective of data management applications.</workshopDescription>
-		<location>Grand Crescent</location>
+		<location>St. Helens</location>
 		<website>http://www.adms-conf.org</website>
 		<organizers>Rajesh Bordawekar, Christian Lang</organizers>
 		<sessionName>Session 2: "Optimizing for Memory Sub-systems"</sessionName>
@@ -511,7 +511,7 @@
 		<workshopID>ADMSpart3</workshopID>
 		<workshopName>2nd International Workshop on Accelerating Data Management Systems Using Modern Processors and Storage Architectures (ADMS 2011)</workshopName>
 		<workshopDescription>This workshop aims to understand impact of modern hardware technologies on accelerating core components of data management workloads. Specifically, the workshop hopes to explore the interplay between overall system design, core algorithms, query optimization strategies, programming approaches, performance modelling and evaluation, etc., from the perspective of data management applications.</workshopDescription>
-		<location>Grand Crescent</location>
+		<location>St. Helens</location>
 		<website>http://www.adms-conf.org</website>
 		<organizers>Rajesh Bordawekar, Christian Lang</organizers>
 		<sessionName>Session 2: "Optimizing for Memory Sub-systems"</sessionName>
@@ -526,7 +526,7 @@
 		<workshopID>ADMSpart3</workshopID>
 		<workshopName>2nd International Workshop on Accelerating Data Management Systems Using Modern Processors and Storage Architectures (ADMS 2011)</workshopName>
 		<workshopDescription>This workshop aims to understand impact of modern hardware technologies on accelerating core components of data management workloads. Specifically, the workshop hopes to explore the interplay between overall system design, core algorithms, query optimization strategies, programming approaches, performance modelling and evaluation, etc., from the perspective of data management applications.</workshopDescription>
-		<location>Grand Crescent</location>
+		<location>St. Helens</location>
 		<website>http://www.adms-conf.org</website>
 		<organizers>Rajesh Bordawekar, Christian Lang</organizers>
 		<sessionName>Session 2: "Optimizing for Memory Sub-systems"</sessionName>
@@ -541,7 +541,7 @@
 		<workshopID>ADMSpart4</workshopID>
 		<workshopName>2nd International Workshop on Accelerating Data Management Systems Using Modern Processors and Storage Architectures (ADMS 2011)</workshopName>
 		<workshopDescription>This workshop aims to understand impact of modern hardware technologies on accelerating core components of data management workloads. Specifically, the workshop hopes to explore the interplay between overall system design, core algorithms, query optimization strategies, programming approaches, performance modelling and evaluation, etc., from the perspective of data management applications.</workshopDescription>
-		<location>Grand Crescent</location>
+		<location>St. Helens</location>
 		<website>http://www.adms-conf.org</website>
 		<organizers>Rajesh Bordawekar, Christian Lang</organizers>
 		<sessionName>Workshop Panel</sessionName>
@@ -766,7 +766,7 @@
 		<workshopID>PersDBpart1</workshopID>
 		<workshopName>5th Workshop on Personalized Access, Profile Management, and Context Awareness in Databases (PersDB 2011)</workshopName>
 		<workshopDescription>The interconnected nature of personalized, social, and contextual data management problems, and the fertile research ground they represent motivates a corresponding discussion within the database community. Teams studying and building different components of database systems need to clarify their views of personalization and contextualization, and expose their approaches to the rest of the community. We need a common understanding of new challenges and collaborate on the design of new models, algorithms, and systems for emerging applications. The PersDB 2011 workshop aims at providing the appropriate venue for discussion and debate of personalization and contextualization issues and at nurturing related future research and applications.</workshopDescription>
-		<location>Cascade 1AB</location>
+		<location>Cascade 1BC</location>
 		<website>http://persdb11.imis.athena-innovation.gr/</website>
 		<organizers>Zoltan Gyongyi, Yannis Stavrakas</organizers>
 		<sessionName>Session 1: Keynote</sessionName>
@@ -781,7 +781,7 @@
 		<workshopID>PersDBpart2</workshopID>
 		<workshopName>5th Workshop on Personalized Access, Profile Management, and Context Awareness in Databases (PersDB 2011)</workshopName>
 		<workshopDescription>The interconnected nature of personalized, social, and contextual data management problems, and the fertile research ground they represent motivates a corresponding discussion within the database community. Teams studying and building different components of database systems need to clarify their views of personalization and contextualization, and expose their approaches to the rest of the community. We need a common understanding of new challenges and collaborate on the design of new models, algorithms, and systems for emerging applications. The PersDB 2011 workshop aims at providing the appropriate venue for discussion and debate of personalization and contextualization issues and at nurturing related future research and applications.</workshopDescription>
-		<location>Cascade 1AB</location>
+		<location>Cascade 1BC</location>
 		<website>http://persdb11.imis.athena-innovation.gr/</website>
 		<organizers>Zoltan Gyongyi, Yannis Stavrakas</organizers>
 		<sessionName>Session 2: "Personalized, Social, and Context-aware Computing and Applications"</sessionName>
@@ -796,7 +796,7 @@
 		<workshopID>PersDBpart2</workshopID>
 		<workshopName>5th Workshop on Personalized Access, Profile Management, and Context Awareness in Databases (PersDB 2011)</workshopName>
 		<workshopDescription>The interconnected nature of personalized, social, and contextual data management problems, and the fertile research ground they represent motivates a corresponding discussion within the database community. Teams studying and building different components of database systems need to clarify their views of personalization and contextualization, and expose their approaches to the rest of the community. We need a common understanding of new challenges and collaborate on the design of new models, algorithms, and systems for emerging applications. The PersDB 2011 workshop aims at providing the appropriate venue for discussion and debate of personalization and contextualization issues and at nurturing related future research and applications.</workshopDescription>
-		<location>Cascade 1AB</location>
+		<location>Cascade 1BC</location>
 		<website>http://persdb11.imis.athena-innovation.gr/</website>
 		<organizers>Zoltan Gyongyi, Yannis Stavrakas</organizers>
 		<sessionName>Session 2: "Personalized, Social, and Context-aware Computing and Applications"</sessionName>
@@ -811,7 +811,7 @@
 		<workshopID>PersDBpart2</workshopID>
 		<workshopName>5th Workshop on Personalized Access, Profile Management, and Context Awareness in Databases (PersDB 2011)</workshopName>
 		<workshopDescription>The interconnected nature of personalized, social, and contextual data management problems, and the fertile research ground they represent motivates a corresponding discussion within the database community. Teams studying and building different components of database systems need to clarify their views of personalization and contextualization, and expose their approaches to the rest of the community. We need a common understanding of new challenges and collaborate on the design of new models, algorithms, and systems for emerging applications. The PersDB 2011 workshop aims at providing the appropriate venue for discussion and debate of personalization and contextualization issues and at nurturing related future research and applications.</workshopDescription>
-		<location>Cascade 1AB</location>
+		<location>Cascade 1BC</location>
 		<website>http://persdb11.imis.athena-innovation.gr/</website>
 		<organizers>Zoltan Gyongyi, Yannis Stavrakas</organizers>
 		<sessionName>Session 2: "Personalized, Social, and Context-aware Computing and Applications"</sessionName>
@@ -826,7 +826,7 @@
 		<workshopID>PersDBpart3</workshopID>
 		<workshopName>5th Workshop on Personalized Access, Profile Management, and Context Awareness in Databases (PersDB 2011)</workshopName>
 		<workshopDescription>The interconnected nature of personalized, social, and contextual data management problems, and the fertile research ground they represent motivates a corresponding discussion within the database community. Teams studying and building different components of database systems need to clarify their views of personalization and contextualization, and expose their approaches to the rest of the community. We need a common understanding of new challenges and collaborate on the design of new models, algorithms, and systems for emerging applications. The PersDB 2011 workshop aims at providing the appropriate venue for discussion and debate of personalization and contextualization issues and at nurturing related future research and applications.</workshopDescription>
-		<location>Cascade 1AB</location>
+		<location>Cascade 1BC</location>
 		<website>http://persdb11.imis.athena-innovation.gr/</website>
 		<organizers>Zoltan Gyongyi, Yannis Stavrakas</organizers>
 		<sessionName>Session 3: Open Discussion</sessionName>
@@ -841,7 +841,7 @@
 		<workshopID>PersDBpart4</workshopID>
 		<workshopName>5th Workshop on Personalized Access, Profile Management, and Context Awareness in Databases (PersDB 2011)</workshopName>
 		<workshopDescription>The interconnected nature of personalized, social, and contextual data management problems, and the fertile research ground they represent motivates a corresponding discussion within the database community. Teams studying and building different components of database systems need to clarify their views of personalization and contextualization, and expose their approaches to the rest of the community. We need a common understanding of new challenges and collaborate on the design of new models, algorithms, and systems for emerging applications. The PersDB 2011 workshop aims at providing the appropriate venue for discussion and debate of personalization and contextualization issues and at nurturing related future research and applications.</workshopDescription>
-		<location>Cascade 1AB</location>
+		<location>Cascade 1BC</location>
 		<website>http://persdb11.imis.athena-innovation.gr/</website>
 		<organizers>Zoltan Gyongyi, Yannis Stavrakas</organizers>
 		<sessionName>Session 4: "Personalization and Context-aware Models and Systems"</sessionName>
@@ -856,7 +856,7 @@
 		<workshopID>PersDBpart4</workshopID>
 		<workshopName>5th Workshop on Personalized Access, Profile Management, and Context Awareness in Databases (PersDB 2011)</workshopName>
 		<workshopDescription>The interconnected nature of personalized, social, and contextual data management problems, and the fertile research ground they represent motivates a corresponding discussion within the database community. Teams studying and building different components of database systems need to clarify their views of personalization and contextualization, and expose their approaches to the rest of the community. We need a common understanding of new challenges and collaborate on the design of new models, algorithms, and systems for emerging applications. The PersDB 2011 workshop aims at providing the appropriate venue for discussion and debate of personalization and contextualization issues and at nurturing related future research and applications.</workshopDescription>
-		<location>Cascade 1AB</location>
+		<location>Cascade 1BC</location>
 		<website>http://persdb11.imis.athena-innovation.gr/</website>
 		<organizers>Zoltan Gyongyi, Yannis Stavrakas</organizers>
 		<sessionName>Session 4: "Personalization and Context-aware Models and Systems"</sessionName>
@@ -871,7 +871,7 @@
 		<workshopID>PersDBpart4</workshopID>
 		<workshopName>5th Workshop on Personalized Access, Profile Management, and Context Awareness in Databases (PersDB 2011)</workshopName>
 		<workshopDescription>The interconnected nature of personalized, social, and contextual data management problems, and the fertile research ground they represent motivates a corresponding discussion within the database community. Teams studying and building different components of database systems need to clarify their views of personalization and contextualization, and expose their approaches to the rest of the community. We need a common understanding of new challenges and collaborate on the design of new models, algorithms, and systems for emerging applications. The PersDB 2011 workshop aims at providing the appropriate venue for discussion and debate of personalization and contextualization issues and at nurturing related future research and applications.</workshopDescription>
-		<location>Cascade 1AB</location>
+		<location>Cascade 1BC</location>
 		<website>http://persdb11.imis.athena-innovation.gr/</website>
 		<organizers>Zoltan Gyongyi, Yannis Stavrakas</organizers>
 		<sessionName>Session 4: "Personalization and Context-aware Models and Systems"</sessionName>
