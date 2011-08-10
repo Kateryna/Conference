@@ -13,8 +13,8 @@ firstAuthorsArray
 }
 firstAuthorsArraySorted=firstAuthorsArray.sort();
 authorsArraySorted=authorsArray.sort();
-console.log(firstAuthorsArraySorted.length);
-console.log(authorsArraySorted);
+//console.log(firstAuthorsArraySorted.length);
+//console.log(authorsArraySorted);
 
 
 function init(){
@@ -76,35 +76,5 @@ function getAbstract(num) {
 			titlRow.nextSibling);	
 	}
 }
-}
-function roomId(roomName){
-var roomid;
-
-	switch (roomName) {
-	case "Grand Crescent":
-		roomid = "grandCrescent";
-		break;
-case "Grand 1":
-		roomid = "grand1";
-		break;
-case "Grand 2":
-		roomid = "grand2";
-		break;
-		case "Grand 3":
-		roomid = "grand3";
-		break;
-case "Cascade 1"||"Cascsde 2":
-		roomid = "cascade";
-		break;
-		case "Vashon":
-		roomid = "vashon";
-		break;
-case "Fifth Avenue":
-		roomid = "fifthAvenueRoom";
-		break;
-case "Not defined":
-		roomid = "";
-		break;
-		}
 }
 };

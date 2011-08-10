@@ -210,7 +210,7 @@
 					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p><br>'+allPresentation; 	
 				} 
 				
-				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "allPresentations">'+allInfo+'</div><br><div class = "workshopName">'+workshopNameMerged+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizersMerged+'</p><p class = "website"><b>Website: </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p><br><div class = "workshopDescription">'+workshopDescriptionMerged+'</div>';
+				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "allPresentations">'+allInfo+'</div><br><br><div class = "workshopName">'+workshopNameMerged+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizersMerged+'</p><p class = "website"><b>Website: </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p><br><div class = "workshopDescription">'+workshopDescriptionMerged+'</div>';
 			
 			addToCalendar();
 			}	
