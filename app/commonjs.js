@@ -59,32 +59,10 @@ case "Fifth Avenue":
 case "Not defined":
 		roomid = "hello";
 		break;
-<<<<<<< HEAD
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-		case "Grand Crescent":
-		tagArray = tagCloud;
-		break;
-case "Grand Crescent":
-		tagArray = tagCloud;
-		break;*/
 		
 		
 }
 return roomid;
-=======
+
 }
-	return roomid;
-//console.log(roomid);	
->>>>>>> 933255a6617ee79250cb4b7d80cad6ce5c96f037
-}
+

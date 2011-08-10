@@ -1,17 +1,16 @@
-	/*
-	var hello1 = function hello(){
-	var txt = 'Please enter your name:<br /><form><input type="checkbox" id="alertName" name="alertName" value="OK">Add to my calendar</input></form>';
-	function mycallbackform(v,m,f){
-	console.log(v);
-	if (v==1)
-	location="calendarplugin.html";
-	}
-	$.prompt(txt,{
-			callback: mycallbackform,
-			buttons: { "Add to my calendar": '1', Close: '2' }
-	});
-	};
- */
+		var txt;
+		function addToCalendar(){
+			function mycallbackform(v,m,f){
+				console.log(v);
+				if (v==1)
+				location="calendarplugin.html";
+			}
+			$.prompt(txt,{
+				callback: mycallbackform,
+				buttons: {"Add to my calendar": '1', "Close": '2' }
+			});
+		};
+							
 			function getInfo(session){
 				var sessionDescription;
 				var location;
@@ -63,12 +62,13 @@
 				} 
 				
 				if (sessionCategory == 'Research' || sessionCategory == 'Industrial' || sessionCategory == 'Demo') {
-					$.prompt('<div class = "header"><div class = "sessionName">'+session+': '+sessionDescription+'</div><a class="location" href="rooms.html#'+roomId(location)+'">('+location+')</a></div><br>'+allInfo);	
+					txt ='<div class = "header"><div class = "sessionName">'+session+': '+sessionDescription+'</div><a class="location" href="rooms.html#'+roomId(location)+'">('+location+')</a></div><br>'+allInfo;	
 				} else if (sessionCategory == 'Keynote' || sessionCategory == 'Panel' || sessionCategory == 'Tutorial'){
-					$.prompt('<div class = "header"><div class = "sessionName">'+session+': '+submissionTitle+'</div><a class="location" href="rooms.html#'+roomId(location)+'">('+location+')</a></div><br>'+allInfo);	
+					txt = '<div class = "header"><div class = "sessionName">'+session+': '+submissionTitle+'</div><a class="location" href="rooms.html#'+roomId(location)+'">('+location+')</a></div><br>'+allInfo;	
 				} else if (sessionCategory == 'ChallengesAndVision' || sessionCategory == 'PhDWorkshop'){
-					$.prompt('<div class = "header"><div class = "sessionName">'+session+'</div><a class="location" href="rooms.html#'+roomId(location)+'">('+location+')</a></div><br>'+allInfo);	
+					txt = '<div class = "header"><div class = "sessionName">'+session+'</div><a class="location" href="rooms.html#'+roomId(location)+'">('+location+')</a></div><br>'+allInfo;	
 				}
+			addToCalendar();
 			};
 
 			function getGeneralInfo(workshop){
@@ -87,7 +87,8 @@
 						website = workshops[i].getElementsByTagName("website")[0].childNodes[0].nodeValue;
 					};
 				}
-				$.prompt('<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p></br><div class = "workshopDescription">'+workshopDescription+'</div>');
+				txt ='<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p></br><div class = "workshopDescription">'+workshopDescription+'</div>';
+				addToCalendar();	
 			};
 				
 			function getDetailInfo(workshop) {
@@ -149,7 +150,9 @@
 					allInfo = allInfo1+'</br>'+'<p class = "workshopSessionName">'+sessionNameAr[1]+'<p></br>'+allInfo2;		
 				}
 				
-				$.prompt('<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p></br><div class = "allPresentations">'+allInfo+'</div>');
+				txt ='<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p></br><div class = "allPresentations">'+allInfo+'</div>';
+			
+			addToCalendar();
 			}	
 			
 			function getDetailMergedInfo(workshop) {
@@ -205,7 +208,9 @@
 					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p></br>'+allPresentation; 	
 				} 
 				
-				$.prompt('<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p></br><div class = "allPresentations">'+allInfo+'</div></br><div class = "workshopName">'+workshopNameMerged+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizersMerged+'</p><p class = "website"><b>Website: </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p></br><div class = "workshopDescription">'+workshopDescriptionMerged+'</div>');
+				txt ='<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p></br><div class = "allPresentations">'+allInfo+'</div></br><div class = "workshopName">'+workshopNameMerged+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizersMerged+'</p><p class = "website"><b>Website: </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p></br><div class = "workshopDescription">'+workshopDescriptionMerged+'</div>';
+			
+			addToCalendar();
 			}	
 	
 			
