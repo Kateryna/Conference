@@ -11,7 +11,7 @@ function init(){
 	var categoryId = hash.replace("category=","");
 
 		
-	console.log(categoryId)
+//	console.log(categoryId)
 	var articles = new Array();
 	var articlesArray = new Array();
 //	var articlesArraySorted = new Array();
@@ -26,7 +26,7 @@ for (i = 0; i < allRecords.length; i++) {
 	console.log(articlesArraySorted.length);
 var table = fastMakeTable("", articlesArraySorted.length, 1, articlesArraySorted);	
 document.getElementById("result").innerHTML = table;
-console.log(table);	
+//console.log(table);	
 	
 	
 function fastMakeTable(buf, row, col, cell) {
@@ -82,33 +82,3 @@ function getAbstract(num) {
 	}
 	}
 };
-function roomId(roomName){
-var roomid;
-
-	switch (roomName) {
-	case "Grand Crescent":
-		roomid = "grandCrescent";
-		break;
-case "Grand 1":
-		roomid = "grand1";
-		break;
-case "Grand 2":
-		roomid = "grand2";
-		break;
-		case "Grand 3":
-		roomid = "grand3";
-		break;
-case "Cascade 1"||"Cascsde 2":
-		roomid = "cascade";
-		break;
-		case "Vashon":
-		roomid = "vashon";
-		break;
-case "Fifth Avenue":
-		roomid = "fifthAvenueRoom";
-		break;
-case "Not defined":
-		roomid = "";
-		break;
-		}
-}

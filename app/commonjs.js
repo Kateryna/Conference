@@ -34,7 +34,7 @@ function roomId(roomName){
 //console.log("room id " + roomName);
 var roomid;
 
-	switch (roomName) {
+switch (roomName) {
 case "Grand Crescent":
 		roomid = "grandCrescent";
 		break;
@@ -47,9 +47,16 @@ case "Grand 2":
 case "Grand 3":
 		roomid = "grand3";
 		break;
-case "Cascade 1"||"Cascade 2"||"Cascade 1 & 2":
+case "Cascade 1":
 		roomid = "cascade";
 		break;
+case "Cascade 2":
+		roomid = "cascade";
+		break;		
+case "Cascade 1 & 2":
+		roomid = "cascade";
+		break;
+		
 case "Vashon":
 		roomid = "vashon";
 		break;
@@ -60,9 +67,9 @@ case "Not defined":
 		roomid = "hello";
 		break;
 		
-		
 }
 return roomid;
+console.log("room id " + roomid);
 
 }
 
