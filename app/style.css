@@ -80,11 +80,11 @@ width: 64px;
     color:#000000;
 
     font-family:'Lucida Grande', Verdana, Arial, sans-serif;
-    font-size:13px;
+    font-size:15px;
     text-align:center;
-		line-height: 90%;
+		line-height: 95%;
     border:1px solid #60b4e5;
-	 margin: 20px 30px 60px 30px;
+	 margin: 20px 20px 60px 20px;
     float:left;
     /*
         CSS3 gradients for webkit and mozilla browsers fallback color for the rest:
