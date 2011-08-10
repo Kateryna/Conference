@@ -7,8 +7,10 @@
 			}
 			$.prompt(txt,{
 				callback: mycallbackform,
-				buttons: {"Add to my calendar": '1', "Close": '2' }
+				buttons: {"Add to my calendar": '1', "Close": '2' },
+				show:'slideDown'
 			});
+			
 		};
 							
 			function getInfo(session){
@@ -87,7 +89,7 @@
 						website = workshops[i].getElementsByTagName("website")[0].childNodes[0].nodeValue;
 					};
 				}
-				txt ='<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p></br><div class = "workshopDescription">'+workshopDescription+'</div>';
+				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "workshopDescription">'+workshopDescription+'</div>';
 				addToCalendar();	
 			};
 				
@@ -132,7 +134,7 @@
 
 				var allInfo;
 				if (sessionCategory == 'KeynoteSession') {
-					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p></br><p><b>Title:</b> "'+submissionTitle+'"</p><p><b>Author:</b> '+submissionAuthors+'</p>';
+					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p><br><p><b>Title:</b> "'+submissionTitle+'"</p><p><b>Author:</b> '+submissionAuthors+'</p>';
 				} else if (sessionCategory == 'ResearchSession') {
 					var allPresentation = '';		
 					for (j=0; j<presentationOrderAr.length; j++){
@@ -141,16 +143,16 @@
 						}		
 					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p><br>'+allPresentation; 	
 				} else if (sessionCategory == 'KeynoteResearchSession'){
-					var allInfo1 = '<p class = "workshopSessionName">'+sessionNameAr[0]+'</p></br><p><b>Title: </b>"'+submissionTitleAr[0]+'"</p><p><b>Author: </b>'+submissionAuthorsAr[0]+'</p>';
+					var allInfo1 = '<p class = "workshopSessionName">'+sessionNameAr[0]+'</p><br><p><b>Title: </b>"'+submissionTitleAr[0]+'"</p><p><b>Author: </b>'+submissionAuthorsAr[0]+'</p>';
 					var allInfo2 = '';
 					for (l=1; l<presentationOrderAr.length; l++){
 							presentation = '<p class = "presentationName">Presentation # '+presentationOrderAr[l]+'</p><p><b>Title:</b> "'+submissionTitleAr[l]+'"</p><p><b>Authors:</b> '+submissionAuthorsAr[l]+'</p>';
 						allInfo2 = allInfo2 + presentation;
 					}		
-					allInfo = allInfo1+'</br>'+'<p class = "workshopSessionName">'+sessionNameAr[1]+'<p></br>'+allInfo2;		
+					allInfo = allInfo1+'<br>'+'<p class = "workshopSessionName">'+sessionNameAr[1]+'<p><br>'+allInfo2;		
 				}
 				
-				txt ='<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p></br><div class = "allPresentations">'+allInfo+'</div>';
+				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "allPresentations">'+allInfo+'</div>';
 			
 			addToCalendar();
 			}	
@@ -198,17 +200,17 @@
 
 				var allInfo;
 				if (sessionCategory == 'KeynoteSession') {
-					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p></br><p><b>Title:</b> "'+submissionTitle+'"</p><p><b>Author:</b> '+submissionAuthors+'</p>';
+					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p><br><p><b>Title:</b> "'+submissionTitle+'"</p><p><b>Author:</b> '+submissionAuthors+'</p>';
 				} else if (sessionCategory == 'ResearchSession') {
 					var allPresentation = '';		
 					for (j=0; j<presentationOrderAr.length; j++){
 								presentation = '<p class = "presentationName">Presentation # '+presentationOrderAr[j]+'</p><p><b>Title:</b> "'+submissionTitleAr[j]+'"</p><p><b>Authors:</b> '+submissionAuthorsAr[j]+'</p>';
 							allPresentation = allPresentation + presentation;
 						}		
-					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p></br>'+allPresentation; 	
+					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p><br>'+allPresentation; 	
 				} 
 				
-				txt ='<div class = "workshopName">'+workshopName+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p></br><div class = "allPresentations">'+allInfo+'</div></br><div class = "workshopName">'+workshopNameMerged+'</div></br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizersMerged+'</p><p class = "website"><b>Website: </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p></br><div class = "workshopDescription">'+workshopDescriptionMerged+'</div>';
+				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "allPresentations">'+allInfo+'</div><br><div class = "workshopName">'+workshopNameMerged+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizersMerged+'</p><p class = "website"><b>Website: </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p><br><div class = "workshopDescription">'+workshopDescriptionMerged+'</div>';
 			
 			addToCalendar();
 			}	

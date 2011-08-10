@@ -58,10 +58,11 @@ div.jqi button{
 	border: solid 1px #f4f4f4; 
 	color: #ffffff; 
 	font-weight: bold; 
-	font-size: 18px; 
+	font-size: 21px; 
 	font-family:Arial, sans-serif;
 
 }
+
 div.jqi button:hover{ 
 	background-color: #728A8C;
 }
