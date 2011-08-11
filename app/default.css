@@ -11,7 +11,7 @@
 
 div.jqi{ 
 	width: 450px; 
-		
+	height: 500px; 
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
 	position: absolute; 
 	background-color: #ffffff; 
@@ -22,8 +22,8 @@ div.jqi{
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	padding: 7px;
+	overflow:auto;
 	
-
 }
 
 div.jqi .jqicontainer{ 

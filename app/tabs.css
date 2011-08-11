@@ -22,12 +22,16 @@ ul.tabs li {
 ul.tabs a { 
 	background: url(img/bluesmall2.png) no-repeat 0 0;
 	font-family:Arial, sans-serif;
+	display:block;
 	font-weight:600;
 	font-size:18px;
 	display:block;
+
 	height: 46px;  
 	line-height:56px;
 	width: 73px;
+
+
 	text-align:center;	
 	text-decoration:none;
 	color:#333;
@@ -56,12 +60,7 @@ ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
 
 /* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
 
-
-
-
-
 .panes div {
-	display:none;
-	border-top:0;
+
 }
 
