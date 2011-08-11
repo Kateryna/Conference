@@ -34,15 +34,7 @@ var info = function(){
 
 var addEvent = function(){
 	var a = 	alert("VLDB is a premier annual international forum for data management and database researchers, vendors, practitioners, application developers, and users. The conference will feature research talks, tutorials, demonstrations, and workshops. It will cover current issues in data management, database and information systems research. Data management and databases remain among the main technological cornerstones of emerging applications of the twenty-first century. VLDB 2011 will take place at the Westin Hotel in Seattle, WA on August 29 - September 3.");
-	var x=window.confirm("Do you want to add to your calendar?")
-if (x){
-window.alert("Good!");
-var db = window.openDatabase("events", "1.0", "Events", 1000000);
-db.transaction(populateDB, errorCB, successCB);
 
-}
-else
-window.alert("Too bad")	
 	};
 
 
