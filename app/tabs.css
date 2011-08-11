@@ -56,12 +56,7 @@ ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
 
 /* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
 
-
-
-
-
 .panes div {
-	display:table-row;
-	border-top:0;
+	
 }
 
