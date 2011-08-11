@@ -1,9 +1,7 @@
 
 /* root element for tabs  */
 ul.tabs { 
-	position:absolute;
-	top:210px;
-	right:400px;
+
 	list-style:none; 
 	margin:0 !important; 
 	padding:0;	
@@ -26,9 +24,7 @@ ul.tabs a {
 	background: url(img/blue.png) no-repeat -553px 0;
 	font-family:Arial, sans-serif;
 	font-size:14.0pt;
-	font-weight:400;
-	font-size:11px;
-	display:block;
+	font-weight:400;	display:block;
 	height: 30px;  
 	line-height:30px;
 	width: 80.5px;
