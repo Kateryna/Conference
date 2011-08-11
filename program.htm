@@ -5,7 +5,7 @@
 	    <title>Main page</title>
 		<link type="text/css" rel="stylesheet" media="all" href="app/layout.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/style.css">
-		<link rel="stylesheet" type="text/css" media="all" href="app/tabs.css" /> 
+		<link rel="stylesheet" type="text/css" media="all" href="app/tabs.css"> 
 		<link type="text/css" rel="stylesheet" media="all" href="app/programday.css">
 		<link type="text/css" rel="stylesheet" media="all" href="app/default.css">
 		<script type="text/javascript" src="app/commonjs.js"></script>	
@@ -24,7 +24,7 @@
 	
 	<body>
 		<div id="header-inner"><img src="./img/vldb2011header.png" width="100%"></a></div> 
-        <div class="main-inner">
+        <div id="programForDay" align="center">
 			<!-- the tabs -->
 			<ul class="tabs">
 			<li><a href="#">Mon</a></li>
@@ -35,9 +35,8 @@
 			<li><a href="#">Sat</a></li>
 			</ul>
 			<!-- tab "panes" -->
-				<div class="panes" align="center">
-				<div>
-				<table style="bordborder-collapse:collapse;table-layout:fixed;width:480px">
+		<div class="panes">
+<div>		<table style="bordborder-collapse:collapse;table-layout:fixed;width:480px">
 					<colgroup>
 						<col width="35">
 						<col width="65">
