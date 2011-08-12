@@ -9,6 +9,7 @@ function goToCategory(categoryId){
 function init(){
 	var hash = window.location.search.substring(1);
 	var categoryId = hash.replace("category=","");
+	
 
 		
 //	console.log(categoryId)

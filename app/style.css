@@ -65,6 +65,7 @@ h4 {
 font-weight: 400;
 font-style: normal;
   text-align: left;
+  padding-left: 20px;
   
 }
 h5 {
@@ -81,8 +82,8 @@ width: 64px;
 
     font-family:'Lucida Grande', Verdana, Arial, sans-serif;
     font-size:15px;
-    text-align:center;
-		line-height: 95%;
+    text-align:left;
+	 line-height: 95%;
     border:1px solid #60b4e5;
 	 margin: 20px 20px 60px 20px;
     float:left;

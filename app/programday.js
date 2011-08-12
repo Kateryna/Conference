@@ -1,9 +1,11 @@
+
 		var txt;
-		function addToCalendar(){
+		function addToCalendar(eventName,loc, docId){
 			function mycallbackform(v,m,f){
 				console.log(v);
 				if (v==1)
-				location="calendarplugin.html";
+				location="calendarplugin.html?eventName="+eventName +"&loc="+loc+"&docId="+docId;
+				console.log(location);
 			}
 			$.prompt(txt,{
 				callback: mycallbackform,
@@ -15,7 +17,7 @@
 							
 			function getInfo(session){
 				var sessionDescription;
-				var location;
+				var loc;
 				var sessionCategory;
 				var submissionTitle;
 				var submissionAuthorsAr;
@@ -28,16 +30,16 @@
 						sessionCategory = records[i].getElementsByTagName("sessionCategory")[0].childNodes[0].nodeValue;
 						if (sessionCategory == 'Research' || sessionCategory == 'Industrial' || sessionCategory == 'Demo') {
 							sessionDescription = records[i].getElementsByTagName("sessionDescription")[0].childNodes[0].nodeValue;
-							location = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
+							loc = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
 							presentationOrderAr.push (records[i].getElementsByTagName("presentationOrder")[0].childNodes[0].nodeValue);	
 							submissionTitleAr.push (records[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue);	
 							submissionAuthorsAr.push (records[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue);	
 						} else if (sessionCategory == 'Keynote' || sessionCategory == 'Panel' || sessionCategory == 'Tutorial') {
-							location = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
+							loc = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
 							submissionTitle = records[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue;	
 							submissionAuthors = records[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue;	
 						} else if (sessionCategory == 'ChallengesAndVision' || sessionCategory == 'PhDWorkshop') {
-							location = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
+							loc = records[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
 							presentationOrderAr.push (records[i].getElementsByTagName("presentationOrder")[0].childNodes[0].nodeValue);	
 							submissionTitleAr.push (records[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue);	
 							submissionAuthorsAr.push (records[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue);	
@@ -64,38 +66,43 @@
 				} 
 				
 				if (sessionCategory == 'Research' || sessionCategory == 'Industrial' || sessionCategory == 'Demo') {
-					txt ='<div class = "header"><div class = "sessionName">'+session+': '+sessionDescription+'</div><a class="location" href="rooms.html#'+roomId(location)+'">('+location+')</a></div><br>'+allInfo;	
+					txt ='<div class = "header"><div class = "sessionName">'+session+': '+sessionDescription+'</div><a class="location" href="rooms.html#'+roomId(loc)+'">('+loc+')</a></div><br>'+allInfo;	
 				} else if (sessionCategory == 'Keynote' || sessionCategory == 'Panel' || sessionCategory == 'Tutorial'){
-					txt = '<div class = "header"><div class = "sessionName">'+session+': '+submissionTitle+'</div><a class="location" href="rooms.html#'+roomId(location)+'">('+location+')</a></div><br>'+allInfo;	
+					txt = '<div class = "header"><div class = "sessionName">'+session+': '+submissionTitle+'</div><a class="location" href="rooms.html#'+roomId(loc)+'">('+loc+')</a></div><br>'+allInfo;	
 				} else if (sessionCategory == 'ChallengesAndVision' || sessionCategory == 'PhDWorkshop'){
-					txt = '<div class = "header"><div class = "sessionName">'+session+'</div><a class="location" href="rooms.html#'+roomId(location)+'">('+location+')</a></div><br>'+allInfo;	
+					txt = '<div class = "header"><div class = "sessionName">'+session+'</div><a class="location" href="rooms.html#'+roomId(loc)+'">('+loc+')</a></div><br>'+allInfo;	
 				}
-			addToCalendar();
+	//		console.log(session);
+			addToCalendar(session,loc, 1);
 			};
 
 			function getGeneralInfo(workshop){
 				var workshopName;
 				var workshopDescription;
-				var location;
+				var loc;
 				var organizers;
 				var website;
+
 				workshops = getDoc("XMLworkshops.xml", "workshop");
+				
 				for (i=0; i<workshops.length; i++) {
-					if (workshops[i].getElementsByTagName("workshopID")[0].childNodes[0].nodeValue == workshop) {
+					
+					if ( workshops[i].getElementsByTagName("workshopID")[0].childNodes[0].nodeValue == workshop) {
 						workshopName = workshops[i].getElementsByTagName("workshopName")[0].childNodes[0].nodeValue;
 						workshopDescription = workshops[i].getElementsByTagName("workshopDescription")[0].childNodes[0].nodeValue;
-						location = workshops[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
+						loc = workshops[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
 						organizers = workshops[i].getElementsByTagName("organizers")[0].childNodes[0].nodeValue;
 						website = workshops[i].getElementsByTagName("website")[0].childNodes[0].nodeValue;
 					};
 				}
-				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "workshopDescription">'+workshopDescription+'</div>';
-				addToCalendar();	
+				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(loc)+'">'+loc+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "workshopDescription">'+workshopDescription+'</div>';
+	//			console.log(workshop);				
+				addToCalendar(workshop,loc,2);	
 			};
 				
 			function getDetailInfo(workshop) {
 				var workshopName;
-				var location;
+				var loc;
 				var organizers;
 				var website;
 				var sessionCategory;
@@ -106,11 +113,13 @@
 				var presentationOrderAr = new Array();
 				var submissionTitleAr = new Array();
 				var submissionAuthorsAr = new Array();
+
 				workshops = getDoc("XMLworkshops.xml", "workshop");
 				for (i=0; i<workshops.length; i++) {
-					if (workshops[i].getElementsByTagName("workshopID")[0].childNodes[0].nodeValue == workshop) {
+					 
+					if (workshops[i].getElementsByTagName("workshopID")[0].childNodes[0].nodeValue== workshop) {
 						workshopName = workshops[i].getElementsByTagName("workshopName")[0].childNodes[0].nodeValue;
-						location = workshops[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
+						loc = workshops[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
 						organizers = workshops[i].getElementsByTagName("organizers")[0].childNodes[0].nodeValue;
 						website = workshops[i].getElementsByTagName("website")[0].childNodes[0].nodeValue;
 						sessionCategory = workshops[i].getElementsByTagName("sessionCategory")[0].childNodes[0].nodeValue;
@@ -152,14 +161,14 @@
 					allInfo = allInfo1+'<br>'+'<p class = "workshopSessionName">'+sessionNameAr[1]+'<p><br>'+allInfo2;		
 				}
 				
-				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "allPresentations">'+allInfo+'</div>';
-			
-			addToCalendar();
+				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(loc)+'">'+loc+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "allPresentations">'+allInfo+'</div>';
+		//	console.log(workshop);
+			addToCalendar(workshop, loc, 2);
 			}	
 			
 			function getDetailMergedInfo(workshop) {
 				var workshopName;
-				var location;
+				var loc;
 				var organizers;
 				var website;
 				var workshopNameMerged;
@@ -173,11 +182,13 @@
 				var presentationOrderAr = new Array();
 				var submissionTitleAr = new Array();
 				var submissionAuthorsAr = new Array();
+
 				workshops = getDoc("XMLworkshops.xml", "workshop");
 				for (i=0; i<workshops.length; i++) {
-					if (workshops[i].getElementsByTagName("workshopID")[0].childNodes[0].nodeValue == workshop) {
+
+					if ( workshops[i].getElementsByTagName("workshopID")[0].childNodes[0].nodeValue== workshop) {
 						workshopName = workshops[i].getElementsByTagName("workshopName")[0].childNodes[0].nodeValue;
-						location = workshops[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
+						loc = workshops[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
 						organizers = workshops[i].getElementsByTagName("organizers")[0].childNodes[0].nodeValue;
 						website = workshops[i].getElementsByTagName("website")[0].childNodes[0].nodeValue;
 						workshopNameMerged = workshops[i].getElementsByTagName("workshopNameMerged")[0].childNodes[0].nodeValue;
@@ -209,14 +220,12 @@
 						}		
 					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p><br>'+allPresentation; 	
 				} 
-				
-				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "allPresentations">'+allInfo+'</div><br><br><div class = "workshopName">'+workshopNameMerged+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(location)+'">'+location+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizersMerged+'</p><p class = "website"><b>Website: </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p><br><div class = "workshopDescription">'+workshopDescriptionMerged+'</div>';
-			
-			addToCalendar();
+		
+				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(loc)+'">'+loc+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "allPresentations">'+allInfo+'</div><br><br><div class = "workshopName">'+workshopNameMerged+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(loc)+'">'+loc+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizersMerged+'</p><p class = "website"><b>Website: </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p><br><div class = "workshopDescription">'+workshopDescriptionMerged+'</div>';
+		
+			addToCalendar(workshop, loc, 2);
 			}	
 	
-			
-			
 			
 			
 			
