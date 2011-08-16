@@ -291,7 +291,7 @@ parent.removeChild(element);
 	}
 	else {
 			
-		abstrRow.innerHTML = "<td class='event'><div>" + resultArticleAbstr[num]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+authors[num]+"</div><div class='textSmall'><i>"+start[num]+" - "+end[num]+"</i></div><div class='textSmall'><a href='rooms.html#"+roomId(loc[num])+"'>"+loc[num]+"</a><br><div>"+category[num]+"</div></div></td>";
+		abstrRow.innerHTML = "<td class='event'><div class='textSmall'>" + resultArticleAbstr[num]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+authors[num]+"</div><div class='textSmall'><i>"+start[num]+" - "+end[num]+"</i></div><div class='textSmall'><a href='rooms.html#"+roomId(loc[num])+"'>"+loc[num]+"</a><br><div>"+category[num]+"</div></div></td>";
 }
  	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
 			titlRow.nextSibling);

@@ -122,6 +122,7 @@ div.textSmall{
 	text-align:left;
 	font-size: 12.0pt;
 	padding-left: 20pt;
+	padding-right: 10pt;
 	}
 .header {
 	text-align:center;
@@ -161,6 +162,23 @@ div.textSmall{
 	font-weight:400;
 	}
 
+.backbutton {
+
+height: 35px;
+width: 90px;
+font-family: Georgia, serif; 
+font-weight: bold;
+text-align: right;
+color: black;
+    font-size:13px;
+	 line-height: 95%;
+    background: url(img/backbtn.png) 0 0 ;
+    border:0px solid #c0c8cd;
+    border-radius:6px;
+clear: both;
+margin: 5px;
+margin-left: 40px;
+}
 
 
 

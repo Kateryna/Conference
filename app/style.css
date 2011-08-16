@@ -9,13 +9,7 @@
  * Icons: http://www.icojoy.com/articles/46/
  */
 /* @group Layout */
-body {
-  background: #fff url('images/bg-body.png') repeat-x left top;
-  font-size: 12px; /* Don't modify the font size here */
-  line-height: 1.6;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
-  color: #111;
-}
+
 
 /* @group Links */
 a,

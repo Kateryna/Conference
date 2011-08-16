@@ -7,13 +7,30 @@ var firstAuthorsArray = new Array();
 for (i = 0; i < allRecords.length; i++) {
 allAuthors = allRecords[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue;
 firstAuthor = allAuthors.split(",",1);
-authorsArray.push(allAuthors);
 firstAuthorsArray
 			.push(firstAuthor);
 }
-firstAuthorsArraySorted=firstAuthorsArray.sort();
-authorsArraySorted=authorsArray.sort();
-//console.log(firstAuthorsArraySorted.length);
+firstAuthorsArraySorted=eliminateDuplicates(firstAuthorsArray.sort());
+
+
+//console.log(firstAuthorsArraySorted);
+
+function eliminateDuplicates(arr) {
+	  var i,
+      len=arr.length,
+      out=[],
+      obj={};
+ 
+  for (i=0;i<len;i++) {
+    obj[arr[i]]=0;
+  }
+  for (i in obj) {
+    out.push(i);
+ }
+	  return out;
+}
+	
+
 //console.log(authorsArraySorted);
 
 
@@ -39,7 +56,7 @@ function fastMakeTable(buf, row, col, cell) {
 	return buf;
 };
 
-	var table = fastMakeTable("", firstAuthorsArray.length, 1, firstAuthorsArray);
+	var table = fastMakeTable("", firstAuthorsArraySorted.length, 1, firstAuthorsArraySorted);
 //	console.log(table);
 
 	document.getElementById("result").innerHTML = table;
@@ -47,34 +64,49 @@ function fastMakeTable(buf, row, col, cell) {
 }
 
 function getAbstract(num) {
-	
-	var element=document.getElementById("article" + num +"abstract"); 
+	var elements=document.getElementsByName("info");
+	var element=document.getElementById("article" + num +"abstract");
+	console.log(element);
+	console.log(elements[1]);
    var parent = document.getElementById("table").childNodes[0];
-	if (element!=null){
-	
-	parent.removeChild(element);
-			} 
+	if (elements.length!=0){
+		for (e=elements.length-1; e>-1; e--){
+	parent.removeChild(elements[e]);
+	}
+	} 
 	else {
+	var titlRow = document.getElementById("article" + num);
+	var allAuthArray=[];
+	var start=[];
+	var end=[];
+	var loc=[];
+	var category=[];	
+	var submissionTitle=[];
+	for (i=0; i<allRecords.length; i++){	
+	if (allRecords[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue.split(",",1)==firstAuthorsArraySorted[num]){
+	allAuthArray.push(allRecords[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue);
+	try {start.push(allRecords[i].getElementsByTagName("startDate")[0].childNodes[0].nodeValue);} catch (err) {start.push("Not defined");}
+	try {end.push(allRecords[i].getElementsByTagName("endDate")[0].childNodes[0].nodeValue);} catch (err) {end.push("Not defined");}
+	try {loc.push(allRecords[i].getElementsByTagName("location")[0].childNodes[0].nodeValue);} catch (err) {loc.push("Not defined");}
+	try {submissionTitle.push(allRecords[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue);} catch (err) {category.push("Not defined");}	
+	try {category.push(allRecords[i].getElementsByTagName("sessionCategory")[0].childNodes[0].nodeValue);} catch (err) {category.push("Not defined");}	
+	}
+	}
+	for (j=0; j<allAuthArray.length; j++){
 	var abstrRow = document.createElement("tr");
 	abstrRow.setAttribute("id","article" + num+"abstract");
-	var titlRow = document.getElementById("article" + num);
-	for (i=0; i<allRecords.length; i++){	
-	if (allRecords[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue==authorsArraySorted[num]){
-	var start;
-	var end;
-	var loc;
-	var category;	
-	
-	try {start = allRecords[i].getElementsByTagName("startDate")[0].childNodes[0].nodeValue;} catch (err) {start="Not defined";}
-	try {end=allRecords[i].getElementsByTagName("endDate")[0].childNodes[0].nodeValue} catch (err) {end="Not defined";}
-	try {loc=allRecords[i].getElementsByTagName("location")[0].childNodes[0].nodeValue} catch (err) {loc="Not defined";}
-	try {category=allRecords[i].getElementsByTagName("sessionCategory")[0].childNodes[0].nodeValue} catch (err) {category="Not defined";}	
-		
-		
-	abstrRow.innerHTML = "<td class='event'><div><b>Article: </b>" +allRecords[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue+"</div><hr/><div class='textSmall'><b>Authors: </b>"+allRecords[i].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue+"<br><i>"+start+" - "+end+"</i><br><a href='rooms.html#"+roomId(loc)+"'>"+loc+"</a><br>"+category+"</div></td>";
+	abstrRow.setAttribute("name","info");
+	var listener = "addToCalendar("+submissionTitle[j]+","+loc[j]+","+1+");";
+	console.log(listener);
+	abstrRow.innerHTML = "<td class='event'><div><b>Article: </b>" +submissionTitle[j]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+allAuthArray[j]+"<br><i>"+start[j]+" - "+end[j]+"</i><br><a href='rooms.html#"+roomId(loc[j])+"'>"+loc[j]+"</a><br>"+category[j]+"<div align='left'><FORM ><INPUT TYPE='BUTTON' VALUE='Add event' class='backbutton' ONCLICK=''></FORM></div></div></td>";
 	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
-			titlRow.nextSibling);	
+			titlRow.nextSibling);
+		}	
 	}
-}
-}
 };
+
+function addToCalendar(eventName,loc, docId){
+location="calendarplugin.html?eventName="+eventName +"&loc="+loc+"&docId="+docId;
+console.log(location);
+};
+					

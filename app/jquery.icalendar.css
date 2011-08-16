@@ -10,6 +10,7 @@
 	z-index: 100;
 }
 .icalendar_popup ul {
+
 	float: left;
 	width: 220px;
 	padding: 2px;
@@ -17,13 +18,16 @@
 	border: 1px solid #aaa;
 }
 .icalendar_popup .icalendar_list li {
+
 	width: 50%;
 	margin: 0%;
 	padding: 2px 0px;
 	background-color: transparent;
 	border: none;
+
 }
 .icalendar_list {
+	
 	display: block;
 	list-style-type: none;
 	font-size: 80%;
@@ -39,6 +43,7 @@ html:first-child .icalendar_list {  /* Opera */
 	font-size: 80%;
 }
 .icalendar_list li {
+
 	float: left;
 	width: 30%;
 	margin: 0px 1px;
@@ -73,10 +78,10 @@ html:first-child .icalendar_list {  /* Opera */
 
 
 #basicICal ul { float: left; border: 0px solid #247; 
-background: transparent; width: 160px; } 
+background: transparent; width: 160px; 	} 
 #basicICal li { width: 80px; height: 30px; margin: 5px; padding: 5px 5px 0px 5px; 
-    border: none;     border-radius:6px;   background: url(img/ibtn.png) 0 0 ; } 
-#basicICal a { color: #fff; font-weight: bold; }
+    border: none;     border-radius:6px;   background: url(img/ibtn.png) 0 0 ; 	} 
+#basicICal a {  font-weight: bold; 	color: black;}
 
 
 a.ibutton{
@@ -84,7 +89,7 @@ a.ibutton{
 height: 30px;
 width: 80px; 
 font-family: Georgia, serif; 
-	color: white;
+	color: black;
     font-size:13px;
 	 line-height: 95%;
     border:1px solid #60b4e5;
