@@ -14,7 +14,7 @@ var FLASH_ID = 'icalendar-flash-copy';
 function iCalendar() {
 	this._defaults = {
 		sites: [],  // List of site IDs to use, empty for all
-		icons: 'icalendar.png', // Horizontal amalgamation of all site icons
+		icons: 'app/img/icalendar.png', // Horizontal amalgamation of all site icons
 		iconSize: 16,  // The size of the individual icons
 		target: '_blank',  // The name of the target window for the iCalendar links
 		compact: false,  // True if a compact presentation should be used, false for full
