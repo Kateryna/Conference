@@ -7,11 +7,12 @@
 		<link type="text/css" rel="stylesheet" media="all" href="./app/programday.css">
 		<link rel='stylesheet' type='text/css' href='app/fullcalendar/fullcalendar/fullcalendar.css' />
 		<link rel='stylesheet' type='text/css' href='app/fullcalendar/fullcalendar/fullcalendar.print.css' media='print'/>
-		
+		<link type="text/css" rel="stylesheet" media="all" href="./app/default.css">
+				<link type="text/css" rel="stylesheet" media="all" href="./app/style.css">
 		<script type='text/javascript' src='app/jquery-1.6.2.min.js'></script>
 		<script type='text/javascript' src='app/jquery-ui-1.8.11.custom.min.js'></script>
 		<script type='text/javascript' src='app/fullcalendar/fullcalendar/fullcalendar.min.js'></script>
-				
+		<script type="text/javascript" src="app/jquery-impromptu.js"></script>
 
 		<script type="text/javascript">
 		
@@ -28,13 +29,25 @@
 		
 		
 		$('#calendar').fullCalendar({
+		eventClick: function(calEvent, jsEvent, view) {
+		var txt = "<h5>Event:</h5><div class='textSmall'>"+calEvent.title+"</div><h5>Location:</h5><div class='textSmall'>"+jsEvent.pageX+"</div><h5>Description:</h5><div class='textSmall'>"+view.name+"</div>";
+		$.prompt(txt);
+        // change the border color just for fun
+        $(this).css('border-color', 'red');
+
+    },
 			header: {
 				left: 'prev,next today',
 				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
+				right: 'agendaWeek,agendaDay'
 			},
+			
 			editable: true,
-						
+
+			defaultView: 'agendaWeek',
+			disableDragging: true,
+			disableResizing : true,
+
 			events: [
 				{
 					title: 'All Day Event',
