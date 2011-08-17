@@ -1,13 +1,15 @@
  
 	var hash = window.location.search.substring(1);
+	console.log(hash);
 	var info = hash.replace(/%20/g," ").replace("eventName=","").replace("loc=","").replace("docId=","");
 	var dat=info.split("&",3);
 	var eventName=dat[0];
 	var loc=dat[1];
 	var docId=dat[2];
 	var desc="";
-console.log(dat);
-		
+
+//	console.log(dat);
+	
 	var startTime=[];
 	var endTime=[];
 	var allRecords=[];
@@ -24,7 +26,7 @@ if (docId==1){
 		
 		}
 }
-//console.log(startTime, endTime);
+console.log(startTime, endTime);
 } else if (docId==2){
 allRecords = getDoc("XMLworkshops.xml", "workshop");
 		for (i=0; i<allRecords.length; i++){
@@ -38,7 +40,7 @@ allRecords = getDoc("XMLworkshops.xml", "workshop");
 			catch (err) {endTime = ["9/2/2011 5:30:00 PM"]; }
 		}
 		}
-//console.log(startTime, endTime);
+console.log(startTime, endTime);
 } else {console.log("Something wrong...");}
 
 var calendarEvent= {start: parsingDate(startTime[0]),
@@ -46,7 +48,7 @@ var calendarEvent= {start: parsingDate(startTime[0]),
     title: eventName,
     description: desc,
     location: loc};
-//console.log(calendarEvent);
+console.log(calendarEvent);
 
 
 function parsingDate(dateData){
@@ -70,3 +72,4 @@ function parsingDate(dateData){
 	$('#basicICal').icalendar($.extend({sites:['google','yahoo','outlook']}, calendarEvent));
 
 });
+
