@@ -3,113 +3,20 @@
 <html>
 <head>
 <title>Calendar plugin test</title>
-
-<<<<<<< HEAD
-<script type="text/javascript" src="app/calendar/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="app/calendar/jquery.icalendar.js"></script>
-<script type="text/javascript" src="app/commonjs.js"></script>
-
- 
-</head>
-
-
-
- <script type="text/javascript">
- 
-	var hash = window.location.search.substring(1);
-	var info = hash.replace(/%20/g," ").replace("eventName=","").replace("loc=","").replace("docId=","");
-	var dat=info.split("&",3);
-	var eventName=dat[0];
-	var loc=dat[1];
-	var docId=dat[2];
-	console.log(dat);
-	
-	
-	
-	var startTime=[];
-	var endTime=[];
-	var allRecords=[];
-if (docId==1){
- allRecords= getDoc("Program.xml", "record");
-		for (i=0; i<allRecords.length; i++){
-		if (allRecords[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue == eventName){
-		startTime.push(allRecords[i].getElementsByTagName("startDate")[0].childNodes[0].nodeValue);
-		endTime.push(allRecords[i].getElementsByTagName("endDate")[0].childNodes[0].nodeValue);
-		}
-}
-console.log(startTime, endTime);
-} else if (docId==2){
-allRecords = getDoc("XMLworkshops.xml", "workshop");
-		for (i=0; i<allRecords.length; i++){
-		if (allRecords[i].getElementsByTagName("workshopID")[0].childNodes[0].nodeValue == eventName){
-		startTime.push(allRecords[i].getElementsByTagName("startDate")[0].childNodes[0].nodeValue);
-		endTime.push(allRecords[i].getElementsByTagName("endDate")[0].childNodes[0].nodeValue);
-		}
-			
-		}
-console.log(startTime, endTime);
-} else {console.log("Something wrong...");}
-
-
-
-
-parsingDate(startTime[0]);
-
-
-
-
-function parsingDate(dateData){
-	dateString=dateData.replace(/ /g, "/").replace(/:/g,"/");
-	var d = dateString.split("/",7);
-	var hours=parseInt(d[3]);
-	
-	console.log(d);
-	if ((d[6]=="PM")&&(hours!=12) )
-	hours+=12;
-	
-	var date = new Date (d[3]);
-	
-	console.log(hours);
-	// new Date = 
-
-
-}
-
-
-
-  $(function () {
-
-	$('#basicICal').icalendar($.extend({sites:['google','yahoo'], copyFlash:''}, {start: new Date(2008, 1-1, 26, 11, 30, 00),
-    end: new Date(2008, 1-1, 26, 12, 45, 00),
-    title: 'Australia Day lunch',
-    description: 'A traditional barbeque for our big day',
-    location: 'On your local beach'}));
-    
-
-});
-
-
-
-  </script>
-<style type="text/css">
-@import "app/calendar/jquery.icalendar.css";
-</style>
-</head>
-<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
-<a>Send</a>  
-  <div id="basicICal">There should be something</div><br>
-  <p>
-  <div id="basicICal1"><a href="hotmailTest.html" class="button">Hotmail</a></div>
- </p>
-  </div>
-=======
+<link type="text/css" rel="stylesheet" media="all" href="./app/layout.css">
+<link type="text/css" rel="stylesheet" media="all" href="./app/programday.css">
 <script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="app/jquery.icalendar.js"></script>
 <script type="text/javascript" src="app/commonjs.js"></script>
 <script type="text/javascript" src="app/mycalendar.js"> </script>
 <link type="text/css" rel="stylesheet" media="all" href="./app/jquery.icalendar.css">
 
+
+<style type="text/css">
+@import "app/calendar/jquery.icalendar.css";
+</style>
 </head>
+
 <body >
 <div style=" background:#6291C0; padding:0px; marging-top:0px;">
 <div>  <img src="./img/vldb2011header.png" width="100%"></div>
@@ -121,9 +28,12 @@ ONCLICK="history.go(-1)"></FORM></div>
 <h4>Select web calendar to add an event</h4>
   <div id="basicICal">There should be something</div>
   <div id="basicICal1" ><a href="#" class="ibutton"><img src="app/img/hotmail.png" alt="" /><b> Hotmail</b></a></div>
+   <div id="basicICal1" ><a  href="appcalendar.htm" class="ibutton"><b>Local calendar</b></a></div>
+ 
+ 
+ 
  </div>
  </div>
 
->>>>>>> 90d2b06f838e0f428d3c8434bbca9c0a5160d849
 </body>
 </html>

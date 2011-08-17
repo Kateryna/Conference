@@ -3,24 +3,25 @@
 <html>
 	<head>
 		<title>Calendar for Conference</title>
-		<link type="text/css" rel="stylesheet" media="all" href="app/layout.css">
-			
-		<script type='text/javascript' src='app/jquery-1.6.2.min.js'></script>
-		<script type='text/javascript' src='app/jquery-ui-1.8.11.custom.min.js'></script>
-		
-		<script type='text/javascript' src='app/fullcalendar/fullcalendar/fullcalendar.min.js'></script>
-				
+		<link type="text/css" rel="stylesheet" media="all" href="./app/layout.css">
+		<link type="text/css" rel="stylesheet" media="all" href="./app/programday.css">
 		<link rel='stylesheet' type='text/css' href='app/fullcalendar/fullcalendar/fullcalendar.css' />
 		<link rel='stylesheet' type='text/css' href='app/fullcalendar/fullcalendar/fullcalendar.print.css' media='print'/>
+		
+		<script type='text/javascript' src='app/jquery-1.6.2.min.js'></script>
+		<script type='text/javascript' src='app/jquery-ui-1.8.11.custom.min.js'></script>
+		<script type='text/javascript' src='app/fullcalendar/fullcalendar/fullcalendar.min.js'></script>
 				
-	
+
 		<script type="text/javascript">
+			
 		$(document).ready(function() {
 	
 		var date = new Date();
 		var d = date.getDate();
 		var m = date.getMonth();
 		var y = date.getFullYear();
+		
 		
 		$('#calendar').fullCalendar({
 			header: {
@@ -29,6 +30,8 @@
 				right: 'month,agendaWeek,agendaDay'
 			},
 			editable: true,
+			
+			
 			events: [
 				{
 					title: 'All Day Event',
@@ -84,11 +87,10 @@
 	
 	
 	<body>
-
 		<div style=" background:#6291C0; padding:0px; marging-top:0px;">
-			<div><img src="./img/vldb2011header.png" width="100%"></div>
+			<div> <img src="./img/vldb2011header.png" width="100%"></div>
 			<div align="left" ><FORM ><INPUT TYPE="BUTTON" VALUE="Go Back" class="backbutton" ONCLICK="history.go(-1)"></FORM></div>
-		</div>
+		</div><br>
 		
 		<div id = "calendar"></div>
 		
