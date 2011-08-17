@@ -66,10 +66,15 @@ function parsingDate(dateData){
 // new Date = 
 }
 
-
-
   $(function () {
 	$('#basicICal').icalendar($.extend({sites:['google','yahoo','outlook']}, calendarEvent));
 
 });
 
+function init(){
+	var locCalendar= "<a href='appcalendar.htm?"+hash+"' class='ibutton'><b>Local calendar</b></a>";	
+	var btnPlace = document.getElementById("basicICal2");
+	btnPlace.innerHTML = locCalendar;
+}	
+	
+	

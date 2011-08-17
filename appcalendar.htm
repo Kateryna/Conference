@@ -14,7 +14,11 @@
 				
 
 		<script type="text/javascript">
-			
+		
+		var hash = window.location.search.substring(1);
+		console.log(hash);
+
+		
 		$(document).ready(function() {
 	
 		var date = new Date();
@@ -30,8 +34,7 @@
 				right: 'month,agendaWeek,agendaDay'
 			},
 			editable: true,
-			
-			
+						
 			events: [
 				{
 					title: 'All Day Event',
