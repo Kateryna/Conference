@@ -64,7 +64,7 @@ function fastMakeTable(buf, row, col, cell) {
 }
 
 function getAbstract(num) {
-	var elements=document.getElementsByName("info");
+	var elements=document.getElementsByName("info"+num);
 	var element=document.getElementById("article" + num +"abstract");
 	console.log(element);
 	console.log(elements[1]);
@@ -89,24 +89,18 @@ function getAbstract(num) {
 	try {end.push(allRecords[i].getElementsByTagName("endDate")[0].childNodes[0].nodeValue);} catch (err) {end.push("Not defined");}
 	try {loc.push(allRecords[i].getElementsByTagName("location")[0].childNodes[0].nodeValue);} catch (err) {loc.push("Not defined");}
 	try {submissionTitle.push(allRecords[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue);} catch (err) {category.push("Not defined");}	
-	try {category.push(allRecords[i].getElementsByTagName("sessionCategory")[0].childNodes[0].nodeValue);} catch (err) {category.push("Not defined");}	
+	try {category.push(allRecords[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue);} catch (err) {category.push("Not defined");}	
 	}
 	}
 	for (j=0; j<allAuthArray.length; j++){
 	var abstrRow = document.createElement("tr");
 	abstrRow.setAttribute("id","article" + num+"abstract");
-	abstrRow.setAttribute("name","info");
-	var listener = "addToCalendar("+submissionTitle[j]+","+loc[j]+","+1+");";
+	abstrRow.setAttribute("name","info"+num);
+	var listener = "<div class='textSmall' style='text-align:center;'><a href='calendarplugin.html?eventName="+category[j] +"&loc="+loc[j]+"&docId="+1+"' class='ibutton'><b>Add to calendar</b></a></div>";
 	console.log(listener);
-	abstrRow.innerHTML = "<td class='event'><div><b>Article: </b>" +submissionTitle[j]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+allAuthArray[j]+"<br><i>"+start[j]+" - "+end[j]+"</i><br><a href='rooms.html#"+roomId(loc[j])+"'>"+loc[j]+"</a><br>"+category[j]+"<div align='left'><FORM ><INPUT TYPE='BUTTON' VALUE='Add event' class='backbutton' ONCLICK=''></FORM></div></div></td>";
+	abstrRow.innerHTML = "<td class='event'><div><b>Article: </b>" +submissionTitle[j]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+allAuthArray[j]+"<br><i>"+start[j]+" - "+end[j]+"</i><br><a href='rooms.html#"+roomId(loc[j])+"'>"+loc[j]+"</a><br>"+category[j]+"</div>"+listener+"</td>";
 	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
 			titlRow.nextSibling);
 		}	
 	}
-};
-
-function addToCalendar(eventName,loc, docId){
-location="calendarplugin.html?eventName="+eventName +"&loc="+loc+"&docId="+docId;
-console.log(location);
-};
-					
+};					

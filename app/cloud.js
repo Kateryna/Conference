@@ -251,7 +251,7 @@ function getArticles(tagName) {
 							} catch (err) {end.push("Not defined");}
 							try {								loc.push(allRecords[j].getElementsByTagName("location")[0].childNodes[0].nodeValue);	
 							} catch (err){loc.push("Not defined");}
-							try {category.push(allRecords[i].getElementsByTagName("sessionCategory")[0].childNodes[0].nodeValue);}
+							try {category.push(allRecords[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue);}
 							catch (err) {category.push("Not defined");}
 //								console.log(authors);
 //	console.log(start);
@@ -284,15 +284,8 @@ parent.removeChild(element);
 	var abstrRow = document.createElement("tr");
 	abstrRow.setAttribute("id","article" + num+"abstract");
 	var titlRow = document.getElementById("article" + num);
-		
-	if (authors[num]==null||start[num]==null||end[num]==null||loc[num]==null){
-		
-	abstrRow.innerHTML = "<td class='event'><div>" + resultArticleAbstr[num]+"</div></td>";
-	}
-	else {
-			
-		abstrRow.innerHTML = "<td class='event'><div class='textSmall'>" + resultArticleAbstr[num]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+authors[num]+"</div><div class='textSmall'><i>"+start[num]+" - "+end[num]+"</i></div><div class='textSmall'><a href='rooms.html#"+roomId(loc[num])+"'>"+loc[num]+"</a><br><div>"+category[num]+"</div></div></td>";
-}
+	var listener = "<div class='textSmall' style='text-align:center;'><a href='calendarplugin.html?eventName="+category[num] +"&loc="+loc[num]+"&docId="+1+"' class='ibutton'><b>Add to calendar</b></a></div>";		
+	abstrRow.innerHTML = "<td class='event'><div class='textSmall'>" + resultArticleAbstr[num]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+authors[num]+"</div><div class='textSmall'><i>"+start[num]+" - "+end[num]+"</i></div><div class='textSmall'><a href='rooms.html#"+roomId(loc[num])+"'>"+loc[num]+"</a><br><div>"+category[num]+"</div></div>"+listener+"</td>";
  	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
 			titlRow.nextSibling);
 	//document.getElementById("article"+num).childNodes[0].childNodes[0].disabled=true;

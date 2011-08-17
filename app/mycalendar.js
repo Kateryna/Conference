@@ -7,9 +7,9 @@
 	var loc=dat[1];
 	var docId=dat[2];
 	var desc="";
-	console.log(dat);
+
+//	console.log(dat);
 	
-		
 	var startTime=[];
 	var endTime=[];
 	var allRecords=[];
@@ -69,7 +69,7 @@ function parsingDate(dateData){
 
 
   $(function () {
-	$('#basicICal').icalendar($.extend({sites:['google','yahoo'], copyFlash:''}, calendarEvent));
+	$('#basicICal').icalendar($.extend({sites:['google','yahoo','outlook']}, calendarEvent));
 
 });
 

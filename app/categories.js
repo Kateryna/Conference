@@ -73,10 +73,10 @@ function getAbstract(num) {
 	try {start = allRecords[i].getElementsByTagName("startDate")[0].childNodes[0].nodeValue;} catch (err) {start="Not defined";}
 	try {end=allRecords[i].getElementsByTagName("endDate")[0].childNodes[0].nodeValue} catch (err) {end="Not defined";}
 	try {loc=allRecords[i].getElementsByTagName("location")[0].childNodes[0].nodeValue} catch (err) {loc="Not defined";}
-
+	try {category=allRecords[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue} catch (err) {loc="Not defined";}
 		
-		
-	abstrRow.innerHTML = "<td class='event'><div class='textSmall'><b>Authors: </b>"+author+"<br><hr/><i>"+start+" - "+end+"</i><br><a href='rooms.html#"+roomId(loc)+"'>"+loc+"</a></div></td>";
+	var listener = "<div class='textSmall' style='text-align:center;'><a href='calendarplugin.html?eventName="+category +"&loc="+loc+"&docId="+1+"' class='ibutton'><b>Add to calendar</b></a></div>";	
+	abstrRow.innerHTML = "<td class='event'><div class='textSmall'><b>Authors: </b>"+author+"<br><hr/><i>"+start+" - "+end+"</i><br><a href='rooms.html#"+roomId(loc)+"'>"+loc+"</a></div>"+listener+"</td>";
 	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
 			titlRow.nextSibling);	
 	}
