@@ -49,6 +49,10 @@ var calendarEvent= {start: parsingDate(startTime[0]),
     description: desc,
     location: loc};
 console.log(calendarEvent);
+var txt = "Event: "+eventName+" Location: "+loc;
+
+
+
 
 
 function parsingDate(dateData){
@@ -68,8 +72,14 @@ function parsingDate(dateData){
 
 
 
-  $(function () {
-	$('#basicICal').icalendar($.extend({sites:['google','yahoo','outlook']}, calendarEvent));
+  //$(function () {
+//	$('#basicICal').icalendar($.extend({sites:['google','yahoo','outlook']}, calendarEvent));
 
-});
+//});
 
+
+function init(){
+	
+var eventHolder=document.getElementById("eventPlace");
+eventHolder.innerHTML=txt;
+}
