@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<title>Calendar plugin test</title>
+
+<link type="text/css" rel="stylesheet" media="all" href="./app/layout.css">
+<link type="text/css" rel="stylesheet" media="all" href="./app/programday.css">
+<link type="text/css" rel="stylesheet" media="all" href="./app/style.css">
+
+<script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
+
+
+<script type="text/javascript" src="app/commonjs.js"></script>
+<script type="text/javascript" src="app/mycalendar.js"> </script>
+
+
+
+<link rel='stylesheet' type='text/css' href='app/jquery.addtocal.css' />
+
+<script type='text/javascript' src='app/jquery-ui.min.js'></script>
+
+
+<script type='text/javascript' src='app/rfc3339date.js'></script>
+<script type='text/javascript' src='app/jquery.addtocal.js'></script>
+
+<script type='text/javascript'>
+$(document).ready(function() {
+
+  $('.event').AddToCal({
+    // ical and vcal require an ics or vcs file to be served. 
+    // Disable these features if reqired (as a result the 30boxes, iCal and vCalendar menu links will not appear)
+    icalEnabled:false,
+    vcalEnabled:false,
+    getEventDetails: function( element ) {
+
+        var 
+          dtstart_element = element.find('.dtstart'), start,
+          dtend_element = element.find('.dtend'), end,
+          title_element = element.find('.summary'), title,
+          details_element = element.find('.description'), details;
+        
+        // in this demo, we attempt to get hCalendar attributes or otherwise just dummy the values
+        start = dtstart_element.length ? dtstart_element.attr('title') : new Date();
+        if(dtend_element.length) {
+          end = dtend_element.attr('title');
+        } else {
+          end = new Date();
+          end.setTime(end.getTime() + 60 * 60 * 1000);
+        }
+        title = title_element.length ? title_element.html() : element.attr('id');
+        details = details_element.length ? details_element.html() : element.html();
+
+      // return the required event structure
+      return { 
+        webcalurl: null,
+        icalurl: null,
+        vcalurl: null, 
+        start: start, 
+        end: end, 
+        title: title, 
+        details: details, 
+        location: null, 
+        url: null
+        };
+    },
+  });
+
+});
+</script>
+</head>
+
+
+<body onload="init()">
+
+<div style=" background:#6291C0; padding:0px; marging-top:0px;">
+<div>  <img src="./img/vldb2011header.png" width="100%"></div>
+<div align="left" >
+<FORM ><INPUT TYPE="BUTTON" VALUE="Go Back" class="backbutton"
+ONCLICK="history.go(-1)"></FORM></div>
+</div>
+			<div align="center">
+<h4>Select web calendar to add an event</h4>
+
+<div id="eventPlace" class="event"></div>
+
+<!-- <div id="basicICal">There should be something</div>
+  <div id="basicICal1" ><a href="#" class="ibutton"><img src="app/img/hotmail.png" alt="" /><b> Hotmail</b></a></div>
+   <div id="basicICal1" ><a  href="appcalendar.htm" class="ibutton"><b>Local calendar</b></a></div>
+  -->
+  </div>
+</body>
+</html>

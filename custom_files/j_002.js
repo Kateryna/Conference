@@ -1,1 +1,0 @@
-document.write('<script type="text/javascript"><!--\r\ngoogle_ad_client = "pub-4034267692091448";\r\n/* ROW-300x250, created 9/16/10 */\r\ngoogle_ad_slot = "2267742935";\r\ngoogle_ad_width = 300;\r\ngoogle_ad_height = 250;\r\n//-->\r\n<\/script>\r\n<script type="text/javascript"\r\nsrc="http://pagead2.googlesyndication.com/pagead/show_ads.js">\r\n<\/script>');

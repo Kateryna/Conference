@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FileReader Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="app/phonegap-1.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+// Wait for PhoneGap to load
+function init() {
+    // the next line makes it impossible to see Contacts on the HTC Evo since it
+    // doesn't have a scroll button
+    // document.addEventListener("touchmove", preventBehavior, false);
+    document.addEventListener("deviceready", myFunc, true);
+}
+
+
+function writeSomething(){
+writeData('file.txt', 'Hurray', onComplete);
+
+}
+
+
+function onComplete(){
+alert("completed");
+}
+    // PhoneGap is ready
+var writeData = function (filename, data, callback) {
+	var writeOutData = function () {
+		var fw = new FileWriter();
+		fw.oncomplete = callback;
+		fw.onerror = function () { 
+			alert("Failed to save update");
+		}
+		fw.writeAsText("myDir/" + filename, data);
+	}
+
+	navigator.fileMgr.testDirectoryExists("myDir", function(exists) {
+			exists ? writeOutData() :
+			navigator.fileMgr.createDirectory("myDir", writeOutData, function() {
+				alert("Failed to save update");
+			})
+	});
+};
+
+
+
+    </script>
+  </head>
+  <body>
+    <h1>Example</h1>
+    <p>Read File</p>
+  </body>
+</html>
