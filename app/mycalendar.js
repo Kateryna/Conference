@@ -49,7 +49,7 @@ var calendarEvent= {start: parsingDate(startTime[0]),
     description: desc,
     location: loc};
 console.log(calendarEvent);
-var txt = "Event: "+eventName+" Location: "+loc;
+var txt = "<h5>Event:</h5> "+eventName+"<h5>Location:</h5>"+loc+"<h5>Start time: </h5>" ++ "<h5>End time: </h5>";
 
 
 
@@ -72,6 +72,7 @@ function parsingDate(dateData){
 
 
 
+
   //$(function () {
 //	$('#basicICal').icalendar($.extend({sites:['google','yahoo','outlook']}, calendarEvent));
 
@@ -83,3 +84,11 @@ function init(){
 var eventHolder=document.getElementById("eventPlace");
 eventHolder.innerHTML=txt;
 }
+
+/*
+function init(){
+	var locCalendar= "<a href='appcalendar.htm?"+hash+"' class='ibutton'><b>Local calendar</b></a>";	
+	var btnPlace = document.getElementById("basicICal2");
+	btnPlace.innerHTML = locCalendar;
+}	
+*/

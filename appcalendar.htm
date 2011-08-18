@@ -15,7 +15,11 @@
 		<script type="text/javascript" src="app/jquery-impromptu.js"></script>
 
 		<script type="text/javascript">
-			
+		
+		var hash = window.location.search.substring(1);
+		console.log(hash);
+
+		
 		$(document).ready(function() {
 	
 		var date = new Date();
@@ -37,12 +41,13 @@
 				center: 'title',
 				right: 'agendaWeek,agendaDay'
 			},
+			
 			editable: true,
+
 			defaultView: 'agendaWeek',
 			disableDragging: true,
 			disableResizing : true,
-			
-			
+
 			events: [
 				{
 					title: 'All Day Event',

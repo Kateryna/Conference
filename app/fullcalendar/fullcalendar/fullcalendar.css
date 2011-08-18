@@ -10,8 +10,9 @@
  */
 
 #calendar{
-	width: 900px;
+	width: 480px;
 	margin: 0 auto;
+
 	}
 
 .fc {
@@ -32,7 +33,7 @@ html .fc,
 .fc td,
 .fc th {
 	padding: 0;
-	vertical-align: top;
+
 	}
 
 
@@ -41,26 +42,24 @@ html .fc,
 ------------------------------------------------------------------------*/
 
 .fc-header td {
-	padding-top:20px;
+
 	white-space: nowrap;
 	font-family:Arial, sans-serif;
 	}
 
 .fc-header-left {
-	width: 25%;
 	text-align: left;
 	}
 	
 .fc-header-center {
 	text-align: center;
-	font-size:14.0pt;
+	font-size:7.0pt;
 	font-weight:700;
 	font-family:Arial, sans-serif;
 	color:#1F497D;
 	}
 	
 .fc-header-right {
-	width: 25%;
 	text-align: right;
 	}
 	
