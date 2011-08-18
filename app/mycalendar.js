@@ -49,7 +49,7 @@ var calendarEvent= {start: parsingDate(startTime[0]),
     description: desc,
     location: loc};
 console.log(calendarEvent);
-var txt = "<h5>Event:</h5> "+eventName+"<h5>Location:</h5>"+loc+"<h5>Start time: </h5>" ++ "<h5>End time: </h5>";
+var txt = "<h5>Event:</h5> "+eventName+"<h5>Location:</h5>"+loc+"<h5>Start time: </h5><h5>End time: </h5>";
 
 
 
