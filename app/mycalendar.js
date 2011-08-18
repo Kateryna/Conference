@@ -49,7 +49,7 @@ var calendarEvent= {start: parsingDate(startTime[0]),
     description: desc,
     location: loc};
 console.log(calendarEvent);
-var txt = "<h5>Event:</h5> "+eventName+"<h5>Location:</h5>"+loc+"<h5>Start time: </h5>" ++ "<h5>End time: </h5>";
+var txt = "<h4>Event:</h4> "+eventName+"<h4>Location:</h4>"+loc+"<h4>Start time: </h4>" +startTime[0]+ "<h4>End time: </h4>"+endTime[0];
 
 
 
@@ -69,10 +69,6 @@ function parsingDate(dateData){
 	return date;
 // new Date = 
 }
-
-
-
-
   //$(function () {
 //	$('#basicICal').icalendar($.extend({sites:['google','yahoo','outlook']}, calendarEvent));
 
@@ -92,3 +88,53 @@ function init(){
 	btnPlace.innerHTML = locCalendar;
 }	
 */
+
+
+
+$(document).ready(function() {
+
+  $('.event').AddToCal({
+    // ical and vcal require an ics or vcs file to be served. 
+    // Disable these features if reqired (as a result the 30boxes, iCal and vCalendar menu links will not appear)
+    icalEnabled:false,
+    vcalEnabled:false,
+    getEventDetails: function( element ) {
+
+var start =  parsingDate(startTime[0]);
+var end =  parsingDate(endTime[0]);
+var title = eventName;
+var eLocation=loc;
+var descript = desc;
+ /*       var 
+          dtstart_element = element.find('.dtstart'), start,
+          dtend_element = element.find('.dtend'), end,
+          title_element = element.find('.summary'), title,
+          details_element = element.find('.description'), details;
+        
+        // in this demo, we attempt to get hCalendar attributes or otherwise just dummy the values
+        start = dtstart_element.length ? dtstart_element.attr('title') : new Date();
+        if(dtend_element.length) {
+          end = dtend_element.attr('title');
+        } else {
+          end = new Date();
+          end.setTime(end.getTime() + 60 * 60 * 1000);
+        }
+        title = title_element.length ? title_element.html() : element.attr('id');
+        details = details_element.length ? details_element.html() : element.html();
+*/
+      // return the required event structure
+      return { 
+        webcalurl: null,
+        icalurl: null,
+        vcalurl: null, 
+        start: start, 
+        end: end, 
+        title: title, 
+        details: descript, 
+        location: eLocation, 
+        url: null
+        };
+    },
+  });
+
+});
