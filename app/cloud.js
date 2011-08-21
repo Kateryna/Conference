@@ -1,24 +1,48 @@
+function goToWord(wordId){
+	location="tagresult.html?keyword="+wordId;
+	return false;	
+}
+
+
 var articlesIdArray = new Array();
 var articles = getDoc("XMLarticlesAbstr.xml", "article");
 var allRecords = getDoc("Program.xml", "record");
-console.log(allRecords[3]);
-//console.log(articles[0]);
+//console.log(allRecords[3]);
 
 for (i = 0; i < articles.length; i++) {
 	articlesIdArray
 			.push(articles[i].getElementsByTagName("articleId")[0].childNodes[0].nodeValue);
-}
+			}
 //console.log(articlesIdArray);
-	var resultArticle = [];
-	var resultArticleAbstr = new Array();
+
+var resultArticleAbstr = new Array();
 var authors = new Array();
 var start = new Array ();
 var end = new Array();
 var loc = new Array();
 var category = new Array(); 
 	
+		
+		
+		
+		function init(){
+
+	var hash = window.location.search.substring(1);
+	var keyWord = hash.replace("keyword=","");
+	
+
+	var rArticles = getArticles(keyWord); 
+	console.log(rArticles);
+	var table = fastMakeTable("", rArticles.length, 1, rArticles);
+//	console.log(table);
+document.getElementById("category").innerHTML = "<h3>"+keyWord+"</h3>";
+	document.getElementById("result").innerHTML = table;
+
+};
+//console.log(articlesIdArray);
+
 function getArticles(tagName) {
-	resultArticle=[];
+	var resultArticle=[];
 	resultArticleAbstr=[];
 	authors=[];
 	start=[];
@@ -238,10 +262,11 @@ function getArticles(tagName) {
 					.push(articles[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
 			resultArticleAbstr
 					.push(articles[i].getElementsByTagName("abstract")[0].childNodes[0].nodeValue);
+					console.log(allRecords);
 					for (j=0; j<allRecords.length; j++){
 						var subId;
 						try {subId = allRecords[j].getElementsByTagName("submissionId")[0].childNodes[0].nodeValue;} catch (err){subId="";}
-						if ( subId == articlesIdArray[i])
+						if (subId == articlesIdArray[i])
 						{
 							authors.push(allRecords[j].getElementsByTagName("submissionAuthors")[0].childNodes[0].nodeValue);
 							try {start.push(allRecords[j].getElementsByTagName("startDate")[0].childNodes[0].nodeValue);}
@@ -249,30 +274,26 @@ function getArticles(tagName) {
 							try {
 							end.push(allRecords[j].getElementsByTagName("endDate")[0].childNodes[0].nodeValue);
 							} catch (err) {end.push("Not defined");}
-							try {								loc.push(allRecords[j].getElementsByTagName("location")[0].childNodes[0].nodeValue);	
+							try {loc.push(allRecords[j].getElementsByTagName("location")[0].childNodes[0].nodeValue);	
 							} catch (err){loc.push("Not defined");}
 							try {category.push(allRecords[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue);}
 							catch (err) {category.push("Not defined");}
-//								console.log(authors);
-//	console.log(start);
-//	console.log(end);
-//	console.log(loc);
+//console.log(authors);
+//console.log(start);
+//console.log(end);
+//console.log(loc);
 						}						
 					}
 		}
-
 	}
 //	console.log(resultArticle);
 //	console.log(authors);
 //	console.log(start);
 //	console.log(end);
 //	console.log(loc);
-	var table = fastMakeTable("", resultArticle.length, 1, resultArticle);
-//	console.log(table);
-
-	document.getElementById("result").innerHTML = table;
-
+return resultArticle;
 };
+
 
 function getAbstract(num) {
 	var element=document.getElementById("article" + num+"abstract"); 

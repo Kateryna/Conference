@@ -16,14 +16,14 @@ function fastMakeTable(buf, row, col, cell) {
 	for ( var i = 0; i < ROWS; i++) {
 		var row = "<tr id='article" + i + "'>";
 		for ( var j = 0; j < COLS; j++) {
-			row += "<td class='sessionFirstTypeList'><a href='#'  onclick='getAbstract("
+			row += "<td class='sessionFirstTypeList'><a onclick='getAbstract("
 					+ i + ")'><div>" + cell[i] + "</div></a></td>";
 		}
 		row += "</tr>";
 
 		buf += row;
 	}
-	buf += "</table></div>";
+	buf += "</table><br></div>";
 
 	return buf;
 };

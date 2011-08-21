@@ -908,6 +908,18 @@
 		<submissionAuthors>Hyungsoo Jung (University of Sydney), Hyuck Han (Seoul National Univeristy), Alan Fekete (University of Sydney), Uwe Roehm (University of Sydney)</submissionAuthors>
 		<sessionDescription>Distributed Systems</sessionDescription>
 	</record>
+     <record>
+		<startDate>8/31/2011 1:30:00 PM</startDate>
+		<endDate>8/31/2011 3:00:00 PM</endDate>
+		<sessionName>Research Session 16</sessionName>
+		<sessionCategory>Research</sessionCategory>
+		<location>Vashon</location>
+		<submissionId>139</submissionId>
+		<presentationOrder>1</presentationOrder>
+		<submissionTitle>Lightweight Graphical Models for Selectivity Estimation Without Independence Assumptions</submissionTitle>
+		<submissionAuthors>Kostas Tzoumas (Aalborg University, Denmark), Amol Deshpande (University of Maryland), Christian Jensen (Aarhus University)</submissionAuthors>
+		<sessionDescription>Statistical Methods</sessionDescription>
+	</record>
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
 		<endDate>8/31/2011 3:00:00 PM</endDate>
@@ -915,7 +927,7 @@
 		<sessionCategory>Research</sessionCategory>
 		<location>Vashon</location>
 		<submissionId>223</submissionId>
-		<presentationOrder>1</presentationOrder>
+		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Active Complex Event Processing over Event Streams</submissionTitle>
 		<submissionAuthors>Di Wang (Worcester Polytechnic Institut), Elke Rundensteiner (Worcester Polytechnic Institute), Richard Ellison III (University of Massachusetts Medical School)</submissionAuthors>
 		<sessionDescription>Streams and Events</sessionDescription>
@@ -927,23 +939,12 @@
 		<sessionCategory>Research</sessionCategory>
 		<location>Vashon</location>
 		<submissionId>621</submissionId>
-		<presentationOrder>2</presentationOrder>
+		<presentationOrder>3</presentationOrder>
 		<submissionTitle>Massive Scale-out of Expensive Continuous Queries</submissionTitle>
 		<submissionAuthors>Erik Zeitler (Uppsala University), Tore Risch (Uppsala University)</submissionAuthors>
 		<sessionDescription>Streams and Events</sessionDescription>
 	</record>
-	<record>
-		<startDate>8/31/2011 1:30:00 PM</startDate>
-		<endDate>8/31/2011 3:00:00 PM</endDate>
-		<sessionName>Research Session 16</sessionName>
-		<sessionCategory>Research</sessionCategory>
-		<location>Vashon</location>
-		<submissionId>621</submissionId>
-		<presentationOrder>3</presentationOrder>
-		<submissionTitle>Incrementally Maintaining Classification using an RDBMS</submissionTitle>
-		<submissionAuthors>Mehmet Levent Koc (University of Wisconsin-Madison), Christopher Ré (University of Wisconsin-Madison)</submissionAuthors>
-		<sessionDescription>Streams and Events</sessionDescription>
-	</record>
+
 	<record>
 		<startDate>8/31/2011 3:30:00 PM</startDate>
 		<endDate>8/31/2011 5:30:00 PM</endDate>
@@ -1304,16 +1305,16 @@
 		<submissionAuthors>Aditya Ramesh (Stanford University), S. Sudarshan (IIT Bombay), Purva Joshi (IIT Bombay)</submissionAuthors>
 		<sessionDescription>Searching and Ranking</sessionDescription>
 	</record>
-	<record>
+    <record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
 		<endDate>9/1/2011 3:00:00 PM</endDate>
 		<sessionName>Research Session 25</sessionName>
 		<sessionCategory>Research</sessionCategory>
 		<location>Grand 2</location>
-		<submissionId>139</submissionId>
+		<submissionId>999</submissionId>
 		<presentationOrder>1</presentationOrder>
-		<submissionTitle>Lightweight Graphical Models for Selectivity Estimation Without Independence Assumptions</submissionTitle>
-		<submissionAuthors>Kostas Tzoumas (Aalborg University, Denmark), Amol Deshpande (University of Maryland), Christian Jensen (Aarhus University)</submissionAuthors>
+		<submissionTitle>Incrementally Maintaining Classification using an RDBMS</submissionTitle>
+		<submissionAuthors>Mehmet Levent Koc (University of Wisconsin-Madison), Christopher Ré (University of Wisconsin-Madison)</submissionAuthors>
 		<sessionDescription>Statistical Methods</sessionDescription>
 	</record>
 	<record>

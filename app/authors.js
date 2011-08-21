@@ -36,26 +36,6 @@ function eliminateDuplicates(arr) {
 
 function init(){
 
-function fastMakeTable(buf, row, col, cell) {
-	var COLS = col;
-	var ROWS = row;
-
-	buf += "<div align='center'><table id='table' style='bordborder-collapse:collapse;table-layout:fixed;width:90%'>";
-	for ( var i = 0; i < ROWS; i++) {
-		var row = "<tr id='article" + i + "'>";
-		for ( var j = 0; j < COLS; j++) {
-			row += "<td class='sessionFirstTypeList'><a href='#'  onclick='getAbstract("
-					+ i + ")'><div>" + cell[i] + "</div></a></td>";
-		}
-		row += "</tr>";
-
-		buf += row;
-	}
-	buf += "</table></div>";
-
-	return buf;
-};
-
 	var table = fastMakeTable("", firstAuthorsArraySorted.length, 1, firstAuthorsArraySorted);
 //	console.log(table);
 

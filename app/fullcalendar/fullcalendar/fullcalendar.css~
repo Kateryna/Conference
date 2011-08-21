@@ -312,7 +312,7 @@ a.fc-event {
 	display: block;
 	position: absolute;
 	z-index: 99999;
-	overflow: visible; /* hacky spaces (IE6/7) */
+	overflow: hidden; /* hacky spaces (IE6/7) */
 	font-size: 300%;  /* */
 	line-height: 50%; /* */
 	}

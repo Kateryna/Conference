@@ -49,7 +49,9 @@ var calendarEvent= {start: parsingDate(startTime[0]),
     description: desc,
     location: loc};
 console.log(calendarEvent);
+
 var txt = "<h4>Event:</h4> "+eventName+"<h4>Location:</h4>"+loc+"<h4>Start time: </h4>" +startTime[0]+ "<h4>End time: </h4>"+endTime[0];
+
 
 
 
@@ -69,6 +71,7 @@ function parsingDate(dateData){
 	return date;
 // new Date = 
 }
+
   //$(function () {
 //	$('#basicICal').icalendar($.extend({sites:['google','yahoo','outlook']}, calendarEvent));
 
