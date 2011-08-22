@@ -130,6 +130,24 @@ background: url(img/ibtn.png) 0 0 ;
 clear: both;
 margin: 5px;
 }
+a.ibutton2{
+
+height: 30px;
+width: 80px; 
+font-family: Georgia, serif; 
+	color: black;
+    font-size:13px;
+	 line-height: 95%;
+    border:1px solid #60b4e5;
+	 padding: 5px 5px 0px 5px;
+    float:left;
+text-decoration:none; 
+background: url(img/ibtn.png) 0 0 ;
+    border:0px solid #c0c8cd;
+    border-radius:6px;
+clear: both;
+margin: 5px;
+}
 
 /*end of main buttons*/
 /*style of floor plans*/

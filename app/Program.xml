@@ -75,7 +75,7 @@
 		<submissionId>666</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Guided Interaction: Rethinking the Query-Result Paradigm</submissionTitle>
-		<submissionAuthors>Arnab Nandi (University of Michigan), H Jagadish (U. Mich)</submissionAuthors>
+		<submissionAuthors>Arnab Nandi (University of Michigan), H. Jagadish (University of Michigan)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
@@ -97,7 +97,7 @@
 		<submissionId>822</submissionId>
 		<presentationOrder>4</presentationOrder>
 		<submissionTitle>Exploring the Coming Repositories of Reproducible Experiments: Challenges and Opportunities</submissionTitle>
-		<submissionAuthors>Juliana Freire (University of Utah), Philippe Bonnet (University of Copenhagen, Denmark), Dennis Shasha (New York University)</submissionAuthors>
+		<submissionAuthors>Juliana Freire (University of Utah), Philippe Bonnet (University of Copenhagen Denmark), Dennis Shasha (New York University)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/30/2011 4:00:00 PM</startDate>
@@ -167,7 +167,7 @@
 		<submissionId>759</submissionId>
 		<presentationOrder>6</presentationOrder>
 		<submissionTitle>EIRENE: Interactive Design and Refinement of Schema Mappings via Data Examples</submissionTitle>
-		<submissionAuthors>Bogdan Alexe (UC Santa Cruz), Balder ten Cate (UC Santa Cruz), Phokion Kolaitis (UCSC &amp; IBM Research - Almaden), Wang-Chiew Tan (IBM Research - Almaden &amp; UCSC)</submissionAuthors>
+		<submissionAuthors>Bogdan Alexe (UC Santa Cruz), Balder_ten Cate (UC Santa Cruz), Phokion Kolaitis (UCSC &amp; IBM Research - Almaden), Wang-Chiew Tan (IBM Research - Almaden &amp; UCSC)</submissionAuthors>
 		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
 	</record>
 	<record>
@@ -197,7 +197,7 @@
 		<submissionId>801</submissionId>
 		<presentationOrder>9</presentationOrder>
 		<submissionTitle>AIDA: An Online Tool for Accurate Disambiguation of Named Entities in Text and Tables</submissionTitle>
-		<submissionAuthors>BMohamed Amir Yosef (Max Planck Institute for Informatics), Johannes Hoffart (Max Planck Institute for Informatics), Ilaria Bordino (Yahoo! Research), Marc Spaniol (Max Planck Institute for Informatics), Gerhard Weikum ( Max Planck Institute, Germany)</submissionAuthors>
+		<submissionAuthors>Mohamed Amir Yosef (Max Planck Institute for Informatics), Johannes Hoffart (Max Planck Institute for Informatics), Ilaria Bordino (Yahoo! Research), Marc Spaniol (Max Planck Institute for Informatics), Gerhard Weikum ( Max Planck Institute Germany)</submissionAuthors>
 		<sessionDescription>Information Integration and Information Retrieval</sessionDescription>
 	</record>
 	<record>
@@ -287,7 +287,7 @@
 		<submissionId>786</submissionId>
 		<presentationOrder>8</presentationOrder>
 		<submissionTitle>A Demonstration of HYRISE - A Main Memory Hybrid Storage Engine</submissionTitle>
-		<submissionAuthors>Martin Grund (Hasso-Plattner-Institute), Philippe Cudre-Mauroux (MIT), Samuel Madden (MIT)</submissionAuthors>
+		<submissionAuthors>Martin Grund (Hasso-Plattner-Institut), Philippe Cudre-Mauroux (MIT CSAIL), Samuel Madden (MIT)</submissionAuthors>
 		<sessionDescription>Modern Hardware, Streaming, and Benchmarking</sessionDescription>
 	</record>
 	<record>
@@ -473,7 +473,7 @@
 		<submissionId>727</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Auto-Grouping Emails For Faster E-Discovery</submissionTitle>
-		<submissionAuthors>Sachindra Joshi (IBM Research India), Danish Contractor (IBM Research India), Kenney Ng (IBM Software Group, USA), Prasad Deshpande (IBM Research - India), Thomas Hampp (IBM Software Group, Germany)</submissionAuthors>
+		<submissionAuthors>Sachindra Joshi (IBM Research India), Danish Contractor (IBM Research India), Kenney Ng (IBM Software Group USA), Prasad Deshpande (IBM Research - India), Thomas Hampp (IBM Software Group Germany)</submissionAuthors>
 		<sessionDescription>Techniques for Large Scale Data Management</sessionDescription>
 	</record>
 	<record>
@@ -509,7 +509,7 @@
 		<submissionId>747</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>An Algebraic Approach for Data-Centric Scientific Workflows</submissionTitle>
-		<submissionAuthors>Eduardo Ogasawara (COPPE/UFRJ), Daniel de Oliveira (COPPE/UFRJ), Patrick Valduriez (INRIA), Jonas Dias (COPPE/UFRJ), Fábio Porto (LNCC), Marta Mattoso (COPPE/UFRJ)</submissionAuthors>
+		<submissionAuthors>Eduardo Ogasawara (COPPE/UFRJ), Daniel_de Oliveira (COPPE/UFRJ), Patrick Valduriez (INRIA), Jonas Dias (COPPE/UFRJ), Fábio Porto (LNCC), Marta Mattoso (COPPE/UFRJ)</submissionAuthors>
 		<sessionDescription>Distributed Systems</sessionDescription>
 	</record>
 	<record>
@@ -554,7 +554,7 @@
 		<sessionCategory>Panel</sessionCategory>
 		<location>Vashon</location>
 		<submissionTitle>Panel Discussion: Maximizing Impact</submissionTitle>
-		<submissionAuthors>David DeWitt (Microsoft), Juliana Freire (NYU Polytechnic), Ed Lazowska (University of Washington), Sam Madden (MIT), Jennifer Widom (Stanford)</submissionAuthors>
+		<submissionAuthors>David DeWitt (Microsoft), Juliana Freire (NYU Polytechnic), Ed Lazowska (University of Washington), Samuel Madden (MIT), Jennifer Widom (Stanford University)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 10:30:00 AM</startDate>
@@ -587,7 +587,7 @@
 		<submissionId>825</submissionId>
 		<presentationOrder>3</presentationOrder>
 		<submissionTitle>Top-k Web Service Compositions in the context of user preferences</submissionTitle>
-		<submissionAuthors>Karim Benouaret (LIRIS), Djamal Benslimane, Allel Hadjali</submissionAuthors>
+		<submissionAuthors>Karim Benouaret (LIRIS), Djamal Benslimane (University of Lyon), Allel Hadjali (University of Rennes)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
@@ -713,7 +713,7 @@
 		<submissionId>614</submissionId>
 		<presentationOrder>3</presentationOrder>
 		<submissionTitle>Stratification Criteria and Rewriting Techniques for Checking Chase Termination</submissionTitle>
-		<submissionAuthors>Sergio Greco (Università della Calabria), Francesca Spezzano (Università della calabria), Irina Trubitsyna (DEIS, Università della Calabria)</submissionAuthors>
+		<submissionAuthors>Sergio Greco (Università della Calabria), Francesca Spezzano (Università della calabria), Irina Trubitsyna (DEIS Università della Calabria)</submissionAuthors>
 		<sessionDescription>Causality, Quality, and Dependencies</sessionDescription>
 	</record>
 	<record>
@@ -737,7 +737,7 @@
 		<submissionId>188</submissionId>
 		<presentationOrder>1</presentationOrder>
 		<submissionTitle>gStore: Answering SPARQL Queries via Subgraph Matching</submissionTitle>
-		<submissionAuthors>Lei Zou (Peking University), Jinhui Mo (Peking University), Lei Chen (Hong Kong University of Science and Technology, China), M. Tamer Özsu (University of Waterloo), Zhao Dongyan (Peking University)</submissionAuthors>
+		<submissionAuthors>Lei Zou (Peking University), Jinhui Mo (Peking University), Lei Chen (Hong Kong University of Science and Technology China), M. Tamer Özsu (University of Waterloo), Zhao Dongyan (Peking University)</submissionAuthors>
 		<sessionDescription>Graph Data</sessionDescription>
 	</record>
 	<record>
@@ -749,7 +749,7 @@
 		<submissionId>461</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Efficient Subgraph Search over Large Uncertain Graphs</submissionTitle>
-		<submissionAuthors>Ye Yuan (College of Information Science and Engineering, Northeastern University, China), Guoren Wang (College of Information Science and Engineering, Northeastern University, China), Haixun Wang (Microsoft Research Asia), Lei Chen (Hong Kong University of Science and Technology, China)</submissionAuthors>
+		<submissionAuthors>Ye Yuan (College of Information Science and Engineering - Northeastern University - China), Guoren Wang (College of Information Science and Engineering - Northeastern University - China), Haixun Wang (Microsoft Research Asia), Lei Chen (Hong Kong University of Science and Technology China)</submissionAuthors>
 		<sessionDescription>Graph Data</sessionDescription>
 	</record>
 	<record>
@@ -761,7 +761,7 @@
 		<submissionId>599</submissionId>
 		<presentationOrder>3</presentationOrder>
 		<submissionTitle>Scalable SPARQL Querying of Large RDF Graphs</submissionTitle>
-		<submissionAuthors>Jiewen Huang (Yale University), Daniel Abadi (Yale University), Kun Ren (Northwestern Polytechnical University, China)</submissionAuthors>
+		<submissionAuthors>Jiewen Huang (Yale University), Daniel Abadi (Yale University), Kun Ren (Northwestern Polytechnical University China)</submissionAuthors>
 		<sessionDescription>Graph Data</sessionDescription>
 	</record>
 	<record>
@@ -773,7 +773,7 @@
 		<submissionId>191</submissionId>
 		<presentationOrder>1</presentationOrder>
 		<submissionTitle>Albatross: Lightweight Elasticity in Shared Storage Databases for the Cloud using Live Data Migration</submissionTitle>
-		<submissionAuthors>Sudipto Das (UC Santa Barbara), Shoji Nishimura (NEC Corporation), Divyakant Agrawal (University of California, Santa Barbara), Amr El Abbadi (UC Santa Barbara)</submissionAuthors>
+		<submissionAuthors>Sudipto Das (UC Santa Barbara), Shoji Nishimura (NEC Corporation), Divyakant Agrawal (University of California Santa Barbara), Amr El Abbadi (UC Santa Barbara)</submissionAuthors>
 		<sessionDescription>Cloud Computing and High-Availability</sessionDescription>
 	</record>
 	<record>
@@ -785,7 +785,7 @@
 		<submissionId>252</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>iCBS: Incremental Cost-based Scheduling under Piecewise Linear SLAs</submissionTitle>
-		<submissionAuthors>Yun Chi (NEC Laboratories, America), Hyun Moon (NEC Labs America), Hakan Hacigumus (NEC Labs America)</submissionAuthors>
+		<submissionAuthors>Yun Chi (NEC Laboratories America), Hyun Moon (NEC Labs America), Hakan Hacigumus (NEC Labs America)</submissionAuthors>
 		<sessionDescription>Cloud Computing and High-Availability</sessionDescription>
 	</record>
 	<record>
@@ -821,7 +821,7 @@
 		<submissionId>52</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>A Probabilistic Approach for Automatically Filling Form-Based Web Interfaces</submissionTitle>
-		<submissionAuthors>Guilherme Toda (Federal University of Amazonas), Eli Cortez (Federal University of Amazonas), Altigran da Silva (Federal University of Amazonas), Edleno de Moura (Federal University of Amazonas)</submissionAuthors>
+		<submissionAuthors>Guilherme Toda (Federal University of Amazonas), Eli Cortez (Federal University of Amazonas), Altigran_da Silva (Federal University of Amazonas), Edleno_de Moura (Federal University of Amazonas)</submissionAuthors>
 		<sessionDescription>Human-Computer Interaction</sessionDescription>
 	</record>
 	<record>
@@ -917,7 +917,7 @@
 		<submissionId>139</submissionId>
 		<presentationOrder>1</presentationOrder>
 		<submissionTitle>Lightweight Graphical Models for Selectivity Estimation Without Independence Assumptions</submissionTitle>
-		<submissionAuthors>Kostas Tzoumas (Aalborg University, Denmark), Amol Deshpande (University of Maryland), Christian Jensen (Aarhus University)</submissionAuthors>
+		<submissionAuthors>Kostas Tzoumas (Aalborg University Denmark), Amol Deshpande (University of Maryland), Christian Jensen (Aarhus University)</submissionAuthors>
 		<sessionDescription>Statistical Methods</sessionDescription>
 	</record>
 	<record>
@@ -954,7 +954,7 @@
 		<submissionId>178</submissionId>
 		<presentationOrder>1</presentationOrder>
 		<submissionTitle>Personalized Privacy Protection in Social Networks</submissionTitle>
-		<submissionAuthors>Mingxuan Yuan (HKUST), Lei Chen (Hong Kong University of Science and Technology, China), Philip Yu (UIC)</submissionAuthors>
+		<submissionAuthors>Mingxuan Yuan (HKUST), Lei Chen (Hong Kong University of Science and Technology China), Philip Yu (University of Illinois at Chicago)</submissionAuthors>
 		<sessionDescription>Privacy and Protection</sessionDescription>
 	</record>
 	<record>
@@ -966,7 +966,7 @@
 		<submissionId>578</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Publishing Set-Valued Data via Differential Privacy</submissionTitle>
-		<submissionAuthors>Rui Chen (Concordia University), Noman Mohammed (Concordia University), Benjamin C. M. Fung (Concordia University), Bipin c. Desai (Concordia University), Li Xiong (Emory University)</submissionAuthors>
+		<submissionAuthors>Rui Chen (Concordia University), Noman Mohammed (Concordia University), Benjamin Fung (Concordia University), Bipin Desai (Concordia University), Li Xiong (Emory University)</submissionAuthors>
 		<sessionDescription>Privacy and Protection</sessionDescription>
 	</record>
 	<record>
@@ -1050,7 +1050,7 @@
 		<submissionId>160</submissionId>
 		<presentationOrder>1</presentationOrder>
 		<submissionTitle>On Pruning for Top-K Ranking in Uncertain Databases</submissionTitle>
-		<submissionAuthors>Chonghai Wang (University of Alberta), Li Yan Yuan (University of Alberta), Jia-Huai  You (University of Alberta), Osmar Zaiane (University of Alberta), Jian Pei (Simon Fraser University)</submissionAuthors>
+		<submissionAuthors>Chonghai Wang (University of Alberta), Li Yan Yuan (University of Alberta), Jia-Huai You (University of Alberta), Osmar Zaiane (University of Alberta), Jian Pei (Simon Fraser University)</submissionAuthors>
 		<sessionDescription>Ranking</sessionDescription>
 	</record>
 	<record>
@@ -1062,7 +1062,7 @@
 		<submissionId>531</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>PathSim: Meta Path-Based Top-K Similarity Search in Heterogeneous Information Networks</submissionTitle>
-		<submissionAuthors>Yizhou Sun (UIUC), Jiawei Han (UIUC), Xifeng Yan (UCSB), Philip Yu (UIC), Tianyi Wu (Microsoft)</submissionAuthors>
+		<submissionAuthors>Yizhou Sun (UIUC), Jiawei Han (UIUC), Xifeng Yan (UCSB), Philip Yu (University of Illinois at Chicago), Tianyi Wu (Microsoft)</submissionAuthors>
 		<sessionDescription>Ranking</sessionDescription>
 	</record>
 	<record>
@@ -1074,7 +1074,7 @@
 		<submissionId>554</submissionId>
 		<presentationOrder>3</presentationOrder>
 		<submissionTitle>Optimizing and Parallelizing Ranked Enumeration</submissionTitle>
-		<submissionAuthors>Konstantin Golenberg (The Hebrew University), Benny Kimelfeld (IBM Research - Almaden), Yehoshua Sagiv (Hebrew University, Jerusalem)</submissionAuthors>
+		<submissionAuthors>Konstantin Golenberg (The Hebrew University), Benny Kimelfeld (IBM Research - Almaden), Yehoshua Sagiv (Hebrew University Jerusalem)</submissionAuthors>
 		<sessionDescription>Ranking</sessionDescription>
 	</record>
 	<record>
@@ -1086,7 +1086,7 @@
 		<submissionId>655</submissionId>
 		<presentationOrder>4</presentationOrder>
 		<submissionTitle>Efficient Rank Join with Aggregation Constraints</submissionTitle>
-		<submissionAuthors>Min Xie (University of British Columbia), Laks Lakshmanan (University of British Columbia), Peter Wood (Birkbeck, University of London)</submissionAuthors>
+		<submissionAuthors>Min Xie (University of British Columbia), Laks Lakshmanan (University of British Columbia), Peter Wood (Birkbeck University of London)</submissionAuthors>
 		<sessionDescription>Ranking</sessionDescription>
 	</record>
 	<record>
@@ -1110,7 +1110,7 @@
 		<submissionId>310</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Large-Scale Collective Entity Matching</submissionTitle>
-		<submissionAuthors>Vibhor Rastogi (Yahoo! Research), Nilesh Dalvi (Yahoo! ), Minos Garofalakis (Technical University of Crete)</submissionAuthors>
+		<submissionAuthors>Vibhor Rastogi (Yahoo! Research), Nilesh Dalvi (Yahoo!), Minos Garofalakis (Technical University of Crete)</submissionAuthors>
 		<sessionDescription>Entity Matching</sessionDescription>
 	</record>
 	<record>
@@ -1206,7 +1206,7 @@
 		<submissionId>376</submissionId>
 		<presentationOrder>3</presentationOrder>
 		<submissionTitle>On Link-based Similarity Join</submissionTitle>
-		<submissionAuthors>Liwen Sun (University of Hong Kong), Reynold Cheng (University of Hong Kong), Xiang Li (University of Hong Kong), David   Cheung (University of Hong Kong), Jiawei Han (UIUC)</submissionAuthors>
+		<submissionAuthors>Liwen Sun (University of Hong Kong), Reynold Cheng (University of Hong Kong), Xiang Li (University of Hong Kong), David Cheung (University of Hong Kong), Jiawei Han (UIUC)</submissionAuthors>
 		<sessionDescription>Graph Data</sessionDescription>
 	</record>
 	<record>
@@ -1242,7 +1242,7 @@
 		<submissionId>227</submissionId>
 		<presentationOrder>1</presentationOrder>
 		<submissionTitle>Structural Trend Analysis For Online Social Networks</submissionTitle>
-		<submissionAuthors>Ceren Budak (Ucsb), Divyakant Agrawal (University of California, Santa Barbara), Amr El Abbadi (UC Santa Barbara)</submissionAuthors>
+		<submissionAuthors>Ceren Budak (Ucsb), Divyakant Agrawal (University of California Santa Barbara), Amr El Abbadi (UC Santa Barbara)</submissionAuthors>
 		<sessionDescription>Social Networks</sessionDescription>
 	</record>
 	<record>
@@ -1278,7 +1278,7 @@
 		<submissionId>77</submissionId>
 		<presentationOrder>1</presentationOrder>
 		<submissionTitle>Fast Incremental and Personalized PageRank</submissionTitle>
-		<submissionAuthors>Bahman Bahmani (Stanford University), Abdur Chowdhury (Twitter Inc.), Ashish Goel (Stanford University, Twitter Inc.)</submissionAuthors>
+		<submissionAuthors>Bahman Bahmani (Stanford University), Abdur Chowdhury (Twitter Inc.), Ashish Goel (Stanford University Twitter Inc.)</submissionAuthors>
 		<sessionDescription>Searching and Ranking</sessionDescription>
 	</record>
 	<record>
@@ -1374,7 +1374,7 @@
 		<submissionId>575</submissionId>
 		<presentationOrder>3</presentationOrder>
 		<submissionTitle>MRI: Meaningful Interpretations of Collaborative Ratings</submissionTitle>
-		<submissionAuthors>Mahashweta Das (University of Texas at Arlington), Sihem Amer-Yahia (Yahoo Research,  USA), Gautam Das (University of Texas, Arlington), Cong Yu (Google Research)</submissionAuthors>
+		<submissionAuthors>Mahashweta Das (University of Texas at Arlington), Sihem Amer-Yahia (Yahoo Research USA), Gautam Das (University of Texas Arlington), Cong Yu (Google Research)</submissionAuthors>
 		<sessionDescription>Recommender Systems</sessionDescription>
 	</record>
 	<record>
@@ -1446,7 +1446,7 @@
 		<submissionId>320</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Implementing Performance Competitive Logical Recovery</submissionTitle>
-		<submissionAuthors>David Lomet (Microsoft Research,  USA ), Kostas Tzoumas (Aalborg University, Denmark), Michael Zwilling (Microsoft)</submissionAuthors>
+		<submissionAuthors>David Lomet (Microsoft Research  USA ), Kostas Tzoumas (Aalborg University Denmark), Michael Zwilling (Microsoft)</submissionAuthors>
 		<sessionDescription>Transaction Processing</sessionDescription>
 	</record>
 	<record>
@@ -1470,7 +1470,7 @@
 		<submissionId>498</submissionId>
 		<presentationOrder>4</presentationOrder>
 		<submissionTitle>Optimistic Concurrency Control by Melding Trees</submissionTitle>
-		<submissionAuthors>Philip Bernstein (Microsoft Corp), Colin Reid (Microsoft Corporation), Ming Wu (Microsoft), Xinhao Yuan (Tsinghua University, Beijing, China)</submissionAuthors>
+		<submissionAuthors>Philip Bernstein (Microsoft Corp), Colin Reid (Microsoft Corporation), Ming Wu (Microsoft), Xinhao Yuan (Tsinghua University Beijing China)</submissionAuthors>
 		<sessionDescription>Transaction Processing</sessionDescription>
 	</record>
 	<record>
@@ -1518,7 +1518,7 @@
 		<submissionId>589</submissionId>
 		<presentationOrder>4</presentationOrder>
 		<submissionTitle>Randomized Generalization for Aggregate Suppression over Hidden Web Databases</submissionTitle>
-		<submissionAuthors>Xin Jin (George Washington U), Nan Zhang (George Washington U), Aditya Mone (UT Arlington), Gautam Das (UT Arlington)</submissionAuthors>
+		<submissionAuthors>Xin Jin (George Washington U), Nan Zhang (George Washington U), Aditya Mone (UT Arlington), Gautam Das (University of Texas Arlington)</submissionAuthors>
 		<sessionDescription>Web Data</sessionDescription>
 	</record>
 	<record>
@@ -1542,7 +1542,7 @@
 		<submissionId>80</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Automatic Wrappers for Large Scale Web Extraction</submissionTitle>
-		<submissionAuthors>Nilesh Dalvi (Yahoo! ), Ravi  Kumar (Yahoo!), Mohamed Soliman (U. of Waterloo)</submissionAuthors>
+		<submissionAuthors>Nilesh Dalvi (Yahoo!), Ravi Kumar (Yahoo!), Mohamed Soliman (U. of Waterloo)</submissionAuthors>
 		<sessionDescription>Web Processing</sessionDescription>
 	</record>
 	<record>
@@ -1554,7 +1554,7 @@
 		<submissionId>134</submissionId>
 		<presentationOrder>3</presentationOrder>
 		<submissionTitle>Recovering Semantics of Tables on the Web</submissionTitle>
-		<submissionAuthors>Petros Venetis (Stanford University), Alon Halevy (Google), Jayant Madhavan (Google Inc), Marius Pasca (Google Inc), Warren Shen (Google), Fei Wu (Google Inc), Gengxin Miao (University of California, Santa Barbara), Chung Wu</submissionAuthors>
+		<submissionAuthors>Petros Venetis (Stanford University), Alon Halevy (Google), Jayant Madhavan (Google Inc), Marius Pasca (Google Inc), Warren Shen (Google), Fei Wu (Google Inc), Gengxin Miao (University of California Santa Barbara), Chung Wu</submissionAuthors>
 		<sessionDescription>Web Processing</sessionDescription>
 	</record>
 	<record>
@@ -1638,7 +1638,7 @@
 		<submissionId>163</submissionId>
 		<presentationOrder>3</presentationOrder>
 		<submissionTitle>SXPath - Extending XPath towards Spatial Querying on Web Documents</submissionTitle>
-		<submissionAuthors>Ermelinda Oro (DEIS-UNICAL, Altilia srl), Massimo Ruffolo (ICAR-CNR, Altilia srl), Steffen Staab (Institute WeST, University of Koblenz-Landau)</submissionAuthors>
+		<submissionAuthors>Ermelinda Oro (DEIS-UNICAL Altilia srl), Massimo Ruffolo (ICAR-CNR Altilia srl), Steffen Staab (Institute WeST University of Koblenz-Landau)</submissionAuthors>
 		<sessionDescription>GeoSpatial</sessionDescription>
 	</record>
 	<record>
@@ -1662,7 +1662,7 @@
 		<submissionId>22</submissionId>
 		<presentationOrder>1</presentationOrder>
 		<submissionTitle>A Generic Framework for Handling Uncertain Data with Local Correlations</submissionTitle>
-		<submissionAuthors>Xiang Lian (HKUST), Lei Chen (HKUST)</submissionAuthors>
+		<submissionAuthors>Xiang Lian (Hong Kong University of Science and Technology China), Lei Chen (Hong Kong University of Science and Technology China)</submissionAuthors>
 		<sessionDescription>Uncertain Data</sessionDescription>
 	</record>
 	<record>
@@ -1674,7 +1674,7 @@
 		<submissionId>250</submissionId>
 		<presentationOrder>2</presentationOrder>
 		<submissionTitle>Efficient Probabilistic Reverse Nearest Neighbor Query Processing on Uncertain Data</submissionTitle>
-		<submissionAuthors>Thomas Bernecker (Ludwig-Maximilians-University), Tobias Emrich (Ludwig-Maximilians-University), Hans-Peter Kriegel ( Univ. of Munchen,  Germany ), Matthias Renz (Ludwig-Maximilians-University), Stefan Zankl (Ludwig-Maximilians-Universität München), Andreas Züfle (Ludwig-Maximilians-University)</submissionAuthors>
+		<submissionAuthors>Thomas Bernecker (Ludwig-Maximilians-University), Tobias Emrich (Ludwig-Maximilians-University), Hans-Peter Kriegel ( Univ. of Munchen  Germany ), Matthias Renz (Ludwig-Maximilians-University), Stefan Zankl (Ludwig-Maximilians-Universität München), Andreas Züfle (Ludwig-Maximilians-University)</submissionAuthors>
 		<sessionDescription>Uncertain Data</sessionDescription>
 	</record>
 	<record>
@@ -1842,7 +1842,7 @@
 		<submissionId>424</submissionId>
 		<presentationOrder>4</presentationOrder>
 		<submissionTitle>Mining Top-K Large Structural Patterns in a Massive Network</submissionTitle>
-		<submissionAuthors>Feida Zhu (Singapore Management Uni), Qiang Qu (Peking University), David Lo (Singapore Management University), Xifeng Yan (UCSB), Jiawei Han (UIUC), Philip Yu (UIC)</submissionAuthors>
+		<submissionAuthors>Feida Zhu (Singapore Management Uni), Qiang Qu (Peking University), David Lo (Singapore Management University), Xifeng Yan (UCSB), Jiawei Han (UIUC), Philip Yu (University of Illinois at Chicago)</submissionAuthors>
 		<sessionDescription>Graph Data</sessionDescription>
 	</record>
 	<record>
@@ -1900,7 +1900,7 @@
 		<sessionCategory>Tutorial</sessionCategory>
 		<location>Cascade 1BC</location>
 		<submissionTitle>New Frontiers in Business Intelligence</submissionTitle>
-		<submissionAuthors>Surajit Chaudhuri and Vivek Narasayya</submissionAuthors>
+		<submissionAuthors>Surajit Chaudhuri, Vivek Narasayya (Microsoft Research)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/30/2011 1:30:00 PM</startDate>
@@ -1909,7 +1909,7 @@
 		<sessionCategory>Tutorial</sessionCategory>
 		<location>Cascade 1BC</location>
 		<submissionTitle>System Co-Design and Data Managment for Flash Devices</submissionTitle>
-		<submissionAuthors>Philippe Bonnet, Luc Bouganim, Ioannis Koltsidas, and Stratis D. Viglas</submissionAuthors>
+		<submissionAuthors>Philippe Bonnet (University of Copenhagen Denmark), Luc Bouganim, Ioannis Koltsidas, Stratis_D. Viglas</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/31/2011 10:30:00 AM</startDate>
@@ -1918,7 +1918,7 @@
 		<sessionCategory>Tutorial</sessionCategory>
 		<location>Cascade 1BC</location>
 		<submissionTitle>Exploration of Deep Web Repositories</submissionTitle>
-		<submissionAuthors>Nan Zhang and Gautam Das</submissionAuthors>
+		<submissionAuthors>Nan Zhang (George Washington U), Gautam Das (University of Texas Arlington)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>8/31/2011 1:30:00 PM</startDate>
@@ -1927,7 +1927,7 @@
 		<sessionCategory>Tutorial</sessionCategory>
 		<location>Cascade 1BC</location>
 		<submissionTitle>Crowdsourcing Applications and Platforms: A Data Management Perspective</submissionTitle>
-		<submissionAuthors>Anhai Doan, Michael Franklin, Donald Kossmann, and Tim Kraska</submissionAuthors>
+		<submissionAuthors>AnHai Doan (University of Wisconsin), Michael Franklin (UC Berkeley), Donald Kossmann (ETH Zurich), Tim Kraska (UC Berkeley)</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 10:30:00 AM</startDate>
@@ -1936,7 +1936,7 @@
 		<sessionCategory>Tutorial</sessionCategory>
 		<location>Cascade 1BC</location>
 		<submissionTitle>Graph Data Management Systems for New Application Domains</submissionTitle>
-		<submissionAuthors>Philippe Cudre-Mauroux and Sameh Elniket</submissionAuthors>
+		<submissionAuthors>Philippe Cudre-Mauroux (MIT CSAIL), Sameh Elniket</submissionAuthors>
 	</record>
 	<record>
 		<startDate>9/1/2011 1:30:00 PM</startDate>
@@ -1945,6 +1945,6 @@
 		<sessionCategory>Tutorial</sessionCategory>
 		<location>Cascade 1BC</location>
 		<submissionTitle>Information Diffusion In Social Networks: Observing and Influencing Societal Interests</submissionTitle>
-		<submissionAuthors>Divyakant Agrawal, Ceren Budak, and Amr El Abbadi</submissionAuthors>
+		<submissionAuthors>Divyakant Agrawal (University of California Santa Barbara), Ceren Budak (Ucsb), Amr El Abbadi (UC Santa Barbara)</submissionAuthors>
 	</record>
 </programm>

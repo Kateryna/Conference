@@ -90,19 +90,21 @@ function parsingDate(dateData){
 // new Date = 
 }	
 
-function addToWebCalendar (sTime, eTime, eName, eLoc){
-		var start;
-		var end;
+
+
+function addToWebCalendar (){
+/*
+		var start = parsingDate(sTime);
+		var end = parsingDate(eTime);
+		if (sTime=="Not defined") start = parsingDate("8/30/2011 10:30:00 AM");
+		if (eTime=="Not defined") end = parsingDate("8/30/2011 10:30:00 AM");
 		try {start = parsingDate(sTime);}
-		catch (err) { start = ["8/30/2011 10:30:00 AM"];}
+		catch (err) { start = parsingDate("8/30/2011 10:30:00 AM");}
 		try {end =  parsingDate(eTime);}
-		catch (err) { end = ["9/2/2011 5:30:00 PM"];}
-		
-console.log ("Event\n"+eName+"\n"+start+"\n"+end+"\n"+eLoc);		
-	
-		
-			
-		
+		catch (err) { end = parsingDate("9/2/2011 5:30:00 PM");}
+*/	
+
+
 $(document).ready(function() {
   
   $('.ibutton').AddToCal({
@@ -111,36 +113,36 @@ $(document).ready(function() {
     icalEnabled:false,
     vcalEnabled:false,
     getEventDetails: function( element ) {
-    	
-  
- /*
- var 
+
+ 			var 
           dtstart_element = element.find('.dtstart'), start,
           dtend_element = element.find('.dtend'), end,
-          title_element = element.find('.summary'), title,
-          details_element = element.find('.description'), details;
+          title_element = element.find('.summary'), eName,
+          details_element = element.find('.location'), loc;
         
+        
+ 			start = dtstart_element.length ? dtstart_element.html() : element.html();
+
+         end = dtend_element.length ? dtend_element.html() : element.html();
+
+   
+        eName = title_element.length ? title_element.html() : element.html();
+        loc = details_element.length ? details_element.html() : element.html();
+        var estart = parsingDate(start);
+        var eend = parsingDate(end);
         // in this demo, we attempt to get hCalendar attributes or otherwise just dummy the values
-        start = dtstart_element.length ? dtstart_element.attr('title') : new Date();
-        if(dtend_element.length) {
-          end = dtend_element.attr('title');
-        } else {
-          end = new Date();
-          end.setTime(end.getTime() + 60 * 60 * 1000);
-        }
-        title = title_element.length ? title_element.html() : element.attr('id');
-        details = details_element.length ? details_element.html() : element.html();
-*/
+
       // return the required event structure
+      console.log("in function "+ eName+estart+eend+loc);
       return { 
         webcalurl: null,
         icalurl: null,
         vcalurl: null, 
-        start: start, 
-        end: end, 
+        start: estart, 
+        end: eend, 
         title: eName, 
         details: null, 
-        location: eLoc, 
+        location: loc, 
         url: null
         };
     },

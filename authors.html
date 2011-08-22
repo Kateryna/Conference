@@ -8,8 +8,10 @@
 		<link type="text/css" rel="stylesheet" media="all" href="./app/programday.css">
 		<link rel='stylesheet' type='text/css' href='app/jquery.addtocal.css' />
 		<link rel='stylesheet' type='text/css' href='app/jquery-ui.css' />
+		<link rel="stylesheet" type="text/css" media="all" href="app/tabs.css"> 
 		
 		<script type="text/javascript" src="app/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="app/jquery.tools.min.js"></script> 
 		<script type='text/javascript' src='app/jquery-ui.min.js'></script>		
 		<script type='text/javascript' src='app/rfc3339date.js'></script>
 		<script type='text/javascript' src='app/jquery.addtocal.js'></script>
@@ -19,6 +21,11 @@
 		<script type="text/javascript" src="app/localcalendar.js"></script>	
 		<script type="text/javascript" charset="utf-8" src="app/phonegap-1.0.0.js"></script>      
 
+
+
+<script type="text/javascript" >
+	
+</script>>
    </head>
 	
 	<body onload="init()">
@@ -29,10 +36,25 @@
 <FORM><INPUT TYPE="BUTTON" VALUE="Go Back" class="backbutton"
 ONCLICK="history.go(-1)"></FORM></div>
 </div></div><br>
-		<div align="center"> 
-		<div style="width: 90%; text-align: center" >
-      <div id="result"></div>
-      </div>
+	
+      
+        <div id="programForDay" align="center">
+			<!-- the tabs -->
+			<ul class="tabs">
+			<li><a>First N.</a></li>
+			<li><a>Last N.</a></li>
+
+			</ul>
+			<!-- tab "panes" -->
+
+			<div class="panes" align="center" style="width: 90%; text-align: center">
+				<div id="resultF" style="padding-top:15px;">  
+      		</div>
+      		 <div id="resultL" style="padding-top:15px;">
+      		 </div>
+      
+      
+    	</div>
     	</div>
 </body>
 </html>
