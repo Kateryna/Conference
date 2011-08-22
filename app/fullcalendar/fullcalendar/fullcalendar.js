@@ -437,12 +437,62 @@ function Calendar(element, options, eventSources) {
 	}
 	
 	
+	
+
+function calcSize() {
+		if (options.contentHeight) {
+			suggestedViewHeight = options.contentHeight;
+		} else if (options.height) {
+			if(options.height.toString().match(new RegExp("^[0-9]+(px)?$"))) {
+				suggestedViewHeight = parseInt(options.height) - (headerElement ? headerElement.height() : 0) - vsides(content);
+			} else {
+				suggestedViewHeight = options.height;
+			}
+		} else {
+			suggestedViewHeight = Math.round(content.width() / Math.max(options.aspectRatio, .5));
+		}
+	}
+	
+	
+
+	
+	function setHeight(height, dateChanged) {
+		if (height === undefined) {
+			height = viewHeight;
+		}
+		viewHeight = height;
+		slotTopCache = {};
+	
+		var headHeight = dayBody.position().top;
+		
+		if($.type(height) === 'number') {
+			var allDayHeight = slotScroller.position().top; // including divider
+			var bodyHeight = Math.min( // total body height, including borders
+				height - headHeight,   // when scrollbars
+				slotTable.height() + allDayHeight + 1 // when no scrollbars. +1 for bottom border
+			);
+			
+			slotScroller.height(bodyHeight - allDayHeight - 1);
+			dayBodyFirstCellStretcher.height(bodyHeight - vsides(dayBodyFirstCell));
+		} else {
+			slotScroller.height(height);
+			dayBodyFirstCellStretcher.height(slotScroller.height());
+		}
+		slotLayer.css('top', headHeight);
+		
+		slotHeight = slotTableFirstInner.height() + 1; // +1 for border
+		
+		if (dateChanged) {
+			resetScroll();
+		}
+	}
+	/*///////////////////////////////////////////
 	function calcSize() {
 		if (options.contentHeight) {
 			suggestedViewHeight = options.contentHeight;
 		}
 		else if (options.height) {
-			suggestedViewHeight = options.height - (headerElement ? headerElement.height() : 0) - vsides(content);
+			suggestedViewHeight = options.height - (headerElement ? headerElement.height() : 0) - vsides(content)+100;
 		}
 		else {
 			suggestedViewHeight = Math.round(content.width() / Math.max(options.aspectRatio, .5));
@@ -460,7 +510,7 @@ function Calendar(element, options, eventSources) {
 		currentView.setWidth(content.width(), dateChanged);
 		ignoreWindowResize--;
 	}
-	
+	/////////////////////////////////////////*/
 	
 	function windowResize() {
 		if (!ignoreWindowResize) {
@@ -3660,7 +3710,7 @@ function AgendaEventRenderer() {
 		reportEvents(events);
 		var i, len=events.length,
 			dayEvents=[],
-			slotEvents=[];
+			slotEvmnts=[];
 		for (i=0; i<len; i++) {
 			if (events[i].allDay) {
 				dayEvents.push(events[i]);

@@ -48,7 +48,8 @@ h1 {
   margin: 0;
 }
 h2 {
-  font-size: 1.8em;
+  font-size: 2.0em;
+  font-weight: 400;
 }
 h3 {
   font-size: 1.6em;

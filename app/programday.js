@@ -1,19 +1,88 @@
 
 		var txt;
 		function addToCalendar(eventName,loc, docId){
+			
+			
+	var startTime=[];
+	var endTime=[];
+	var allRecords=[];
+if (docId==1){
+ allRecords= getDoc("Program.xml", "record");
+		for (i=0; i<allRecords.length; i++){
+		if (allRecords[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue == eventName){
+		try {startTime.push(allRecords[i].getElementsByTagName("startDate")[0].childNodes[0].nodeValue);} 
+	
+		catch (err) { startTime = ["8/30/2011 10:30:00 AM"];}
+		try {
+		endTime.push(allRecords[i].getElementsByTagName("endDate")[0].childNodes[0].nodeValue);}
+		catch (err) { endTime = ["9/2/2011 5:30:00 PM"];}
+		
+		}
+}
+console.log(startTime, endTime);
+} else if (docId==2){
+allRecords = getDoc("XMLworkshops.xml", "workshop");
+		for (i=0; i<allRecords.length; i++){
+		if (allRecords[i].getElementsByTagName("workshopID")[0].childNodes[0].nodeValue == eventName){
+		try {startTime.push(allRecords[i].getElementsByTagName("startDate")[0].childNodes[0].nodeValue);} 
+			catch (err) { 
+			desc="All day event";
+			startTime=["8/30/2011 10:30:00 AM"];}
+		try {endTime.push(allRecords[i].getElementsByTagName("endDate")[0].childNodes[0].nodeValue);}
+		
+			catch (err) {endTime = ["9/2/2011 5:30:00 PM"]; }
+		}
+		}
+console.log(startTime, endTime);
+} else {console.log("Something wrong...");}
+
+var start = parsingDate(startTime[0]);
+var end = parsingDate(endTime[0]);
+
+
+
 			function mycallbackform(v,m,f){
 				console.log(v);
-				if (v==1)
-				location="calendarplugin.html?eventName="+eventName +"&loc="+loc+"&docId="+docId;
-				console.log(location);
-			}
+				if (v!=2){
+addToLocalCalendar(eventName, startTime[0], endTime[0], loc);
+return false;
+
+//				location="calendarplugin.html?eventName="+eventName +"&loc="+loc+"&docId="+docId;
+//				console.log(location);
+				} return true;					
+}
 			$.prompt(txt,{
-				callback: mycallbackform,
+				submit: mycallbackform,
 				buttons: {"Add to my calendar": '1', "Close": '2' },
 				show:'slideDown'
 			});
 			
-		};
+				
+$(document).ready(function() {
+	console.log('works');
+	 $('.jqidefaultbutton').AddToCal({
+    // ical and vcal require an ics or vcs file to be served. 
+    // Disable these features if reqired (as a result the 30boxes, iCal and vCalendar menu links will not appear)
+    icalEnabled:false,
+    vcalEnabled:false,
+    getEventDetails: function( element ) {
+
+      // return the required event structure
+      return { 
+        webcalurl: null,
+        icalurl: null,
+        vcalurl: null, 
+        start: start, 
+        end: end, 
+        title: eventName, 
+        details: null, 
+        location: loc, 
+        url: null
+        };
+    },
+  });
+});
+	};
 							
 			function getInfo(session){
 				var sessionDescription;

@@ -40,6 +40,7 @@ function init(){
 //	console.log(table);
 
 	document.getElementById("result").innerHTML = table;
+
 	
 }
 
@@ -76,11 +77,21 @@ function getAbstract(num) {
 	var abstrRow = document.createElement("tr");
 	abstrRow.setAttribute("id","article" + num+"abstract");
 	abstrRow.setAttribute("name","info"+num);
-	var listener = "<div class='textSmall' style='text-align:center;'><a href='calendarplugin.html?eventName="+category[j] +"&loc="+loc[j]+"&docId="+1+"' class='ibutton'><b>Add to calendar</b></a></div>";
+	var listener = "<div class='textSmall' style='text-align:center;'><a href='#null' id= 'btn' class='ibutton'><b>Add to calendar</b></a></div>";
 	console.log(listener);
 	abstrRow.innerHTML = "<td class='event'><div><b>Article: </b>" +submissionTitle[j]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+allAuthArray[j]+"<br><i>"+start[j]+" - "+end[j]+"</i><br><a href='rooms.html#"+roomId(loc[j])+"'>"+loc[j]+"</a><br>"+category[j]+"</div>"+listener+"</td>";
 	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
 			titlRow.nextSibling);
+	var btn = document.getElementById("btn")
+	btn.setAttribute("onclick","addToLocalCalendar('"+category[j]+"','" +start[j]+"','" +end[j]+"','" +loc[j]+"')");
+	addToWebCalendar(start[j],end[j], category[j], loc[j]);
 		}	
 	}
-};					
+
+};				
+
+
+
+
+
+

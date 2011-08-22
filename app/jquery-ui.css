@@ -47,7 +47,7 @@
 
 /* Component containers
 ----------------------------------*/
-.ui-widget { font-family: segoe ui, Arial, sans-serif; font-size: 20.0pt; font-weight:700;}
+.ui-widget { font-family: segoe ui, Arial, sans-serif; font-size: 16.0pt; font-weight:500;}
 .ui-widget .ui-widget { font-size: 1em; }
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: segoe ui, Arial, sans-serif; font-size: 18.0pt; }
 .ui-widget-content { border: 1px solid #000000; background: #FDE9D9 url(images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) 50% top repeat-x; color: #000000; }

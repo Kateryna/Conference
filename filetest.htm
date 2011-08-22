@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FileReader Example</title>
+    <title>Contact Example</title>
 
-    <script type="text/javascript" charset="utf-8" src="app/phonegap-1.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
     <script type="text/javascript" charset="utf-8">
 
-// Wait for PhoneGap to load
-function init() {
-    // the next line makes it impossible to see Contacts on the HTC Evo since it
-    // doesn't have a scroll button
-    // document.addEventListener("touchmove", preventBehavior, false);
-    document.addEventListener("deviceready", myFunc, true);
-}
+    // Wait for PhoneGap to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
 
-
-function writeSomething(){
-writeData('file.txt', 'Hurray', onComplete);
-
-}
-
-
-function onComplete(){
-alert("completed");
-}
     // PhoneGap is ready
-var writeData = function (filename, data, callback) {
-	var writeOutData = function () {
-		var fw = new FileWriter();
-		fw.oncomplete = callback;
-		fw.onerror = function () { 
-			alert("Failed to save update");
-		}
-		fw.writeAsText("myDir/" + filename, data);
-	}
+    //
+    function onDeviceReady() {
+        var db = window.openDatabase("Events", "1.0", "CalendarEvents", 200000);
+        db.transaction(populateDB, errorCB, successCB);
+    }
 
-	navigator.fileMgr.testDirectoryExists("myDir", function(exists) {
-			exists ? writeOutData() :
-			navigator.fileMgr.createDirectory("myDir", writeOutData, function() {
-				alert("Failed to save update");
-			})
-	});
-};
+    // Populate the database 
+    //
+    function populateDB(tx) {
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+         tx.executeSql('CREATE TABLE IF NOT EXISTS EVENT (eName, eStart, eEnd, eLoc)');
+         tx.executeSql('INSERT INTO EVENT (eName, eStart, eEnd, eLoc) VALUES (a,'+new Date(y, m, d-5)+','+new Date(y, m, d-2)+',d)');
+    }
 
+    // Transaction error callback
+    //
+    function errorCB(tx, err) {
+        alert("Error processing SQL: "+err);
+    }
 
+    // Transaction success callback
+    //
+    function successCB() {
+        alert("success!");
+    }
 
     </script>
   </head>
   <body>
     <h1>Example</h1>
-    <p>Read File</p>
+    <p>Database</p>
   </body>
 </html>

@@ -305,10 +305,13 @@ parent.removeChild(element);
 	var abstrRow = document.createElement("tr");
 	abstrRow.setAttribute("id","article" + num+"abstract");
 	var titlRow = document.getElementById("article" + num);
-	var listener = "<div class='textSmall' style='text-align:center;'><a href='calendarplugin.html?eventName="+category[num] +"&loc="+loc[num]+"&docId="+1+"' class='ibutton'><b>Add to calendar</b></a></div>";		
+	var listener = "<div class='textSmall' style='text-align:center;'><a href='#null' id='btn' class='ibutton'><b>Add to calendar</b></a></div>";		
 	abstrRow.innerHTML = "<td class='event'><div class='textSmall'>" + resultArticleAbstr[num]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+authors[num]+"</div><div class='textSmall'><i>"+start[num]+" - "+end[num]+"</i></div><div class='textSmall'><a href='rooms.html#"+roomId(loc[num])+"'>"+loc[num]+"</a><br><div>"+category[num]+"</div></div>"+listener+"</td>";
  	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
 			titlRow.nextSibling);
+	var btn = document.getElementById("btn")
+	btn.setAttribute("onclick","addToLocalCalendar('"+category[num]+"','" +start[num]+"','" +end[num]+"','" +loc[num]+"')");
+	addToWebCalendar(start[num],end[num], category[num], loc[num]);
 	//document.getElementById("article"+num).childNodes[0].childNodes[0].disabled=true;
 }
 };

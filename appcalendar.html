@@ -9,33 +9,49 @@
 		<link rel='stylesheet' type='text/css' href='app/fullcalendar/fullcalendar/fullcalendar.print.css' media='print'/>
 		<link type="text/css" rel="stylesheet" media="all" href="./app/default.css">
 				<link type="text/css" rel="stylesheet" media="all" href="./app/style.css">
+		  <script type="text/javascript" charset="utf-8" src="app/phonegap-1.0.0.js"></script>      
+
 		<script type='text/javascript' src='app/jquery-1.6.2.min.js'></script>
 <script type='text/javascript' src='app/jquery-ui.min.js'></script>
 		<script type='text/javascript' src='app/fullcalendar/fullcalendar/fullcalendar.min.js'></script>
 		<script type="text/javascript" src="app/jquery-impromptu.js"></script>
-
+		<script type='text/javascript' src='app/localcalendar.js'></script>
+		<script type='text/javascript' src='app/commonjs.js'></script>
 		<script type="text/javascript">
 		
-		var hash = window.location.search.substring(1);
-		console.log(hash);
-
-		
-		$(document).ready(function() {
+		retrieveFromDB();
 	
-		var date = new Date();
+	/*
+$(document).ready(function() {
+			var date = new Date();
 		var d = date.getDate();
 		var m = date.getMonth();
 		var y = date.getFullYear();
-		
-		
+	
+
+	
 		$('#calendar').fullCalendar({
+					height: 1500,
+	windowResize: function(view) {
+        alert('The calendar has adjusted to a window resize');
+    },
 		eventClick: function(calEvent, jsEvent, view) {
-		var txt = "<h5>Event:</h5><div class='textSmall'>"+calEvent.title+"</div><h5>Location:</h5><div class='textSmall'>"+jsEvent.pageX+"</div><h5>Description:</h5><div class='textSmall'>"+view.name+"</div>";
-		$.prompt(txt);
-        // change the border color just for fun
+		var txt = "<h5>Event:</h5><div class='textSmall'>"+calEvent.title+"</div><h5>Location:</h5><div class='textSmall'><a href='rooms.html#"+roomId(calEvent.place)+"'>"+calEvent.place+"</a></div>";
+	
+
+
+			$.prompt(txt,{
+				buttons: {"Delete event": '1', "Close": '2' },
+				show:'slideDown'
+			});
+	        // change the border color just for fun
         $(this).css('border-color', 'red');
 
     },
+    		buttonText: {
+        prev: '&lt;',
+        next: '&gt;'
+    		},
 			header: {
 				left: 'prev,next today',
 				center: 'title',
@@ -45,6 +61,7 @@
 			editable: true,
 
 			defaultView: 'agendaWeek',
+			firstHour: 6,
 			disableDragging: true,
 			disableResizing : true,
 
@@ -57,58 +74,26 @@
 					title: 'Long Event',
 					start: new Date(y, m, d-5),
 					end: new Date(y, m, d-2)
-				},
-				{
-					id: 999,
-					title: 'Repeating Event',
-					start: new Date(y, m, d-3, 16, 0),
-					allDay: false
-				},
-				{
-					id: 999,
-					title: 'Repeating Event',
-					start: new Date(y, m, d+4, 16, 0),
-					allDay: false
-				},
-				{
-					title: 'Meeting',
-					start: new Date(y, m, d, 10, 30),
-					allDay: false
-				},
-				{
-					title: 'Lunch',
-					start: new Date(y, m, d, 12, 0),
-					end: new Date(y, m, d, 14, 0),
-					allDay: false
-				},
-				{
-					title: 'Birthday Party',
-					start: new Date(y, m, d+1, 19, 0),
-					end: new Date(y, m, d+1, 22, 30),
-					allDay: false
-				},
-				{
-					title: 'Click for Google',
-					start: new Date(y, m, 28),
-					end: new Date(y, m, 29),
-					url: 'http://google.com/'
-				}
-			]
+				}]
+
+
 		});
-		
 	});
+	
+	*/
 	  </script>
+
 	</head>
 
 	
 	
-	<body>
+	<body >
 		<div style=" background:#6291C0; padding:0px; marging-top:0px;">
 			<div> <img src="./img/vldb2011header.png" width="100%"></div>
 			<div align="left" ><FORM ><INPUT TYPE="BUTTON" VALUE="Go Back" class="backbutton" ONCLICK="history.go(-1)"></FORM></div>
 		</div><br>
 		
-		<div id = "calendar"></div>
+		<div id = "calendar" style="align:center"></div>
 		
 		
 		<!--

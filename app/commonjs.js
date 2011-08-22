@@ -73,3 +73,79 @@ console.log("room id " + roomid);
 
 }
 
+			
+function parsingDate(dateData){
+	dateString=dateData.replace(/ /g, "/").replace(/:/g,"/");
+	var d = dateString.split("/",7);
+	var hours=parseInt(d[3]);
+	
+//	console.log(d);
+	if ((d[6]=="PM")&&(hours!=12) )
+	hours+=12;
+	
+	var date = new Date (d[2],d[0]-1,d[1],hours,d[4]);
+//	console.log(date);
+//alert("DATE "+date);
+	return date;
+// new Date = 
+}	
+
+function addToWebCalendar (sTime, eTime, eName, eLoc){
+		var start;
+		var end;
+		try {start = parsingDate(sTime);}
+		catch (err) { start = ["8/30/2011 10:30:00 AM"];}
+		try {end =  parsingDate(eTime);}
+		catch (err) { end = ["9/2/2011 5:30:00 PM"];}
+		
+console.log ("Event\n"+eName+"\n"+start+"\n"+end+"\n"+eLoc);		
+	
+		
+			
+		
+$(document).ready(function() {
+  
+  $('.ibutton').AddToCal({
+    // ical and vcal require an ics or vcs file to be served. 
+    // Disable these features if reqired (as a result the 30boxes, iCal and vCalendar menu links will not appear)
+    icalEnabled:false,
+    vcalEnabled:false,
+    getEventDetails: function( element ) {
+    	
+  
+ /*
+ var 
+          dtstart_element = element.find('.dtstart'), start,
+          dtend_element = element.find('.dtend'), end,
+          title_element = element.find('.summary'), title,
+          details_element = element.find('.description'), details;
+        
+        // in this demo, we attempt to get hCalendar attributes or otherwise just dummy the values
+        start = dtstart_element.length ? dtstart_element.attr('title') : new Date();
+        if(dtend_element.length) {
+          end = dtend_element.attr('title');
+        } else {
+          end = new Date();
+          end.setTime(end.getTime() + 60 * 60 * 1000);
+        }
+        title = title_element.length ? title_element.html() : element.attr('id');
+        details = details_element.length ? details_element.html() : element.html();
+*/
+      // return the required event structure
+      return { 
+        webcalurl: null,
+        icalurl: null,
+        vcalurl: null, 
+        start: start, 
+        end: end, 
+        title: eName, 
+        details: null, 
+        location: eLoc, 
+        url: null
+        };
+    },
+  });
+
+});	
+
+}
