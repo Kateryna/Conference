@@ -48,23 +48,24 @@ for (i = 0; i < allRecords.length; i++) {
 	articlesArraySorted=articlesArray.sort();
 	console.log(articlesArraySorted.length);
 document.getElementById("category").innerHTML = "<h3>"+categoryTitle+"</h3>";
-var table = fastMakeTable("", articlesArraySorted.length, 1, articlesArraySorted);	
+var table = fastMakeTable("", articlesArraySorted.length, 1, articlesArraySorted,1);	
 document.getElementById("result").innerHTML = table;
 //console.log(table);	
 
 };
-function getAbstract(num) {
+function getAbstract(num, tableId) {
 	
-	var element=document.getElementById("article" + num +"abstract"); 
-   var parent = document.getElementById("table").childNodes[0];
+	var element=document.getElementById("article" + num+tableId+"abstract"); 
+   var parent = document.getElementById("1").childNodes[0];
 	if (element!=null){
 	
 	parent.removeChild(element);
 			} 
 	else {
+		console.log("creation");
 	var abstrRow = document.createElement("tr");
-	abstrRow.setAttribute("id","article" + num+"abstract");
-	var titlRow = document.getElementById("article" + num);
+	abstrRow.setAttribute("id","article" + num+tableId+"abstract");
+	var titlRow = document.getElementById("article" + num+tableId);
 	for (i=0; i<allRecords.length; i++){	
 	if (allRecords[i].getElementsByTagName("submissionTitle")[0].childNodes[0].nodeValue==articlesArraySorted[num]){
 	var start;
@@ -77,14 +78,18 @@ function getAbstract(num) {
 	try {end=allRecords[i].getElementsByTagName("endDate")[0].childNodes[0].nodeValue} catch (err) {end="Not defined";}
 	try {loc=allRecords[i].getElementsByTagName("location")[0].childNodes[0].nodeValue} catch (err) {loc="Not defined";}
 	try {category=allRecords[i].getElementsByTagName("sessionName")[0].childNodes[0].nodeValue} catch (err) {loc="Not defined";}
-		
-	var listener = "<div class='textSmall' style='text-align:center;'><a href='#null' id='btn' class='ibutton'><b>Add to calendar</b></a></div>";	
+	
+	var element = "<div id='event' style='visibility:hidden'><div class='summary'>"+category+"</div><span class='dtstart'>"+start+"</span><span class='dtend'>"+end+"</span><div class='location'>"+loc+"</div><div class='details'>"+articlesArraySorted[num]+"</div></div>";	
+	var listener = "<div class='textSmall' style='text-align:center;font-size:0.1em;'><a href='#null' id= 'btnW' class='ibutton'><div><b>Add to web calendar</b>"+element+"</div></a></div><a href='#null' id= 'btnL' class='ibutton2'><b>Add to local calendar</b></a></div>";	
+	
 	abstrRow.innerHTML = "<td class='event'><div class='textSmall'><b>Authors: </b>"+author+"<br><hr/><i>"+start+" - "+end+"</i><br><a href='rooms.html#"+roomId(loc)+"'>"+loc+"</a></div>"+listener+"</td>";
-	var btn = document.getElementById("btn")
-	btn.setAttribute("onclick","addToLocalCalendar('"+category+"','" +start+"','" +end+"','" +loc+"')");
-	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
-			titlRow.nextSibling);	
-	addToWebCalendar(start,end, category, loc);
+
+
+	document.getElementById("1").childNodes[0].insertBefore(abstrRow,titlRow.nextSibling);	
+	addToWebCalendar();	
+	var btnL = document.getElementById("btnL");
+	btnL.setAttribute("onclick","addToLocalCalendar('"+category+"','" +start+"','" +end+"','" +loc+"')");
+
 	}
 	}
 	}

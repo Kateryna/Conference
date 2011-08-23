@@ -116,7 +116,7 @@ a.ibutton{
 
 height: 30px;
 width: 80px; 
-font-family: Georgia, serif; 
+font-family: Arial, serif; 
 	color: black;
     font-size:13px;
 	 line-height: 95%;
@@ -134,7 +134,7 @@ a.ibutton2{
 
 height: 30px;
 width: 80px; 
-font-family: Georgia, serif; 
+font-family: Arial, serif; 
 	color: black;
     font-size:13px;
 	 line-height: 95%;
@@ -145,7 +145,7 @@ text-decoration:none;
 background: url(img/ibtn.png) 0 0 ;
     border:0px solid #c0c8cd;
     border-radius:6px;
-clear: both;
+clear: none;
 margin: 5px;
 }
 

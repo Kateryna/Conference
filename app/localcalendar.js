@@ -21,7 +21,7 @@ function addToLocalCalendar(eName, eStart, eEnd, eLoc){
     // Transaction success callback
     //
     function successCB() {
-        alert("success!");
+       // alert("Entry is added to local calendar");
     }
 }
 
@@ -55,12 +55,24 @@ function retrieveFromDB(){
         var len = results.rows.length;
     //    alert("EVENT table: " + len + " rows found.");
         eventArray=[];
+var startE;
+ 	var endE ;
         for (var i=0; i<len; i++){
-        	var startE = parsingDate(results.rows.item(i).eStart);
-			var endE = parsingDate(results.rows.item(i).eEnd);
-  //      alert("Row = " + i + " Event = " + results.rows.item(i).eName + " Start =  " + results.rows.item(i).eStart+" End= "+results.rows.item(i).eEnd+" Loc= "+results.rows.item(i).eLoc);   	
-  //      alert(startE+" "+endE);
+        	if (results.rows.item(i).eStart!="Not defined"&&results.rows.item(i).eEnd!="Not defined"){
+        	       	
+        	startE = parsingDate(results.rows.item(i).eStart);
+			endE = parsingDate(results.rows.item(i).eEnd);
+   //     alert("Row = " + i + " Event = " + results.rows.item(i).eName + " Start =  " + results.rows.item(i).eStart+" End= "+results.rows.item(i).eEnd+" Loc= "+results.rows.item(i).eLoc);   	
+    //    alert(startE+" "+endE);
         eventArray[i]= {title: results.rows.item(i).eName, start: startE, end: endE, place: results.rows.item(i).eLoc, allDay: false};
+     } else {
+     	
+     	 	startE = parsingDate("8/30/2011 10:30:00 AM");
+			endE = parsingDate("9/1/2011 5:30:00 PM");
+			eventArray[i]= {title: results.rows.item(i).eName, start: startE, end: endE, place: results.rows.item(i).eLoc};
+     	}
+     
+     
 }
    //     alert(eventArray[1]);
 
@@ -75,7 +87,7 @@ function retrieveFromDB(){
     // Transaction success callback
     //
     function successCB() {
-        alert("Calendar entries updated");
+        //alert("Calendar entries updated");
         	$(document).ready(function() {
 	
 	
@@ -85,7 +97,7 @@ function retrieveFromDB(){
 		height: 1300,
 			
 	windowResize: function(view) {
-        alert('The calendar has adjusted to a window resize');
+        //alert('The calendar has adjusted to a window resize');
     },
 		eventClick: function(calEvent, jsEvent, view) {
 		var txt = "<h2>Event:</h2><h5>"+calEvent.title+"</h5><h2>Location:</h2><h5><a href='rooms.html#"+roomId(calEvent.place)+"'>"+calEvent.place+"</a></h5><h2>Start time:</h2><h5> "+calEvent.start+"</h5><h2>End time:</h2><h5> "+calEvent.end+"</h5>";
@@ -166,7 +178,7 @@ function deleteFromDB(eName){
     function querySuccess(tx, results) {
         var len = results.rows.length;
         //alert("EVENT table: " + len + " rows found.");
-        alert("Event was deleted");
+     //   alert("Event was deleted");
      }
 
     // Transaction error callback
@@ -179,7 +191,7 @@ function deleteFromDB(eName){
     //
     function successCB() {
        // alert("success");
-	 location.reload();
+	 window.location.reload();
     }
 	
 	

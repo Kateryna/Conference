@@ -8,16 +8,16 @@ var allRecords = programDoc.getElementsByTagName(tagName);
 return allRecords;
 };
 
-function fastMakeTable(buf, row, col, cell) {
+function fastMakeTable(buf, row, col, cell, tableId) {
 	var COLS = col;
 	var ROWS = row;
 
-	buf += "<div align='center'><table id='table' style='bordborder-collapse:collapse;table-layout:fixed;width:90%'>";
+	buf += "<div align='center'><table id='"+tableId+"' style='bordborder-collapse:collapse;table-layout:fixed;width:90%'>";
 	for ( var i = 0; i < ROWS; i++) {
-		var row = "<tr id='article" + i + "'>";
+		var row = "<tr id='article" + i + tableId+"'>";
 		for ( var j = 0; j < COLS; j++) {
 			row += "<td class='sessionFirstTypeList'><a onclick='getAbstract("
-					+ i + ")'><div>" + cell[i] + "</div></a></td>";
+					+ i +","+tableId+ ")'><div>" + cell[i] + "</div></a></td>";
 		}
 		row += "</tr>";
 
@@ -118,22 +118,24 @@ $(document).ready(function() {
           dtstart_element = element.find('.dtstart'), start,
           dtend_element = element.find('.dtend'), end,
           title_element = element.find('.summary'), eName,
-          details_element = element.find('.location'), loc;
-        
+          location_element = element.find('.location'), loc,
+        	details_element = element.find('.details'), details;
         
  			start = dtstart_element.length ? dtstart_element.html() : element.html();
-
+	
          end = dtend_element.length ? dtend_element.html() : element.html();
-
+			if (start=="Not defined") start="8/30/2011 10:30:00 AM";
+			if (end=="Not defined") end="9/1/2011 5:30:00 PM";
    
         eName = title_element.length ? title_element.html() : element.html();
-        loc = details_element.length ? details_element.html() : element.html();
+        loc = location_element.length ? location_element.html() : element.html();
+        details = details_element.length ? details_element.html() : element.html();
         var estart = parsingDate(start);
         var eend = parsingDate(end);
         // in this demo, we attempt to get hCalendar attributes or otherwise just dummy the values
 
       // return the required event structure
-      console.log("in function "+ eName+estart+eend+loc);
+      console.log("in function "+ eName+start+end+loc);
       return { 
         webcalurl: null,
         icalurl: null,
@@ -141,7 +143,7 @@ $(document).ready(function() {
         start: estart, 
         end: eend, 
         title: eName, 
-        details: null, 
+        details: details, 
         location: loc, 
         url: null
         };

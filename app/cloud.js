@@ -21,7 +21,7 @@ var start = new Array ();
 var end = new Array();
 var loc = new Array();
 var category = new Array(); 
-	
+var rArticles;	
 		
 		
 		
@@ -31,9 +31,9 @@ var category = new Array();
 	var keyWord = hash.replace("keyword=","");
 	
 
-	var rArticles = getArticles(keyWord); 
-	console.log(rArticles);
-	var table = fastMakeTable("", rArticles.length, 1, rArticles);
+	rArticles = getArticles(keyWord); 
+//	console.log(rArticles);
+	var table = fastMakeTable("", rArticles.length, 1, rArticles, 1);
 //	console.log(table);
 document.getElementById("category").innerHTML = "<h3>"+keyWord+"</h3>";
 	document.getElementById("result").innerHTML = table;
@@ -295,23 +295,26 @@ return resultArticle;
 };
 
 
-function getAbstract(num) {
-	var element=document.getElementById("article" + num+"abstract"); 
-   var parent = document.getElementById("table").childNodes[0];
+function getAbstract(num, tableId) {
+	var element=document.getElementById("article" + num+tableId+"abstract"); 
+   var parent = document.getElementById(tableId).childNodes[0];
 	if (element!=null){
 parent.removeChild(element);
 	} 
 	else {
 	var abstrRow = document.createElement("tr");
-	abstrRow.setAttribute("id","article" + num+"abstract");
-	var titlRow = document.getElementById("article" + num);
-	var listener = "<div class='textSmall' style='text-align:center;'><a href='#null' id='btn' class='ibutton'><b>Add to calendar</b></a></div>";		
+	abstrRow.setAttribute("id","article" + num+tableId+"abstract");
+	var titlRow = document.getElementById("article" + num+tableId);
+	var element = "<div id='event' style='visibility:hidden'><div class='summary'>"+category[num]+"</div><span class='dtstart'>"+start[num]+"</span><span class='dtend'>"+end[num]+"</span><div class='location'>"+loc[num]+"</div><div class='details'>"+rArticles[num]+"</div></div>";
+
+	var listener = "<div class='textSmall' style='text-align:center; font-size:1px;'><a href='#null' id= 'btnW' class='ibutton'><div><b>Add to web calendar</b>"+element+"</div></a></div><a href='#null' id= 'btnL' class='ibutton2'><b>Add to local calendar</b></a></div>";
+
 	abstrRow.innerHTML = "<td class='event'><div class='textSmall'>" + resultArticleAbstr[num]+"</div><hr/><div class='textSmall'><b>Authors: </b>"+authors[num]+"</div><div class='textSmall'><i>"+start[num]+" - "+end[num]+"</i></div><div class='textSmall'><a href='rooms.html#"+roomId(loc[num])+"'>"+loc[num]+"</a><br><div>"+category[num]+"</div></div>"+listener+"</td>";
- 	document.getElementById("table").childNodes[0].insertBefore(abstrRow,
+ 	document.getElementById(tableId).childNodes[0].insertBefore(abstrRow,
 			titlRow.nextSibling);
-	var btn = document.getElementById("btn")
+	var btn = document.getElementById("btnL")
 	btn.setAttribute("onclick","addToLocalCalendar('"+category[num]+"','" +start[num]+"','" +end[num]+"','" +loc[num]+"')");
-	addToWebCalendar(start[num],end[num], category[num], loc[num]);
+	addToWebCalendar();
 	//document.getElementById("article"+num).childNodes[0].childNodes[0].disabled=true;
 }
 };
