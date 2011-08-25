@@ -289,8 +289,8 @@ $(document).ready(function() {
 						}		
 					allInfo = '<p class = "workshopSessionName">'+sessionName+'</p><br>'+allPresentation; 	
 				} 
-		
-				txt ='<div class = "workshopName">'+workshopName+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(loc)+'">'+loc+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizers+'</p><p class = "website"><b>Website: </b><a href="'+website+'">'+website+'</a></p><br><div class = "allPresentations">'+allInfo+'</div><br><br><div class = "workshopName">'+workshopNameMerged+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(loc)+'">'+loc+'</a></p><p class = "organizers"><b>Organizers: </b>'+organizersMerged+'</p><p class = "website"><b>Website: </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p><br><div class = "workshopDescription">'+workshopDescriptionMerged+'</div>';
+						
+				txt ='<div class = "workshopName">'+workshopName+'<br>and<br>'+workshopNameMerged+'</div><br><p class = "room"><b>Room: </b><a href="rooms.html#'+roomId(loc)+'">'+loc+'</a></p><br><p class = "organizers"><b>Organizers (DBRank 2011): </b>'+organizers+'</p><p class = "website"><b>Website (DBRank 2011): </b><a href="'+website+'">'+website+'</a></p><br><p class = "organizers"><b>Organizers (MUD 2011): </b>'+organizersMerged+'</p><p class = "website"><b>Website (MUD 2011): </b><a href="'+websiteMerged+'">'+websiteMerged+'</a></p><br><div class = "allPresentations">'+allInfo+'</div>';
 		
 			addToCalendar(workshop, loc, 2);
 			}	

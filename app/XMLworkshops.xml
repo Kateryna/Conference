@@ -206,7 +206,7 @@
 		<organizers>Raghunath Nambiar, Meikel Poess</organizers>
 		<sessionName>Keynote</sessionName>
 		<sessionCategory>KeynoteResearchSession</sessionCategory>
-		<submissionTitle> Optimization of Analytic Data Flows for Next Generation Business Intelligence Applications</submissionTitle>
+		<submissionTitle>Optimization of Analytic Data Flows for Next Generation Business Intelligence Applications</submissionTitle>
 		<submissionAuthors>Umeshwar Dayal (HP Labs)</submissionAuthors>
 		<presentationOrder>0</presentationOrder>
 	</workshop>
@@ -326,7 +326,7 @@
 		<organizers>Raghunath Nambiar, Meikel Poess</organizers>
 		<sessionName>Session 3: "Performance Modeling and Characterization"</sessionName>
 		<sessionCategory>KeynoteResearchSession</sessionCategory>
-		<submissionTitle> When free is not really free: What does it cost to run a database workload in the cloud?</submissionTitle>
+		<submissionTitle>When free is not really free: What does it cost to run a database workload in the cloud?</submissionTitle>
 		<submissionAuthors>Avrilia Floratou, Willis Lang, Jignesh Patel (University of Wisconsin); Alan Halverson (Microsoft)</submissionAuthors>
 		<presentationOrder>2</presentationOrder>
 	</workshop>
@@ -356,7 +356,7 @@
 		<organizers>Raghunath Nambiar, Meikel Poess</organizers>
 		<sessionName>Session 3: "Performance Modeling and Characterization"</sessionName>
 		<sessionCategory>KeynoteResearchSession</sessionCategory>
-		<submissionTitle> SI-CV: Snapshot Isolation With Co-Located Versions</submissionTitle>
+		<submissionTitle>SI-CV: Snapshot Isolation With Co-Located Versions</submissionTitle>
 		<submissionAuthors>Robert Gottstein, Ilia Petrov, Alejandro Buchmann (TU-Darmstadt)</submissionAuthors>
 		<presentationOrder>4</presentationOrder>
 	</workshop>
@@ -626,7 +626,7 @@
 		<organizers>Mohamed Mokbel, Suman Nath, Wang-Chien Lee, Demetris Zeinalipour</organizers>
 		<sessionName>Panel</sessionName>
 		<sessionCategory>KeynoteSession</sessionCategory>
-		<submissionTitle>Panel (TBD) </submissionTitle>
+		<submissionTitle>Panel (TBD)</submissionTitle>
 		<submissionAuthors>Mohamed Mokbel, Suman Nath, Wang-Chien Lee, Demetris Zeinalipour</submissionAuthors>
 		<presentationOrder>0</presentationOrder>
 	</workshop>
@@ -1481,8 +1481,8 @@
 		<organizers>Zoltan Gyongyi, Yannis Stavrakas</organizers>
 		<sessionName>Session 4: "Personalization and Context-aware Models and Systems"</sessionName>
 		<sessionCategory>ResearchSession</sessionCategory>
-		<submissionTitle>Efficient Algorithms for Recommending Top-k Items and Packages (Invited Paper)   </submissionTitle>
-		<submissionAuthors>Mohammad Khabbaz (University of British Columbia, Canada), Min Xie (University of British Columbia, Canada), Laks Lakshmanan (University of British Columbia, Canada) </submissionAuthors>
+		<submissionTitle>Efficient Algorithms for Recommending Top-k Items and Packages (Invited Paper)</submissionTitle>
+		<submissionAuthors>Mohammad Khabbaz (University of British Columbia, Canada), Min Xie (University of British Columbia, Canada), Laks Lakshmanan (University of British Columbia, Canada)</submissionAuthors>
 		<presentationOrder>4</presentationOrder>
 	</workshop>
 	<workshop>
@@ -1606,7 +1606,7 @@
 		<presentationOrder>2</presentationOrder>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 9:00:00 AM</startDate>
+		<startDate>8/29/2011  8:30:00 AM</startDate>
 		<endDate>8/29/2011 10:30:00 AM</endDate>
 		<workshopID>DBRank/MUDpart1</workshopID>
 		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
@@ -1621,12 +1621,12 @@
 		<presentationOrder>0</presentationOrder>
 		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
 		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
 		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 11:00:00 AM</startDate>
-		<endDate>8/29/2011 12:30:00 PM</endDate>
+		<startDate>8/29/2011 10:30:00 AM</startDate>
+		<endDate>8/29/2011  12:00:00 PM</endDate>
 		<workshopID>DBRank/MUDpart2</workshopID>
 		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
 		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
@@ -1640,12 +1640,12 @@
 		<presentationOrder>1</presentationOrder>
 		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
 		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
 		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 11:00:00 AM</startDate>
-		<endDate>8/29/2011 12:30:00 PM</endDate>
+		<startDate>8/29/2011 10:30:00 AM</startDate>
+		<endDate>8/29/2011  12:00:00 PM</endDate>
 		<workshopID>DBRank/MUDpart2</workshopID>
 		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
 		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
@@ -1659,12 +1659,12 @@
 		<presentationOrder>2</presentationOrder>
 		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
 		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
 		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 11:00:00 AM</startDate>
-		<endDate>8/29/2011 12:30:00 PM</endDate>
+		<startDate>8/29/2011 10:30:00 AM</startDate>
+		<endDate>8/29/2011  12:00:00 PM</endDate>
 		<workshopID>DBRank/MUDpart2</workshopID>
 		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
 		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
@@ -1678,12 +1678,12 @@
 		<presentationOrder>3</presentationOrder>
 		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
 		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
 		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 2:00:00 PM</startDate>
-		<endDate>8/29/2011 4:00:00 PM</endDate>
+		<startDate>8/29/2011  1:30:00 PM</startDate>
+		<endDate>8/29/2011  3:00:00 PM</endDate>
 		<workshopID>DBRank/MUDpart3</workshopID>
 		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
 		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
@@ -1697,12 +1697,12 @@
 		<presentationOrder>1</presentationOrder>
 		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
 		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
 		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 2:00:00 PM</startDate>
-		<endDate>8/29/2011 4:00:00 PM</endDate>
+		<startDate>8/29/2011  1:30:00 PM</startDate>
+		<endDate>8/29/2011  3:00:00 PM</endDate>
 		<workshopID>DBRank/MUDpart3</workshopID>
 		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
 		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
@@ -1716,12 +1716,12 @@
 		<presentationOrder>2</presentationOrder>
 		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
 		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
 		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 2:00:00 PM</startDate>
-		<endDate>8/29/2011 4:00:00 PM</endDate>
+		<startDate>8/29/2011  1:30:00 PM</startDate>
+		<endDate>8/29/2011  3:00:00 PM</endDate>
 		<workshopID>DBRank/MUDpart3</workshopID>
 		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
 		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
@@ -1735,31 +1735,12 @@
 		<presentationOrder>3</presentationOrder>
 		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
 		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
 		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 2:00:00 PM</startDate>
-		<endDate>8/29/2011 4:00:00 PM</endDate>
-		<workshopID>DBRank/MUDpart3</workshopID>
-		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
-		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
-		<location>Cascade 2</location>
-		<website>http://home.dei.polimi.it/martinen/dbrank2011/</website>
-		<organizers>Kaushik Chakrabarti, Davide Martinenghi</organizers>
-		<sessionName>Session 2</sessionName>
-		<sessionCategory>ResearchSession</sessionCategory>
-		<submissionTitle>BeyOND — Unleashing BOND</submissionTitle>
-		<submissionAuthors>Thomas Bernecker (Ludwig-Maximilians-Universitaet Muenchen), Franz Graf (Ludwig-Maximilians-Universitaet Muenchen), Hans-Peter Kriegel (Ludwig-Maximilians-Universitaet Muenchen), Christian Moennig (Ludwig-Maximilians-Universitaet Muenchen), Arthur Zimek (Ludwig-Maximilians-Universitaet Muenchen)</submissionAuthors>
-		<presentationOrder>4</presentationOrder>
-		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
-		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
-		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
-	</workshop>
-	<workshop>
-		<startDate>8/29/2011 4:30:00 PM</startDate>
-		<endDate>8/29/2011 6:00:00 PM</endDate>
+		<startDate>8/29/2011 3:30:00 PM</startDate>
+		<endDate>8/29/2011 5:30:00 PM</endDate>
 		<workshopID>DBRank/MUDpart4</workshopID>
 		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
 		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
@@ -1773,12 +1754,12 @@
 		<presentationOrder>1</presentationOrder>
 		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
 		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
 		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 4:30:00 PM</startDate>
-		<endDate>8/29/2011 6:00:00 PM</endDate>
+		<startDate>8/29/2011 3:30:00 PM</startDate>
+		<endDate>8/29/2011 5:30:00 PM</endDate>
 		<workshopID>DBRank/MUDpart4</workshopID>
 		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
 		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
@@ -1792,12 +1773,12 @@
 		<presentationOrder>2</presentationOrder>
 		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
 		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
 		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 4:30:00 PM</startDate>
-		<endDate>8/29/2011 6:00:00 PM</endDate>
+		<startDate>8/29/2011 3:30:00 PM</startDate>
+		<endDate>8/29/2011 5:30:00 PM</endDate>
 		<workshopID>DBRank/MUDpart4</workshopID>
 		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
 		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
@@ -1811,17 +1792,26 @@
 		<presentationOrder>3</presentationOrder>
 		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
 		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
-		<organizersMerged>Maurice van Keulen, Ander de Keijzer</organizersMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
 		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 	<workshop>
-		<startDate>8/29/2011 8:30:00 AM</startDate>
-		<endDate>8/29/2011 5:00:00 PM</endDate>
-		<workshopID>DBRank/MUD</workshopID>
-		<workshopName>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopName>
-		<workshopDescription>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescription>
+		<startDate>8/29/2011 3:30:00 PM</startDate>
+		<endDate>8/29/2011 5:30:00 PM</endDate>
+		<workshopID>DBRank/MUDpart4</workshopID>
+		<workshopName>5th International Workshop on Ranking in Databases (DBRank 2011)</workshopName>
+		<workshopDescription>The workshop focuses on the semantics, the modeling and the implementation of ranking and ordering in database systems and applications. In recent years, there has been a great deal of interest in developing effective techniques for ad-hoc search and retrieval in relational XML databases, text and multimedia databases, scientific information systems, biological databases, and so on. In particular, a large number of emerging applications require exploratory querying on such general-purpose or domain-specific databases; examples include users wishing to search bibliographic databases or catalogs of products such as homes, cars, cameras, restaurants, photographs, etc. To address the limitations of the traditional Boolean retrieval model in these emerging ad-hoc search and retrieval applications, Top-k queries and ranking query results are gaining increasing importance. In fact, in many of these applications, ranking is an integral part of the semantics, e.g., keyword search, similarity search in multimedia as well as document databases. The increasing importance of ranking is directly derived from the explosion in the volume of data handled by current applications. The user would be overwhelmed by too many unranked results. Furthermore, the sheer amount of data makes it almost impossible to process queries in the traditional compute-then-sort approach. Hence, ranking comes as a great tool for soliciting user preferences and data exploration. Ranking imposes several challenges for almost all data-centric systems.</workshopDescription>
 		<location>Cascade 2</location>
-		<website>http://mud.cs.utwente.nl</website>
-		<organizers>Maurice van Keulen, Ander de Keijzer</organizers>
+		<website>http://home.dei.polimi.it/martinen/dbrank2011/</website>
+		<organizers>Kaushik Chakrabarti, Davide Martinenghi</organizers>
+		<sessionName>Session 3</sessionName>
+		<sessionCategory>ResearchSession</sessionCategory>
+		<submissionTitle>BeyOND — Unleashing BOND</submissionTitle>
+		<submissionAuthors>Thomas Bernecker (Ludwig-Maximilians-Universitaet Muenchen), Franz Graf (Ludwig-Maximilians-Universitaet Muenchen), Hans-Peter Kriegel (Ludwig-Maximilians-Universitaet Muenchen), Christian Moennig (Ludwig-Maximilians-Universitaet Muenchen), Arthur Zimek (Ludwig-Maximilians-Universitaet Muenchen)</submissionAuthors>
+		<presentationOrder>4</presentationOrder>
+		<workshopNameMerged>5th International Workshop on Management of Uncertain Data (MUD 2011)</workshopNameMerged>
+		<workshopDescriptionMerged>The aim of the workshop is to provide a forum to share original ideas as well as research results and practical development experiences among researchers and application developers. In this workshop we want to explore the various aspects of uncertainty in data as well as techniques how to handle them in the domain of databases. In particular, we are interested in circleussing the different kinds of uncertainty, different models for uncertainty representation in databases, techniques for querying and updating data involving uncertainty, and the varying application areas in which handling uncertain data is involved.</workshopDescriptionMerged>
+		<organizersMerged>Maurice van Keulen, Ander de Keijzer, Ghita Berrada</organizersMerged>
+		<websiteMerged>http://mud.cs.utwente.nl</websiteMerged>
 	</workshop>
 </programm>
