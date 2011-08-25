@@ -262,7 +262,7 @@ function getArticles(tagName) {
 					.push(articles[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
 			resultArticleAbstr
 					.push(articles[i].getElementsByTagName("abstract")[0].childNodes[0].nodeValue);
-					console.log(allRecords);
+					//console.log(allRecords);
 					for (j=0; j<allRecords.length; j++){
 						var subId;
 						try {subId = allRecords[j].getElementsByTagName("submissionId")[0].childNodes[0].nodeValue;} catch (err){subId="";}

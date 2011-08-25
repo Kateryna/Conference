@@ -191,7 +191,7 @@ function deleteFromDB(eName){
     //
     function successCB() {
        // alert("success");
-	 window.location.reload();
+	 location='appcalendar.html';
     }
 	
 	

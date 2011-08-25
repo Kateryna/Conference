@@ -31,7 +31,7 @@ margin-right:auto;
 	
 html .fc,
 .fc table {
-	font-size: 1.3em;
+	font-size: 25px;
 	}
 	
 .fc td,
@@ -48,6 +48,7 @@ html .fc,
 
 	white-space: nowrap;
 	font-family:Arial, sans-serif;
+			font-weight:700;
 	}
 
 .fc-header-left {
@@ -64,6 +65,7 @@ html .fc,
 	
 .fc-header-right {
 	text-align: right;
+
 	}
 	
 .fc-header-title {

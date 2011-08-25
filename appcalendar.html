@@ -20,7 +20,11 @@
 		<script type="text/javascript">
 		
 		retrieveFromDB();
-/*	
+
+
+
+///////////Needed for debugging in browser, because widget loads just after successfull request from phine DB
+	/*
 	
 $(document).ready(function() {
 			var date = new Date();
@@ -90,73 +94,9 @@ $(document).ready(function() {
 	<body >
 		<div style=" background:#6291C0; padding:0px; marging-top:0px;">
 			<div> <img src="./img/vldb2011header.png" width="100%"></div>
-			<div align="left" ><FORM ><INPUT TYPE="BUTTON" VALUE="Go Back" class="backbutton" ONCLICK="history.go(-1)"></FORM></div>
+			<div align="left" ><FORM ><INPUT TYPE="BUTTON" VALUE="Go Back" class="backbutton" ONCLICK="location='index.html'"></FORM></div>
 		</div><br>
 		
 		<div id = "calendar" style="align:center"></div>
-		
-		
-		<!--
-		<div id="programForDay" align="center">
-
-		<table  style="bordborder-collapse:collapse;table-layout:fixed;width:480px">
-			<colgroup>
-				<col width="30">
-				<col width="20">
-				<col width="100">
-				
-			</colgroup> 
-	 
-			<tr><p class="date">Calendar for Conference</p></tr>
- 			 
-			<tr>
-			  <td class="event" colspan="3" >August-September</td>
-			</tr>
-			 
-			<tr>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div>MON</div></a></td>
-				<td class="event"><a href="#" onclick="info()"><div>29</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div></div></a></td>
-			</tr>
-			<tr>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div>TUE</div></a></td>
-				<td class="event"><a href="#" onclick="info()"><div>30</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div></div></a></td>
-			</tr>		
-			<tr>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div>WED</div></a></td>
-				<td class="event"><a href="#" onclick="info()"><div>31</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div></div></a></td>
-			</tr>		
-			<tr>
-				
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div>THU</div></a></td>
-				<td class="event"><a href="#" onclick="info()"><div>1</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div></div></a></td>
-			</tr>		
-			<tr>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div>FRI</div></a></td>
-				<td class="event"><a href="#" onclick="info()"><div>2</div></a></td>
-<td class="sessionFirstType"><a href="#" onclick="info()"><div></div></a></td>
-			</tr>		
-			<tr>
-			
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div>SAT</div></a></td>
-				<td class="event"><a href="#" onclick="info()"><div>3</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div></div></a></td>
-			</tr>		
-			<tr>
-			
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div>SUN</div></a></td>
-				<td class="event"><a href="#" onclick="info()"><div>4</div></a></td>
-				<td class="sessionFirstType"><a href="#" onclick="info()"><div></div></a></td>
-			</tr>		
-					
-					
-			
-		</table>
-
-		</div>
--->
 	</body>
 </html>

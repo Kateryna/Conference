@@ -8,6 +8,39 @@ var allRecords = programDoc.getElementsByTagName(tagName);
 return allRecords;
 };
 
+function makeTable(buf, row, col, cell, tableId) {
+	var COLS = col;
+	var ROWS = row;
+	
+	buf += "<div align='center'><table id='"+tableId+"' style='bordborder-collapse:collapse;table-layout:fixed;width:90%'>";
+	buf +="<tr class='date'><td><a name='A'>A</a></td></tr>";
+	for ( var i = 0; i < ROWS; i++) {
+		
+		var row = "<tr id='article" + i + tableId+"'>";
+		var anch=cell[i].split("");
+		anch[0];
+		for ( var j = 0; j < COLS; j++) {
+					
+			row += "<td class='sessionFirstTypeList'><a onclick='getAbstract("
+					+ i +","+tableId+ ")'><div>" + cell[i] + "</div></a></td>";
+		}
+		row += "</tr>";
+		
+			if ((i+1)!=ROWS){		
+				var nextAnch=cell[i+1].split("");
+			//	console.log("anchor "+anch+nextAnch);
+					if (nextAnch[0]!=anch[0]){
+			//			console.log("not equal");
+						row += "<tr class='date'><td><a name='"+nextAnch[0]+"'>"+nextAnch[0]+"</a></td></tr>";
+					}
+			}
+				buf += row;
+	}
+	buf += "</table><br></div>";
+
+	return buf;
+};
+
 function fastMakeTable(buf, row, col, cell, tableId) {
 	var COLS = col;
 	var ROWS = row;
@@ -27,8 +60,6 @@ function fastMakeTable(buf, row, col, cell, tableId) {
 
 	return buf;
 };
-
-
 
 function roomId(roomName){
 //console.log("room id " + roomName);

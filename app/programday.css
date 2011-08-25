@@ -123,6 +123,7 @@ div.textSmall{
 	font-size: 12.0pt;
 	padding-left: 20pt;
 	padding-right: 10pt;
+	font-family:Arial, sans-serif;
 	}
 .header {
 	text-align:center;
@@ -166,18 +167,36 @@ div.textSmall{
 
 height: 35px;
 width: 90px;
-font-family: Georgia, serif; 
+font-family: Arial, serif; 
 font-weight: bold;
 text-align: right;
 color: black;
-    font-size:13px;
+    font-size:14px;
 	 line-height: 95%;
     background: url(img/backbtn.png) 0 0 ;
     border:0px solid #c0c8cd;
     border-radius:6px;
-clear: both;
+clear: left;
 margin: 5px;
-margin-left: 40px;
+margin-left: 20px;
+}
+
+.bigbutton {
+
+height: 35px;
+width: 150px;
+font-family: Arial, serif; 
+font-weight: bold;
+text-align: center;
+color: black;
+    font-size:14px;
+	 line-height: 95%;
+    background: url(img/bigbtn.png) 0 0 ;
+    border:0px solid #c0c8cd;
+    border-radius:6px;
+
+margin: 5px;
+margin-left: 20px;
 }
 
 

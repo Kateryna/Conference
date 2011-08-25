@@ -26,7 +26,6 @@
   padding:0 25px 0 0;
  }
  div#right-sidebar{
-
   position:fixed;
   top:0;
   right:0;
@@ -36,13 +35,14 @@
  ul.side{
 	list-style:none; 
 	margin:0 !important; 
+	line-height: auto;
 	font-size: 25px;
-
 font-family: Arial, serif; 
 font-weight: bold;
  }
  @media screen{
   body>div#right-sidebar{
+ 
   }
  }
  * html body{
@@ -74,13 +74,13 @@ $().ready(function() {
 
 <div align="left" >
 <FORM><INPUT TYPE="BUTTON" VALUE="Go Back" class="backbutton"
-ONCLICK="location='index.html'"><INPUT TYPE="BUTTON" VALUE="Sort by last name" class="bigbutton"
-ONCLICK="location='authorsLN.html'"></FORM></div>
-</div><br>
+ONCLICK="location='index.html'"><INPUT TYPE="BUTTON" VALUE="Sort by first name" class="bigbutton" ONCLICK="location='authors.html'"
+></FORM></div>
+</div></div><br>
 	
 <!-- Sidebar-->
  
-<div id="right-sidebar" > 
+<div id="right-sidebar"> 
 <ul class="side">
 <li><div><a href="#A" onmouseover="location='#A'"> A</a></div></li>
 <li><div><a href="#B" onmouseover="location='#B'"> B</a></div></li>
@@ -113,12 +113,13 @@ ONCLICK="location='authorsLN.html'"></FORM></div>
 
         <div id="programForDay" align="center">
 
+
 			<!-- tab "panes" -->
 
-			<div style="width: 95%; text-align: center">
-				<div id="resultF" style="padding-top:15px;">  
-      		</div>
-      	   
+			<div ="center" style="width: 95%; text-align: center">
+				
+      		<div id="resultL" style="padding-top:15px;">
+      		</div>   
     	</div>
     	</div>
 </body>
