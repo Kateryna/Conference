@@ -10,7 +10,7 @@ function addToLocalCalendar(eName, eStart, eEnd, eLoc){
     // Populate the database 
     //
     function populateDB(tx) {
-         tx.executeSql('INSERT INTO EVENT (eName, eStart, eEnd, eLoc) VALUES ("'+eName+'","'+eStart+'","'+eEnd+'","'+eLoc+'")');
+            tx.executeSql('INSERT INTO EVENT (eName, eStart, eEnd, eLoc) VALUES ("'+eName+'","'+eStart+'","'+eEnd+'","'+eLoc+'")');
     }
     // Transaction error callback
     //
@@ -65,12 +65,12 @@ var startE;
 			endE = parsingDate(results.rows.item(i).eEnd);
     //   alert("Row = " + i + " Event = " + results.rows.item(i).eName + " Start =  " + results.rows.item(i).eStart+" End= "+results.rows.item(i).eEnd+" Loc= "+results.rows.item(i).eLoc);   	
    //    alert(startE+" "+endE);
-        eventArray[i]= {title: results.rows.item(i).eName, start: startE, end: endE, place: results.rows.item(i).eLoc, allDay: false};
+        eventArray[i]= {id: results.rows.item(i).eName, title: results.rows.item(i).eName, start: startE, end: endE, place: results.rows.item(i).eLoc, allDay: false};
      } else {
      	
      	 	startE = parsingDate("8/30/2011 10:30:00 AM");
 			endE = parsingDate("9/1/2011 5:30:00 PM");
-			eventArray[i]= {title: results.rows.item(i).eName, start: startE, end: endE, place: results.rows.item(i).eLoc};
+			eventArray[i]= {id: results.rows.item(i).eName, title: results.rows.item(i).eName, start: startE, end: endE, place: results.rows.item(i).eLoc};
      	}
      
      
@@ -178,6 +178,7 @@ function deleteFromDB(eName){
     //
     function querySuccess(tx, results) {
         var len = results.rows.length;
+
         //alert("EVENT table: " + len + " rows found.");
      //   alert("Event was deleted");
      }
@@ -192,11 +193,10 @@ function deleteFromDB(eName){
     //
     function successCB() {
        // alert("success");
-	 window.location='appcalendar.html';
+//	 window.location='appcalendar.html';
+	$('#calendar').fullCalendar('removeEvents', eName);
     }
-	
-	
-	
+
 	}
 
 
