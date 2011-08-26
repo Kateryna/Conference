@@ -21,7 +21,7 @@ function addToLocalCalendar(eName, eStart, eEnd, eLoc){
     // Transaction success callback
     //
     function successCB() {
-   //     alert("Entry is added to local calendar");
+        alert("Entry is added to local calendar");
     }
 }
 
@@ -36,12 +36,13 @@ var eventArray;
 
 function retrieveFromDB(){
  document.addEventListener("deviceready", onDeviceReady, false);
-
+//alert("devica is ready");
     // PhoneGap is ready
     //
     function onDeviceReady() {
         var db = window.openDatabase("Events", "1.0", "CalendarEvents", 200000);
         db.transaction(queryDB, errorCB, successCB);
+      //  alert("transaction");
     }
 		
 		
@@ -53,7 +54,7 @@ function retrieveFromDB(){
     //
     function querySuccess(tx, results) {
         var len = results.rows.length;
- //       alert("EVENT table: " + len + " rows found.");
+   //     alert("EVENT table: " + len + " rows found.");
         eventArray=[];
 var startE;
  	var endE ;
@@ -62,8 +63,8 @@ var startE;
         	       	
         	startE = parsingDate(results.rows.item(i).eStart);
 			endE = parsingDate(results.rows.item(i).eEnd);
-  //     alert("Row = " + i + " Event = " + results.rows.item(i).eName + " Start =  " + results.rows.item(i).eStart+" End= "+results.rows.item(i).eEnd+" Loc= "+results.rows.item(i).eLoc);   	
-  //      alert(startE+" "+endE);
+    //   alert("Row = " + i + " Event = " + results.rows.item(i).eName + " Start =  " + results.rows.item(i).eStart+" End= "+results.rows.item(i).eEnd+" Loc= "+results.rows.item(i).eLoc);   	
+   //    alert(startE+" "+endE);
         eventArray[i]= {title: results.rows.item(i).eName, start: startE, end: endE, place: results.rows.item(i).eLoc, allDay: false};
      } else {
      	
@@ -87,7 +88,7 @@ var startE;
     // Transaction success callback
     //
     function successCB() {
-   //     alert("Calendar entries updated");
+   //   alert("Calendar entries updated");
         	$(document).ready(function() {
 	
 	

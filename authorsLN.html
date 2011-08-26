@@ -26,23 +26,34 @@
   padding:0 25px 0 0;
  }
  div#right-sidebar{
+
   position:fixed;
   top:0;
   right:0;
   width:25px;
+  border:1px solid #6291C0;
+  border-radius: 4px;
+background-color: #6291C0; 
 
+	
  }
- ul.side{
+#right-sidebar a{
+color: white;
+
+}
+ 
+ul.side{
 	list-style:none; 
 	margin:0 !important; 
-	line-height: auto;
 	font-size: 25px;
+text-align: center;
+
 font-family: Arial, serif; 
 font-weight: bold;
  }
  @media screen{
   body>div#right-sidebar{
- 
+	color: white;
   }
  }
  * html body{
@@ -52,8 +63,10 @@ font-weight: bold;
   height:100%;
   overflow:auto;
  }
+
 </style>
 <script type="text/javascript" >
+document.addEventListener("deviceready", onDeviceReady, false);
 $().ready(function() {
 		var $scrollingDiv = $("#right-sidebar");
  
@@ -65,12 +78,26 @@ $().ready(function() {
 	});
 
 
+
+    // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+    window.location="index.html";
+    }
+
 </script>
    </head>
 	
 	<body onload="init()">
 
-<div style=" background:#6291C0; padding:0px; marging-top:0px;">
+<div style=" background:#6291C0; padding:0px; marging-top:0px;" >
 
 <div align="left" >
 <FORM><INPUT TYPE="BUTTON" VALUE="Go Back" class="backbutton"
@@ -104,7 +131,7 @@ ONCLICK="location='index.html'"><INPUT TYPE="BUTTON" VALUE="Sort by first name" 
 <li><div><a href="#T" onmouseover="location='#T'"> T</a></div></li>
 <li><div><a href="#U" onmouseover="location='#U'"> U</a></div></li>
 <li><div><a href="#V" onmouseover="location='#V'"> V</a></div></li>
-<li><div><a href="#X" onmouseover="location='#W'"> W</a></div></li>
+<li><div><a href="#W" onmouseover="location='#W'"> W</a></div></li>
 <li><div><a href="#X" onmouseover="location='#X'"> X</a></div></li>
 <li><div><a href="#Y" onmouseover="location='#Y'"> Y</a></div></li>
 <li><div><a href="#Z" onmouseover="location='#Z'"> Z</a></div></li>
